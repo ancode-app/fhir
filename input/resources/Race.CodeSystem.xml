@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Race" />
+  <meta>
+    <lastUpdated value="2020-03-11T18:20:19.538+00:00" />
+  </meta>
+  <language value="pt-BR" />
+  <url value="https://ancode.app/fhir/CodeSystem/Race" />
+  <version value="201701A" />
+  <name value="Race" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2020-03-11T18:20:40.0457007+00:00" />
+  <publisher value="Ancode" />
+  <description value="Códigos para representação de raça/cor." />
+  <content value="complete" />
+  <concept>
+    <code value="01" />
+    <display value="Branca" />
+  </concept>
+  <concept>
+    <code value="02" />
+    <display value="Preta" />
+  </concept>
+  <concept>
+    <code value="03" />
+    <display value="Parda" />
+  </concept>
+  <concept>
+    <code value="04" />
+    <display value="Amarela" />
+  </concept>
+  <concept>
+    <code value="05" />
+    <display value="Indígena" />
+  </concept>
+</CodeSystem>

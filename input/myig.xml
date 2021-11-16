@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" 
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
+  <id value="ancode.app.fhir.anhealth"/>
+  <url value="https://ancode.app/fhir/ImplementationGuide/ancode.app.fhir.anhealth"/>
+  <version value="0.1"/>
+  <name value="AnHealth"/>
+  <title value="Guia de Implementação do anHealth"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Ancode"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ancode.app"/>
+    </telecom>
+  </contact>
+  <description value="Esse Guia de Implementação detalha o modelo de interoperabilidade da Aplicação anHealth, que atende Clínicas Médicas e Hospitais"/>
+  <packageId value="ancode.app.fhir.anhealth"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <definition>
+   <resource>
+      <reference>
+        <reference value="ValueSet/Country"/>
+      </reference>
+      <name value="Country"/>
+      <description value="Códigos para representação de países."/>
+    </resource>
+   <resource>
+      <reference>
+        <reference value="ValueSet/Race"/>
+      </reference>
+      <name value="Race"/>
+      <description value="Códigos para representação de raça/cor no Brasil."/>
+    </resource>
+   <resource>
+      <reference>
+        <reference value="CodeSystem/Country"/>
+      </reference>
+      <name value="Country"/>
+      <description value="Códigos para representação de países."/>
+    </resource>
+   <resource>
+      <reference>
+        <reference value="CodeSystem/Race"/>
+      </reference>
+      <name value="Race"/>
+      <description value="Códigos para representação de raça/cor no Brasil."/>
+    </resource> 
+   <resource>
+      <reference>
+        <reference value="StructureDefinition/Address"/>
+      </reference>
+      <name value="Address"/>
+      <description value="Padronização de endereços"/>
+    </resource>
+    <resource>
+        <reference>
+          <reference value="StructureDefinition/ContactPoint"/>
+        </reference>
+        <name value="ContactPoint"/>
+        <description value="Padronização de meios de contato"/>
+      </resource>
+    <resource>
+        <reference>
+          <reference value="StructureDefinition/Country"/>
+        </reference>
+        <name value="Country"/>
+        <description value="Identificar origem, nacionalidade, região etc"/>
+      </resource>   
+    <resource>
+        <reference>
+          <reference value="StructureDefinition/HumanName"/>
+        </reference>
+        <name value="HumanName"/>
+        <description value="Padronização de uso de nomes"/>
+      </resource>
+    <resource>
+        <reference>
+          <reference value="StructureDefinition/Identifier"/>
+        </reference>
+        <name value="Identifier"/>
+        <description value="Estrutura de identificação"/>
+      </resource>
+    <resource>
+        <reference>
+          <reference value="StructureDefinition/ProtectedPerson"/>
+        </reference>
+        <name value="ProtectedPerson"/>
+        <description value="Extensão utilizada para identificar pessoas que possuem  maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros."/>
+      </resource>
+    <resource>
+        <reference>
+          <reference value="StructureDefinition/Race"/>
+        </reference>
+        <name value="Race"/>
+        <description value="Extensão para para representar dados relacionados à raça/cor de um indivíduo."/>
+      </resource>
+    <resource>
+        <reference>
+          <reference value="StructureDefinition/Patient"/>
+        </reference>
+        <name value="Patient"/>
+        <description value="Paciente, sujeito da assistência à saúde."/>
+      </resource>
+    <page>
+      <!-- The root will always be toc.html - the template will force it if you don't do it -->
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home Page"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="background.html"/>
+        <title value="Background"/>
+        <generation value="html"/>
+      </page>      
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2021+"/>
+    </parameter>
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="CI Build"/>
+    </parameter>
+    <parameter>
+      <code value="find-other-resources"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input\history"/>
+    </parameter>
+    <parameter>
+      <code value="path-binary"/>
+      <value value="input\cql"/>
+    </parameter>
+    <parameter>
+      <code value="path-liquid"/>
+      <value value="templates\liquid"/>
+    </parameter>
+    <parameter>
+      <code value="shownav"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="showsource"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

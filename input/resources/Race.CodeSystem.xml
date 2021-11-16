@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="Race" />
-  <meta>
-    <lastUpdated value="2020-03-11T18:20:19.538+00:00" />
-  </meta>
   <language value="pt-BR" />
   <url value="https://ancode.app/fhir/CodeSystem/Race" />
   <version value="201701A" />

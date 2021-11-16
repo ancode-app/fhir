@@ -141,16 +141,6 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
     </element>
-    <element id="Patient.address.line">
-      <path value="Patient.address.line" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="line" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
     <element id="Patient.maritalStatus">
       <path value="Patient.maritalStatus" />
       <short value="Estado civil" />

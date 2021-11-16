@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://ancode.app/fhir/StructureDefinition/Organization" />
+  <name value="Organization" />
+  <title value="Estabelecimento de Saúde" />
+  <status value="draft" />
+  <description value="Estabelecimento de Saúde" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization">
+      <path value="Organization" />
+      <short value="Estabelecimento de Saúde" />
+      <definition value="Estabelecimento de Saúde" />
+    </element>
+    <element id="Organization.extension">
+      <path value="Organization.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Organization.extension:isHealthPublicSevice">
+      <path value="Organization.extension" />
+      <sliceName value="isHealthPublicSevice" />
+      <short value="É Serviço Público de Saúde?" />
+      <definition value="True = Sim; False = Não." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/HealthPublicSevice" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier.use">
+      <path value="Organization.identifier.use" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier.type">
+      <path value="Organization.identifier.type" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier.type.coding">
+      <path value="Organization.identifier.type.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Organization.identifier.type.coding.system">
+      <path value="Organization.identifier.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier.type.coding.code">
+      <path value="Organization.identifier.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier.type.coding.display">
+      <path value="Organization.identifier.type.coding.display" />
+      <max value="0" />
+    </element>
+    <element id="Organization.identifier.type.coding.userSelected">
+      <path value="Organization.identifier.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Organization.identifier.type.text">
+      <path value="Organization.identifier.type.text" />
+      <max value="0" />
+    </element>
+    <element id="Organization.identifier.system">
+      <path value="Organization.identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="Organization.identifier.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier.period">
+      <path value="Organization.identifier.period" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier.period.start">
+      <path value="Organization.identifier.period.start" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier.period.end">
+      <path value="Organization.identifier.period.end" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.active">
+      <path value="Organization.active" />
+      <short value="Estabelecimento de Saúde Ativo" />
+      <definition value="Se o Estabelecimento de Saúde ainda está em ativo." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <short value="Tipo do Estabelecimento de Saúde" />
+      <definition value="Classificação do Estabelecimento de Saúde de acordo com um conjunto de dimensões." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Tipo de Estabelecimento de Saúde" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/OrganizationType" />
+      </binding>
+    </element>
+    <element id="Organization.type.coding.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Organization.type.coding.code">
+      <path value="Organization.type.coding.code" />
+      <min value="1" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Organization.type.coding.display">
+      <path value="Organization.type.coding.display" />
+      <max value="0" />
+    </element>
+    <element id="Organization.type.coding.userSelected">
+      <path value="Organization.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Organization.type.text">
+      <path value="Organization.type.text" />
+      <min value="1" />
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <short value="Nome" />
+      <definition value="Nome do Estabelecimento de Saúde." />
+      <min value="1" />
+    </element>
+    <element id="Organization.alias">
+      <path value="Organization.alias" />
+      <short value="Nomes Empresariais" />
+      <definition value="Firma ou denominação adotada para o exercício da instituição/entidade/órgão/empresa." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <definition value="Informações do(s) meio(s) de contato com o Estabelecimento de Saúde." />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
+      </type>
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <definition value="Dados do endereço onde o Estabelecimento de Saúde é localizado." />
+      <min value="1" />
+      <type>
+        <code value="Address" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

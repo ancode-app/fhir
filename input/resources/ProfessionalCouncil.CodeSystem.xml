@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">  
+  <language value="pt-BR"/>
+  <url value="https://ancode.app/fhir/CodeSystem/ProfessionalCouncil"/>
+  <version value="0.0.1"/>
+  <name value="Terminologia de conselho profissional"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-05-12T20:18:11.6743763+00:00"/>
+  <publisher value="Ancode"/>
+  <description value="Terminologia de conselho profissional"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <concept>
+    <code value="01"/>
+    <display value="Conselho Regional de Assist&#xEA;ncia Social (CRAS)"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Conselho Regional de Enfermagem (COREN)"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Conselho Regional de Farm&#xE1;cia (CRF)"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Conselho Regional de Fonoaudiologia (CRFA)"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Conselho Regional de Fisioterapia e Terapia Ocupacional (CREFITO)"/>
+  </concept>
+  <concept>
+    <code value="06"/>
+    <display value="Conselho Regional de Medicina (CRM)"/>
+  </concept>
+  <concept>
+    <code value="07"/>
+    <display value="Conselho Regional de Nutri&#xE7;&#xE3;o (CRN)"/>
+  </concept>
+  <concept>
+    <code value="08"/>
+    <display value="Conselho Regional de Odontologia (CRO)"/>
+  </concept>
+  <concept>
+    <code value="09"/>
+    <display value="Conselho Regional de Psicologia (CRP)"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Outros Conselhos "/>
+  </concept>
+</CodeSystem>

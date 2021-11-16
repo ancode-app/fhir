@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BrazilianState"/>
+  <language value="pt-BR"/>  
+  <url value="https://ancode.app/fhir/ValueSet/BrazilianState"/>
+  <version value="1.0"/>
+  <name value="Dom&#xED;nio de valores para Unidade Federativa"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-03-11T18:43:43.0294815+00:00"/>
+  <publisher value="Ancode"/>
+  <description value="Dom&#xED;nio de valores de Unidade Federativa para classifica&#xE7;&#xE3;o."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="https://ancode.app/fhir/CodeSystem/BrazilianState"/>
+      <version value="*"/>
+    </include>
+  </compose>
+</ValueSet>

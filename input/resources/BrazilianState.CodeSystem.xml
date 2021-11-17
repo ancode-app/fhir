@@ -4,18 +4,12 @@
   <language value="pt-BR"/>  
   <url value="https://ancode.app/fhir/CodeSystem/BrazilianState"/>
   <version value="1.0"/>
-  <name value="Terminologia de Unidades Federativas"/>
+  <name value="BrazilianState"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2021-05-12T20:18:11.6743763+00:00"/>
   <publisher value="Ancode"/>
   <description value="Terminologia de unidades federativas do Brasil"/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <content value="complete"/>
   <concept>
     <code value="AC"/>

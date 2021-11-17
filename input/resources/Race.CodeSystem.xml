@@ -3,7 +3,7 @@
   <id value="Race" />
   <language value="pt-BR" />
   <url value="https://ancode.app/fhir/CodeSystem/Race" />
-  <version value="201701A" />
+  <version value="1.0" />
   <name value="Race" />
   <status value="active" />
   <experimental value="false" />

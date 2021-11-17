@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://ancode.app/fhir/StructureDefinition/Organization" />
+  <version value="1.0" />
   <name value="Organization" />
   <title value="Estabelecimento de Saúde" />
   <status value="draft" />

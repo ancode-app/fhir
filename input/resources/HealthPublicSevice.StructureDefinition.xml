@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <language value="pt-BR" />
-  <url value="https://ancode.app/fhir/StructureDefinition/HealthPublicSevice " />
+  <url value="https://ancode.app/fhir/StructureDefinition/HealthPublicSevice"/>
   <version value="1.0" />
   <name value="HealthPublicSevice" />
   <title value="Serviço público de saúde?" />

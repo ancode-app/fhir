@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+  <version value="1.0" />
   <name value="Identifier" />
   <title value="Identificador" />
   <status value="active" />

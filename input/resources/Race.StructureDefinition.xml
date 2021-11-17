@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Race" />
-  <meta>
-    <lastUpdated value="2020-03-13T21:06:10.279+00:00" />
-  </meta>
   <language value="pt-BR" />
   <url value="https://ancode.app/fhir/StructureDefinition/Race" />
   <version value="1.0" />

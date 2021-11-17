@@ -4,19 +4,13 @@
   <id value="ProfessionalCouncil"/>  
   <language value="pt-BR"/>
   <url value="https://ancode.app/fhir/ValueSet/ProfessionalCouncil"/>
-  <<version value="1.0" />
-  <name value="Dom&#xED;nio de valores para conselho profissional"/>
+  <version value="1.0" />
+  <name value="ProfessionalCouncil"/>  
   <status value="active"/>
   <experimental value="false"/>
   <date value="2020-03-11T18:43:43.0294815+00:00"/>
   <publisher value="Ancode"/>
-  <description value="Dom&#xED;nio de valores que classifica&#xE7;&#xE3;o de conselho profissional."/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
+  <description value="Domínio de valores que classificam o conselho profissional."/>
   <immutable value="false"/>
   <compose>
     <include>

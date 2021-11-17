@@ -7,7 +7,7 @@
   <title value="Conselho Profissional"/>
   <status value="active"/>  
   <publisher value="Ancode"/>
-  <description value="Classifica&#xE7;&#xE3;o do conselho profissional."/>
+  <description value="Classificação do conselho profissional."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide xmlns="http://hl7.org/fhir" 
-                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                     xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
+<ImplementationGuide xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
   <id value="ancode.app.fhir.anhealth"/>
   <url value="https://ancode.app/fhir/ImplementationGuide/ancode.app.fhir.anhealth"/>
   <version value="0.1"/>
@@ -21,90 +20,167 @@
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <definition>
-   <resource>
+    <resource>
       <reference>
-        <reference value="ValueSet/Country"/>
+        <reference value="StructureDefinition/Address"/>
       </reference>
-      <name value="Country"/>
-      <description value="Códigos para representação de países."/>
+      <name value="Address"/>
+      <description value="Padronização de endereços."/>
     </resource>
-   <resource>
+    <resource>
       <reference>
-        <reference value="ValueSet/Race"/>
+        <reference value="CodeSystem/BrazilianState"/>
       </reference>
-      <name value="Race"/>
-      <description value="Códigos para representação de raça/cor no Brasil."/>
+      <name value="BrazilianState"/>
+      <description value="Terminologia de unidades federativas do Brasil."/>
     </resource>
-   <resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BrazilianState"/>
+      </reference>
+      <name value="BrazilianState"/>
+      <description value="Unidade Federativa."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BrazilianState"/>
+      </reference>
+      <name value="BrazilianState"/>
+      <description value="Domínio de valores de Unidade Federativa para classificação."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/City"/>
+      </reference>
+      <name value="City"/>
+      <description value="Extensão utilizada para informar o município."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ContactPoint"/>
+      </reference>
+      <name value="ContactPoint"/>
+      <description value="Padronização de meios de contato"/>
+    </resource>
+    <resource>
       <reference>
         <reference value="CodeSystem/Country"/>
       </reference>
       <name value="Country"/>
       <description value="Códigos para representação de países."/>
     </resource>
-   <resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Country"/>
+      </reference>
+      <name value="Country"/>
+      <description value="Identificar o país."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/Country"/>
+      </reference>
+      <name value="Country"/>
+      <description value="Códigos para representação de países."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/HealthPublicSevice"/>
+      </reference>
+      <name value="HealthPublicSevice"/>
+      <description value="Identifica se um profissional ou estabelecimento de saúde oferece atendimento pelo Serviço Público de Saúde."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/HumanName"/>
+      </reference>
+      <name value="HumanName"/>
+      <description value="Padronização de uso de nomes"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Identifier"/>
+      </reference>
+      <name value="Identifier"/>
+      <description value="Estrutura de identificação"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Organization"/>
+      </reference>
+      <name value="Organization"/>
+      <description value="Estabelecimento de Saúde."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/OrganizationType"/>
+      </reference>
+      <name value="OrganizationType"/>
+      <description value="Códigos para representação de tipos do estabelecimento de saúde, de acordo com codificação já existente para o Cadastro Nacional de Estabelecimentos de Saúde (CNES)."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/OrganizationType"/>
+      </reference>
+      <name value="OrganizationType"/>
+      <description value="Classificação do tipo do estabelecimento de saúde."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Patient"/>
+      </reference>
+      <name value="Patient"/>
+      <description value="Paciente, sujeito da assistência à saúde."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ProfessionalCouncil"/>
+      </reference>
+      <name value="ProfessionalCouncil"/>
+      <description value="Terminologia de conselho profissional."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ProfessionalCouncil"/>
+      </reference>
+      <name value="ProfessionalCouncil"/>
+      <description value="Classificação do conselho profissional."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ProfessionalCouncil"/>
+      </reference>
+      <name value="ProfessionalCouncil"/>
+      <description value="Domínio de valores que classificam o conselho profissional."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ProtectedPerson"/>
+      </reference>
+      <name value="ProtectedPerson"/>
+      <description value="Extensão utilizada para identificar pessoas que possuem  maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros."/>
+    </resource>
+    <resource>
       <reference>
         <reference value="CodeSystem/Race"/>
       </reference>
       <name value="Race"/>
       <description value="Códigos para representação de raça/cor no Brasil."/>
-    </resource> 
-   <resource>
-      <reference>
-        <reference value="StructureDefinition/Address"/>
-      </reference>
-      <name value="Address"/>
-      <description value="Padronização de endereços"/>
     </resource>
     <resource>
-        <reference>
-          <reference value="StructureDefinition/ContactPoint"/>
-        </reference>
-        <name value="ContactPoint"/>
-        <description value="Padronização de meios de contato"/>
-      </resource>
+      <reference>
+        <reference value="StructureDefinition/Race"/>
+      </reference>
+      <name value="Race"/>
+      <description value="Extensão para para representar dados relacionados à raça/cor de um indivíduo."/>
+    </resource>
     <resource>
-        <reference>
-          <reference value="StructureDefinition/Country"/>
-        </reference>
-        <name value="Country"/>
-        <description value="Identificar origem, nacionalidade, região etc"/>
-      </resource>   
-    <resource>
-        <reference>
-          <reference value="StructureDefinition/HumanName"/>
-        </reference>
-        <name value="HumanName"/>
-        <description value="Padronização de uso de nomes"/>
-      </resource>
-    <resource>
-        <reference>
-          <reference value="StructureDefinition/Identifier"/>
-        </reference>
-        <name value="Identifier"/>
-        <description value="Estrutura de identificação"/>
-      </resource>
-    <resource>
-        <reference>
-          <reference value="StructureDefinition/ProtectedPerson"/>
-        </reference>
-        <name value="ProtectedPerson"/>
-        <description value="Extensão utilizada para identificar pessoas que possuem  maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros."/>
-      </resource>
-    <resource>
-        <reference>
-          <reference value="StructureDefinition/Race"/>
-        </reference>
-        <name value="Race"/>
-        <description value="Extensão para para representar dados relacionados à raça/cor de um indivíduo."/>
-      </resource>
-    <resource>
-        <reference>
-          <reference value="StructureDefinition/Patient"/>
-        </reference>
-        <name value="Patient"/>
-        <description value="Paciente, sujeito da assistência à saúde."/>
-      </resource>
+      <reference>
+        <reference value="ValueSet/Race"/>
+      </reference>
+      <name value="Race"/>
+      <description value="Códigos para representação de raça/cor no Brasil."/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -119,7 +195,7 @@
         <nameUrl value="background.html"/>
         <title value="Background"/>
         <generation value="html"/>
-      </page>      
+      </page>
       <page>
         <nameUrl value="downloads.html"/>
         <title value="Useful Downloads"/>

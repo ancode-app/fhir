@@ -13,7 +13,7 @@
   <date value="2020-03-13T21:06:33.7291792+00:00" />
   <publisher value="Ancode" />
   <description value="Extensão para representar um país." />
-  <purpose value="Identificar origem, nacionalidade, região etc." />
+  <purpose value="Identificar o país." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

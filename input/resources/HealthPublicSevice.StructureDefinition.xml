@@ -7,7 +7,7 @@
   <status value="active" />
   <date value="2020-03-13T20:26:23.0414137+00:00" />
   <publisher value="Ancode" />
-  <description value="Extensão utilizada para identificar se um profissional ou estabelecimento de saúde oferece atendimento pelo Serviço Público de Saúde" />
+  <description value="Extensão utilizada para identificar se um profissional ou estabelecimento de saúde oferece atendimento pelo Serviço Público de Saúde." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />

@@ -135,7 +135,7 @@
     </element>
     <element id="Patient.address">
       <path value="Patient.address" />
-      <definition value="Dados do(s) endereço(s) onde o indivíduo pode ser localizado." />
+      <definition value="Dados do(s) endereço(s) onde o paciente pode ser localizado." />
       <type>
         <code value="Address" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
@@ -150,18 +150,6 @@
       <path value="Patient.photo" />
       <short value="Fotos" />
       <definition value="Fotos do paciente." />
-    </element>
-    <element id="Patient.contact">
-      <path value="Patient.contact" />
-      <max value="0" />
-    </element>
-    <element id="Patient.communication">
-      <path value="Patient.communication" />
-      <max value="0" />
-    </element>
-    <element id="Patient.link">
-      <path value="Patient.link" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

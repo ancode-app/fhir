@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <language value="pt-BR" />
-  <url value="https://ancode.app/fhir/StructureDefinition/HealthPublicSevice"/>
+  <url value="https://ancode.app/fhir/StructureDefinition/HealthPublicSevice" />
   <version value="1.0" />
   <name value="HealthPublicSevice" />
   <title value="Serviço público de saúde?" />
@@ -8,7 +9,7 @@
   <date value="2020-03-13T20:26:23.0414137+00:00" />
   <publisher value="Ancode" />
   <description value="Extensão utilizada para identificar se um profissional ou estabelecimento de saúde oferece atendimento pelo Serviço Público de Saúde." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>

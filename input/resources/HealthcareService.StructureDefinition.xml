@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="HealthcareService" />
+  <url value="https://example.org/fhir/StructureDefinition/HealthcareService" />
+  <version value="1.0" />
+  <name value="HealthcareService" />
+  <status value="draft" />
+  <description value="Os detalhes de um serviço de saúde disponível em um local" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="HealthcareService" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="HealthcareService">
+      <path value="HealthcareService" />
+      <short value="Serviço de Saúde" />
+      <definition value="Os detalhes de um serviço de saúde disponível em um local" />
+    </element>
+    <element id="HealthcareService.active">
+      <path value="HealthcareService.active" />
+      <short value="Registro em uso" />
+      <definition value="Se este registro está em uso." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HealthcareService.providedBy">
+      <path value="HealthcareService.providedBy" />
+      <short value="Organização" />
+      <definition value="Organização que fornece este serviço" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.category">
+      <path value="HealthcareService.category" />
+      <short value="Categoria" />
+      <definition value="Categoria ampla de serviço sendo executado ou prestado" />
+    </element>
+    <element id="HealthcareService.type">
+      <path value="HealthcareService.type" />
+      <short value="Tipo de serviço" />
+      <definition value="Tipo de serviço que pode ser entregue ou executado." />
+    </element>
+    <element id="HealthcareService.specialty">
+      <path value="HealthcareService.specialty" />
+      <short value="Especialidades" />
+      <definition value="Especialidades do serviço de saúde." />
+    </element>
+    <element id="HealthcareService.name">
+      <path value="HealthcareService.name" />
+      <short value="Nome" />
+      <definition value="Descrição do serviço de saúde" />
+    </element>
+    <element id="HealthcareService.comment">
+      <path value="HealthcareService.comment" />
+      <short value="Descrição Adicional" />
+      <definition value="Descrição adicional e/ou quaisquer questões específicas não cobertas." />
+    </element>
+    <element id="HealthcareService.extraDetails">
+      <path value="HealthcareService.extraDetails" />
+      <max value="0" />
+    </element>
+    <element id="HealthcareService.photo">
+      <path value="HealthcareService.photo" />
+      <max value="0" />
+    </element>
+    <element id="HealthcareService.telecom">
+      <path value="HealthcareService.telecom" />
+      <short value="Meio de contato" />
+      <definition value="Informações do(s) meio(s) de contato com o serviço de saúde." />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
+      </type>
+    </element>
+    <element id="HealthcareService.coverageArea">
+      <path value="HealthcareService.coverageArea" />
+      <short value="Área de cobertura" />
+      <definition value="O serviço de localização é destinado/disponível para" />
+    </element>
+    <element id="HealthcareService.serviceProvisionCode">
+      <path value="HealthcareService.serviceProvisionCode" />
+      <short value="Código de Provisão de Serviço" />
+      <definition value="Condições sob as quais o serviço está disponível/oferecido" />
+    </element>
+    <element id="HealthcareService.eligibility">
+      <path value="HealthcareService.eligibility" />
+      <short value="Elegibilidade" />
+      <definition value="Requisitos de elegibilidade específicos necessários para usar o serviço" />
+    </element>
+    <element id="HealthcareService.eligibility.code">
+      <path value="HealthcareService.eligibility.code" />
+      <short value="Código" />
+      <definition value="Valor codificado para elegibilidade" />
+    </element>
+    <element id="HealthcareService.eligibility.comment">
+      <path value="HealthcareService.eligibility.comment" />
+      <short value="Comentário" />
+      <definition value="Descreve as condições de elegibilidade para o serviço" />
+    </element>
+    <element id="HealthcareService.program">
+      <path value="HealthcareService.program" />
+      <short value="Programa" />
+      <definition value="Programas para os quais este serviço é aplicável." />
+    </element>
+    <element id="HealthcareService.characteristic">
+      <path value="HealthcareService.characteristic" />
+      <short value="Características" />
+      <definition value="Coleção de características" />
+    </element>
+    <element id="HealthcareService.communication">
+      <path value="HealthcareService.communication" />
+      <max value="0" />
+    </element>
+    <element id="HealthcareService.referralMethod">
+      <path value="HealthcareService.referralMethod" />
+      <short value="Método de referência" />
+      <definition value="Formas que o serviço aceita referências" />
+    </element>
+    <element id="HealthcareService.appointmentRequired">
+      <path value="HealthcareService.appointmentRequired" />
+      <short value="Necessário agendamento?" />
+      <definition value="Indica se é necessário agendamento para este serviço." />
+    </element>
+    <element id="HealthcareService.availableTime">
+      <path value="HealthcareService.availableTime" />
+      <short value="Horários disponíveis" />
+      <definition value="Horários em que o do serviço está disponível" />
+    </element>
+    <element id="HealthcareService.availableTime.daysOfWeek">
+      <path value="HealthcareService.availableTime.daysOfWeek" />
+      <short value="Dias da Semana" />
+      <definition value="mon | ter | wed | qui | sex | sat | sun" />
+    </element>
+    <element id="HealthcareService.availableTime.allDay">
+      <path value="HealthcareService.availableTime.allDay" />
+      <short value="Dia Todo" />
+      <definition value="Sempre disponível? por exemplo, serviço 24 horas" />
+    </element>
+    <element id="HealthcareService.availableTime.availableStartTime">
+      <path value="HealthcareService.availableTime.availableStartTime" />
+      <short value="Horário de abertura" />
+      <definition value="Horário de abertura do dia (ignorado se allDay = true)" />
+    </element>
+    <element id="HealthcareService.availableTime.availableEndTime">
+      <path value="HealthcareService.availableTime.availableEndTime" />
+      <short value="Hora de fechamento" />
+      <definition value="Hora de fechamento do dia (ignorado se allDay = true)" />
+    </element>
+    <element id="HealthcareService.notAvailable">
+      <path value="HealthcareService.notAvailable" />
+      <short value="Não Disponível" />
+      <definition value="Não disponível durante este período devido ao motivo fornecido" />
+    </element>
+    <element id="HealthcareService.notAvailable.description">
+      <path value="HealthcareService.notAvailable.description" />
+      <short value="Descrição" />
+      <definition value="Motivo apresentado ao usuário explicando porque o tempo não está disponível" />
+    </element>
+    <element id="HealthcareService.notAvailable.during">
+      <path value="HealthcareService.notAvailable.during" />
+      <short value="Tempo" />
+      <definition value="Serviço não disponível a partir desta data" />
+    </element>
+    <element id="HealthcareService.notAvailable.during.start">
+      <path value="HealthcareService.notAvailable.during.start" />
+      <short value="Início" />
+      <definition value="Início" />
+    </element>
+    <element id="HealthcareService.notAvailable.during.end">
+      <path value="HealthcareService.notAvailable.during.end" />
+      <short value="Fim" />
+      <definition value="Fim" />
+    </element>
+    <element id="HealthcareService.availabilityExceptions">
+      <path value="HealthcareService.availabilityExceptions" />
+      <short value="Exceções de disponibilidade" />
+      <definition value="Descrição das exceções de disponibilidade" />
+    </element>
+    <element id="HealthcareService.endpoint">
+      <path value="HealthcareService.endpoint" />
+      <short value="End Points" />
+    </element>
+  </differential>
+</StructureDefinition>

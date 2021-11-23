@@ -34,31 +34,26 @@
       <path value="HumanName.family" />
       <short value="Sobrenome" />
       <definition value="O(s) sobrenome(s) do indivíduo, quando é possível coletar esta informação desagregada." />
-      <mustSupport value="true" />
     </element>
     <element id="HumanName.given">
       <path value="HumanName.given" />
       <short value="Nome Próprio" />
       <definition value="O nome próprio do paciente, incluindo todos aqueles que não são o sobrenome no caso de nomes compostos, quando é possível coletar esta informação desagregada." />
-      <mustSupport value="true" />
     </element>
     <element id="HumanName.prefix">
       <path value="HumanName.prefix" />
       <short value="Prefixo do Nome" />
       <definition value="Prefixo do nome tipicamente utilizado quando se adquire títulos acadêmicos (Prof. ou Dr.), estados maritais (Sr., Sra., Srta.) etc., e é possível coletar esta informação." />
-      <mustSupport value="true" />
     </element>
     <element id="HumanName.suffix">
       <path value="HumanName.suffix" />
       <short value="Sufixo do Nome" />
       <definition value="Sufixo do nome, tipicamente utilizado para identificar a geração do indivíduo (Filho, Neto, Júnior etc.), quando é possível coletar esta informação desagregada." />
-      <mustSupport value="true" />
     </element>
     <element id="HumanName.period">
       <path value="HumanName.period" />
       <short value="Período de Uso do Nome" />
       <definition value="Indica a data inicial e final do uso do nome." />
-      <mustSupport value="true" />
     </element>
     <element id="HumanName.period.start">
       <path value="HumanName.period.start" />

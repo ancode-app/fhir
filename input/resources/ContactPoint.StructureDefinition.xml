@@ -47,19 +47,16 @@
       <path value="ContactPoint.use" />
       <short value="Uso do Meio de Contato" />
       <definition value="home: residencial.&#xD;&#xA;work: comercial.&#xD;&#xA;temp: temporário ou de recado.&#xD;&#xA;mobile: dispositivo móvel, como um telefone celular." />
-      <mustSupport value="true" />
     </element>
     <element id="ContactPoint.rank">
       <path value="ContactPoint.rank" />
       <short value="Ordem de Preferência" />
       <definition value="Especifica uma ordem preferencial entre vários contatos do mesmo tipo, sendo o de valor 1 o preferido." />
-      <mustSupport value="true" />
     </element>
     <element id="ContactPoint.period">
       <path value="ContactPoint.period" />
       <short value="Período do Meio de Contato" />
       <definition value="Período em que o meio de contato foi utilizado pelo indivíduo." />
-      <mustSupport value="true" />
     </element>
     <element id="ContactPoint.period.start">
       <path value="ContactPoint.period.start" />

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Location" />
+  <url value="https://example.org/fhir/StructureDefinition/Location" />
+  <version value="1.0" />
+  <name value="Location" />
+  <title value="Local" />
+  <status value="draft" />
+  <description value="Detalhes e informações de posição para um local físico onde os serviços são fornecidos e os recursos e participantes podem ser armazenados, encontrados, contidos ou acomodados." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Location" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Location">
+      <path value="Location" />
+      <short value="Local" />
+      <definition value="Detalhes e informações de posição para um lugar físico" />
+    </element>
+    <element id="Location.identifier">
+      <path value="Location.identifier" />
+      <short value="Identificação" />
+      <definition value="Código ou número único que identifica o local para seus usuários" />
+    </element>
+    <element id="Location.status">
+      <path value="Location.status" />
+      <short value="Status" />
+      <definition value="active | suspended | inactive" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Location.operationalStatus">
+      <path value="Location.operationalStatus" />
+      <short value="Status Operacional" />
+      <definition value="O status operacional do local (normalmente apenas para uma cama / quarto)" />
+    </element>
+    <element id="Location.name">
+      <path value="Location.name" />
+      <short value="Nome" />
+      <definition value="Nome do local" />
+      <min value="1" />
+    </element>
+    <element id="Location.alias">
+      <path value="Location.alias" />
+      <short value="Nomes Alternativos" />
+      <definition value="Uma lista de nomes alternativos pelos quais o local é conhecido ou era conhecido no passado" />
+    </element>
+    <element id="Location.description">
+      <path value="Location.description" />
+      <short value="Descrição" />
+      <definition value="Detalhes adicionais sobre o local que podem ser exibidos como informações adicionais para identificar o local além de seu nome" />
+    </element>
+    <element id="Location.mode">
+      <path value="Location.mode" />
+      <short value="instância | tipo" />
+      <fixedCode value="Modo" />
+    </element>
+    <element id="Location.type">
+      <path value="Location.type" />
+      <short value="Tipo" />
+      <definition value="Tipo de função executada" />
+    </element>
+    <element id="Location.telecom">
+      <path value="Location.telecom" />
+      <short value="Meio de Contato" />
+      <definition value="Informações do(s) meio(s) de contato com o local." />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
+      </type>
+    </element>
+    <element id="Location.address">
+      <path value="Location.address" />
+      <short value="Dados de Endereçamento" />
+      <definition value="Dados do(s) endereço(s) físicos." />
+      <type>
+        <code value="Address" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
+      </type>
+    </element>
+    <element id="Location.address.line">
+      <path value="Location.address.line" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="line" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Location.physicalType">
+      <path value="Location.physicalType" />
+      <short value="Forma física" />
+      <definition value="Forma física do local" />
+    </element>
+    <element id="Location.position">
+      <path value="Location.position" />
+      <short value="Localização Geográfica" />
+      <definition value="A localização geográfica" />
+    </element>
+    <element id="Location.managingOrganization">
+      <path value="Location.managingOrganization" />
+      <short value="Organização responsável" />
+      <definition value="Organização responsável pelo provisionamento e manutenção" />
+      <min value="1" />
+    </element>
+    <element id="Location.partOf">
+      <path value="Location.partOf" />
+      <short value="Parte de" />
+      <definition value="Outro local do qual este faz parte fisicamente" />
+    </element>
+    <element id="Location.hoursOfOperation">
+      <path value="Location.hoursOfOperation" />
+      <short value="Horarios de Funcionamento" />
+      <definition value="Em que dias / horários durante uma semana este local geralmente abre" />
+    </element>
+    <element id="Location.hoursOfOperation.daysOfWeek">
+      <path value="Location.hoursOfOperation.daysOfWeek" />
+      <short value="Dias da semana" />
+      <definition value="mon | ter | wed | qui | sex | sat | sun" />
+    </element>
+    <element id="Location.hoursOfOperation.allDay">
+      <path value="Location.hoursOfOperation.allDay" />
+      <short value="Dia todo" />
+      <definition value="O local está aberto o dia todo" />
+    </element>
+    <element id="Location.hoursOfOperation.openingTime">
+      <path value="Location.hoursOfOperation.openingTime" />
+      <short value="Horário de abertura" />
+      <definition value="Horário de abertura do local" />
+    </element>
+    <element id="Location.hoursOfOperation.closingTime">
+      <path value="Location.hoursOfOperation.closingTime" />
+      <short value="Horário de encerramento" />
+      <definition value="Horário em que o local fecha" />
+    </element>
+    <element id="Location.availabilityExceptions">
+      <path value="Location.availabilityExceptions" />
+      <short value="Exceções de disponibilidade" />
+      <definition value="Descrição das exceções de disponibilidade" />
+    </element>
+    <element id="Location.endpoint">
+      <path value="Location.endpoint" />
+      <short value="End Points" />
+    </element>
+  </differential>
+</StructureDefinition>

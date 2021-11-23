@@ -25,7 +25,7 @@
         <reference value="StructureDefinition/Address"/>
       </reference>
       <name value="Address"/>
-      <description value="Padronização de endereços."/>
+      <description value="Padronização de endereços"/>
     </resource>
     <resource>
       <reference>
@@ -39,7 +39,7 @@
         <reference value="StructureDefinition/BrazilianState"/>
       </reference>
       <name value="BrazilianState"/>
-      <description value="Unidade Federativa."/>
+      <description value="Utilizada para informar um estado brasileiro."/>
     </resource>
     <resource>
       <reference>
@@ -53,7 +53,7 @@
         <reference value="StructureDefinition/City"/>
       </reference>
       <name value="City"/>
-      <description value="Extensão utilizada para informar o município."/>
+      <description value="Utilizada para informar um município."/>
     </resource>
     <resource>
       <reference>
@@ -74,7 +74,7 @@
         <reference value="StructureDefinition/Country"/>
       </reference>
       <name value="Country"/>
-      <description value="Identificar o país."/>
+      <description value="Utilizada para informar um país."/>
     </resource>
     <resource>
       <reference>
@@ -85,10 +85,17 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/HealthcareService"/>
+      </reference>
+      <name value="HealthcareService"/>
+      <description value="Serviço de Saúde"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/HealthPublicSevice"/>
       </reference>
       <name value="HealthPublicSevice"/>
-      <description value="Identifica se um profissional ou estabelecimento de saúde oferece atendimento pelo Serviço Público de Saúde."/>
+      <description value="Utilizada para identificar se um profissional ou estabelecimento de saúde oferece atendimento pelo Serviço Público de Saúde."/>
     </resource>
     <resource>
       <reference>
@@ -106,10 +113,17 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Location"/>
+      </reference>
+      <name value="Location"/>
+      <description value="Local"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Organization"/>
       </reference>
       <name value="Organization"/>
-      <description value="Estabelecimento de Saúde."/>
+      <description value="Estabelecimento de Saúde"/>
     </resource>
     <resource>
       <reference>
@@ -130,8 +144,29 @@
         <reference value="StructureDefinition/Patient"/>
       </reference>
       <name value="Patient"/>
-      <description value="Paciente, sujeito da assistência à saúde."/>
+      <description value="Paciente"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Person"/>
+      </reference>
+      <name value="Person"/>
+      <description value="Pessoa"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Practitioner"/>
+      </reference>
+      <name value="Practitioner"/>
+      <description value="Profissional"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/PractitionerRole"/>
+      </reference>
+      <name value="PractitionerRole"/>
+      <description value="Função"/>
+    </resource>    
     <resource>
       <reference>
         <reference value="CodeSystem/ProfessionalCouncil"/>
@@ -144,7 +179,7 @@
         <reference value="StructureDefinition/ProfessionalCouncil"/>
       </reference>
       <name value="ProfessionalCouncil"/>
-      <description value="Classificação do conselho profissional."/>
+      <description value="Utilizada para classificação do conselho profissional."/>
     </resource>
     <resource>
       <reference>
@@ -158,7 +193,7 @@
         <reference value="StructureDefinition/ProtectedPerson"/>
       </reference>
       <name value="ProtectedPerson"/>
-      <description value="Extensão utilizada para identificar pessoas que possuem  maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros."/>
+      <description value="Utilizada para identificar pessoas que possuem  maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros."/>
     </resource>
     <resource>
       <reference>
@@ -172,7 +207,7 @@
         <reference value="StructureDefinition/Race"/>
       </reference>
       <name value="Race"/>
-      <description value="Extensão para para representar dados relacionados à raça/cor de um indivíduo."/>
+      <description value="Utilizada representar dados relacionados à raça/cor de uma pessoa."/>
     </resource>
     <resource>
       <reference>

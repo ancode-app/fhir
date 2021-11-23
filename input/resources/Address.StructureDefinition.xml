@@ -40,7 +40,7 @@
       <short value="Texto completo do endereço" />
       <definition value="Texto completo do endereço" />
       <min value="1" />
-      <mustSupport value="false" />
+      <mustSupport value="true" />
     </element>
     <element id="Address.line">
       <path value="Address.line" />
@@ -105,10 +105,6 @@
       <definition value="Município do endereço." />
       <min value="1" />
     </element>
-    <element id="Address.district">
-      <path value="Address.district" />
-      <max value="0" />
-    </element>
     <element id="Address.state">
       <path value="Address.state" />
       <short value="UF" />
@@ -134,7 +130,6 @@
       <path value="Address.period" />
       <short value="Período do Endereço" />
       <definition value="Período em que o endereço foi utilizado." />
-      <mustSupport value="true" />
     </element>
     <element id="Address.period.start">
       <path value="Address.period.start" />

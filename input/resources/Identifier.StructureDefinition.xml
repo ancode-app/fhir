@@ -23,6 +23,7 @@
     <element id="Identifier.type">
       <path value="Identifier.type" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Identifier.type.coding">
       <path value="Identifier.type.coding" />
@@ -60,12 +61,12 @@
       <short value="Número Identificação" />
       <definition value="Número do identificação, incluindo letras e outros caracteres utilizados." />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Identifier.period">
       <path value="Identifier.period" />
       <short value="Período da Identificação" />
       <definition value="Datas de emissão e validade da identificação." />
-      <mustSupport value="true" />
     </element>
     <element id="Identifier.period.start">
       <path value="Identifier.period.start" />
@@ -82,7 +83,6 @@
     <element id="Identifier.assigner">
       <path value="Identifier.assigner" />
       <short value="Órgão Expedidor" />
-      <mustSupport value="false" />
     </element>
     <element id="Identifier.assigner.reference">
       <path value="Identifier.assigner.reference" />

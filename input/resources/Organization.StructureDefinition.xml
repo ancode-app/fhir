@@ -46,6 +46,7 @@
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Organization.identifier.use">
       <path value="Organization.identifier.use" />
@@ -147,6 +148,7 @@
       <short value="Nome" />
       <definition value="Nome do Estabelecimento de Saúde." />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Organization.alias">
       <path value="Organization.alias" />
@@ -171,6 +173,20 @@
         <code value="Address" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
+    </element>
+    <element id="Organization.address.line">
+      <path value="Organization.address.line" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="line" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Organization.address.city">
+      <path value="Organization.address.city" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

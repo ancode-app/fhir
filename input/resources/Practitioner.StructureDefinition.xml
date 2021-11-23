@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Practitioner" />
+  <url value="https://example.org/fhir/StructureDefinition/Practitioner" />
+  <version value="1.0" />
+  <name value="Practitioner" />
+  <title value="Profissional" />
+  <status value="draft" />
+  <description value="Profissional que realiza atividades profissionais." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Practitioner" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Practitioner">
+      <path value="Practitioner" />
+      <short value="Uma pessoa com uma responsabilidade formal no fornecimento de cuidados de saúde ou serviços relacionados" />
+      <definition value="Uma pessoa que está direta ou indiretamente envolvida no fornecimento de cuidados de saúde." />
+    </element>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <short value="Identificação" />
+      <definition value="Identificações do profissional." />
+      <min value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.active">
+      <path value="Practitioner.active" />
+      <short value="Registro em Uso" />
+      <definition value="Indica se o registro desse profissional ainda está em uso.&#xD;&#xA;A codição de inativo pode indicar que tanto uma informação errada quanto um profissional que não está mais atuando." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name">
+      <path value="Practitioner.name" />
+      <short value="Nome do Profissional" />
+      <definition value="Nome(s) associado(s) ao profissional." />
+      <min value="1" />
+      <type>
+        <code value="HumanName" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/HumanName" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.telecom">
+      <path value="Practitioner.telecom" />
+      <short value="Meio de Contato" />
+      <definition value="Informações do(s) meio(s) de contato com o profissional. Não devem ser informados meios de contato pessoais, apenas profissionais." />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
+      </type>
+      <mustSupport value="false" />
+    </element>
+    <element id="Practitioner.address">
+      <path value="Practitioner.address" />
+      <short value="Dados de Endereçamento" />
+      <definition value="Dados do(s) endereço(s) onde o profissional pode ser localizado. Não devem ser informados endereços pessoais, apenas profissionais." />
+      <type>
+        <code value="Address" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
+      </type>
+    </element>
+    <element id="Practitioner.address.line">
+      <path value="Practitioner.address.line" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="line" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Practitioner.gender">
+      <path value="Practitioner.gender" />
+      <short value="Sexo" />
+      <definition value="male: masculino.&#xD;&#xA;female: feminino.&#xD;&#xA;unknown: ignorado." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.birthDate">
+      <path value="Practitioner.birthDate" />
+      <short value="Data de Nascimento" />
+      <definition value="Data de nascimento do profissional" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.photo">
+      <path value="Practitioner.photo" />
+      <short value="Foto" />
+      <definition value="Foto do profissional" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.qualification">
+      <path value="Practitioner.qualification" />
+      <short value="Qualificação" />
+      <definition value="A(s) qualificação(ões), conforme a formação, certificações ou acreditações que o profissional possui." />
+    </element>
+  </differential>
+</StructureDefinition>

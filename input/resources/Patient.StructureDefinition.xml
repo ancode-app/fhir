@@ -107,7 +107,7 @@
     </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom" />
-      <definition value="Informações do(s) meio(s) de contato com o paciente." />
+      <definition value="Informações do(s) meio(s) de contato com a pessoa." />
       <type>
         <code value="ContactPoint" />
         <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
@@ -141,6 +141,16 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
     </element>
+    <element id="Patient.address.line">
+      <path value="Patient.address.line" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="line" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
     <element id="Patient.maritalStatus">
       <path value="Patient.maritalStatus" />
       <short value="Estado civil" />
@@ -148,8 +158,18 @@
     </element>
     <element id="Patient.photo">
       <path value="Patient.photo" />
-      <short value="Fotos" />
-      <definition value="Fotos do paciente." />
+      <short value="Foto" />
+      <definition value="Foto do paciente." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Attachment" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Attachment" />
+      </type>
+    </element>
+    <element id="Patient.contact">
+      <path value="Patient.contact" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

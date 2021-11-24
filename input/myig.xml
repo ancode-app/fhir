@@ -25,7 +25,28 @@
         <reference value="StructureDefinition/Address"/>
       </reference>
       <name value="Address"/>
-      <description value="Padronização de endereços"/>
+      <description value="Padronização de endereço"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Appointment"/>
+      </reference>
+      <name value="Appointment"/>
+      <description value="Compromisso"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/AppointmentResponse"/>
+      </reference>
+      <name value="AppointmentResponse"/>
+      <description value="Resposta do Compromisso"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Attachment"/>
+      </reference>
+      <name value="Attachment"/>
+      <description value="Padrão de anexo"/>
     </resource>
     <resource>
       <reference>
@@ -85,6 +106,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Encounter"/>
+      </reference>
+      <name value="Encounter"/>
+      <description value="Atendimento"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/HealthcareService"/>
       </reference>
       <name value="HealthcareService"/>
@@ -127,6 +155,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/OrganizationAffiliation"/>
+      </reference>
+      <name value="OrganizationAffiliation"/>
+      <description value="Afiliação de Organização"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/OrganizationType"/>
       </reference>
       <name value="OrganizationType"/>
@@ -145,6 +180,13 @@
       </reference>
       <name value="Patient"/>
       <description value="Paciente"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Period"/>
+      </reference>
+      <name value="Period"/>
+      <description value="Período"/>
     </resource>
     <resource>
       <reference>
@@ -197,6 +239,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Quantity"/>
+      </reference>
+      <name value="Quantity"/>
+      <description value="Quantidade"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/Race"/>
       </reference>
       <name value="Race"/>
@@ -215,6 +264,27 @@
       </reference>
       <name value="Race"/>
       <description value="Códigos para representação de raça/cor no Brasil."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/RelatedPerson"/>
+      </reference>
+      <name value="RelatedPerson"/>
+      <description value="Pessoa Relacionada"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Schedule"/>
+      </reference>
+      <name value="Schedule"/>
+      <description value="Agenda"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Slot"/>
+      </reference>
+      <name value="Slot"/>
+      <description value="Slot da Agenda"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

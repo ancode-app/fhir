@@ -23,7 +23,6 @@
       <path value="PractitionerRole.identifier" />
       <short value="Identificação" />
       <definition value="Indentificação da função" />
-      <max value="0" />
     </element>
     <element id="PractitionerRole.active">
       <path value="PractitionerRole.active" />
@@ -84,7 +83,6 @@
     </element>
     <element id="PractitionerRole.telecom">
       <path value="PractitionerRole.telecom" />
-      <short value="Meio de Contato" />
       <definition value="Informações do(s) meio(s) de contato com a função." />
       <type>
         <code value="ContactPoint" />
@@ -130,16 +128,10 @@
       <path value="PractitionerRole.notAvailable.during" />
       <short value="Tempo" />
       <definition value="Serviço não disponível a partir desta data" />
-    </element>
-    <element id="PractitionerRole.notAvailable.during.start">
-      <path value="PractitionerRole.notAvailable.during.start" />
-      <short value="Início" />
-      <definition value="Início" />
-    </element>
-    <element id="PractitionerRole.notAvailable.during.end">
-      <path value="PractitionerRole.notAvailable.during.end" />
-      <short value="Fim" />
-      <definition value="Fim" />
+      <type>
+        <code value="Period" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
+      </type>
     </element>
     <element id="PractitionerRole.availabilityExceptions">
       <path value="PractitionerRole.availabilityExceptions" />

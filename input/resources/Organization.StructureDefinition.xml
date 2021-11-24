@@ -45,6 +45,8 @@
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
+      <short value="Identificação" />
+      <definition value="Identificador da organização usado para identificar a organização em vários sistemas distintos." />
       <min value="1" />
       <mustSupport value="true" />
     </element>
@@ -173,16 +175,6 @@
         <code value="Address" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
-    </element>
-    <element id="Organization.address.line">
-      <path value="Organization.address.line" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="line" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
     </element>
     <element id="Organization.address.city">
       <path value="Organization.address.city" />

@@ -22,7 +22,11 @@
     <element id="Location.identifier">
       <path value="Location.identifier" />
       <short value="Identificação" />
-      <definition value="Código ou número único que identifica o local para seus usuários" />
+      <definition value="Código ou número único que identifica a localização para seus usuários." />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
     </element>
     <element id="Location.status">
       <path value="Location.status" />
@@ -64,7 +68,6 @@
     </element>
     <element id="Location.telecom">
       <path value="Location.telecom" />
-      <short value="Meio de Contato" />
       <definition value="Informações do(s) meio(s) de contato com o local." />
       <type>
         <code value="ContactPoint" />
@@ -73,22 +76,11 @@
     </element>
     <element id="Location.address">
       <path value="Location.address" />
-      <short value="Dados de Endereçamento" />
       <definition value="Dados do(s) endereço(s) físicos." />
       <type>
         <code value="Address" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
-    </element>
-    <element id="Location.address.line">
-      <path value="Location.address.line" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="line" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
     </element>
     <element id="Location.physicalType">
       <path value="Location.physicalType" />
@@ -106,10 +98,24 @@
       <definition value="Organização responsável pelo provisionamento e manutenção" />
       <min value="1" />
     </element>
+    <element id="Location.managingOrganization.identifier">
+      <path value="Location.managingOrganization.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
     <element id="Location.partOf">
       <path value="Location.partOf" />
       <short value="Parte de" />
       <definition value="Outro local do qual este faz parte fisicamente" />
+    </element>
+    <element id="Location.partOf.identifier">
+      <path value="Location.partOf.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
     </element>
     <element id="Location.hoursOfOperation">
       <path value="Location.hoursOfOperation" />

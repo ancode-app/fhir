@@ -50,32 +50,19 @@
     </element>
     <element id="Practitioner.telecom">
       <path value="Practitioner.telecom" />
-      <short value="Meio de Contato" />
       <definition value="Informações do(s) meio(s) de contato com o profissional. Não devem ser informados meios de contato pessoais, apenas profissionais." />
       <type>
         <code value="ContactPoint" />
         <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Practitioner.address">
       <path value="Practitioner.address" />
-      <short value="Dados de Endereçamento" />
       <definition value="Dados do(s) endereço(s) onde o profissional pode ser localizado. Não devem ser informados endereços pessoais, apenas profissionais." />
       <type>
         <code value="Address" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
-    </element>
-    <element id="Practitioner.address.line">
-      <path value="Practitioner.address.line" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="line" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
     </element>
     <element id="Practitioner.gender">
       <path value="Practitioner.gender" />
@@ -96,11 +83,36 @@
       <short value="Foto" />
       <definition value="Foto do profissional" />
       <max value="1" />
+      <type>
+        <code value="Attachment" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Attachment" />
+      </type>
     </element>
     <element id="Practitioner.qualification">
       <path value="Practitioner.qualification" />
       <short value="Qualificação" />
       <definition value="A(s) qualificação(ões), conforme a formação, certificações ou acreditações que o profissional possui." />
+    </element>
+    <element id="Practitioner.qualification.identifier">
+      <path value="Practitioner.qualification.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="Practitioner.qualification.period">
+      <path value="Practitioner.qualification.period" />
+      <type>
+        <code value="Period" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
+      </type>
+    </element>
+    <element id="Practitioner.qualification.issuer.identifier">
+      <path value="Practitioner.qualification.issuer.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

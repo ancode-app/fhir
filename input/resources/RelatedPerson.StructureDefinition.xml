@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="RelatedPerson" />
+  <url value="https://ancode.app/fhir/StructureDefinition/RelatedPerson" />
+  <version value="1.0" />
+  <name value="RelatedPerson" />
+  <title value="Pessoa Relacionada" />
+  <status value="draft" />
+  <description value="Informações sobre uma pessoa que está envolvida no cuidado de um paciente, mas que não é o alvo da assistência à saúde, nem tem responsabilidade formal no processo de cuidar." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="RelatedPerson" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="RelatedPerson">
+      <path value="RelatedPerson" />
+      <short value="Pessoa Relacionada" />
+      <definition value="Uma pessoa que está relacionada a um paciente, mas que não é um alvo direto do cuidado." />
+    </element>
+    <element id="RelatedPerson.identifier">
+      <path value="RelatedPerson.identifier" />
+      <short value="Identificação" />
+      <definition value="Identificações da pessoa." />
+      <min value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.active">
+      <path value="RelatedPerson.active" />
+      <short value="Registro em Uso" />
+      <definition value="Indica se o registro dessa pessoa ainda está em uso." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.patient">
+      <path value="RelatedPerson.patient" />
+      <short value="Paciente" />
+      <definition value="O paciente ao qual esta pessoa é parente" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.relationship">
+      <path value="RelatedPerson.relationship" />
+      <short value="Tipo de Relacionamento" />
+      <definition value="A natureza do relacionamento" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.name">
+      <path value="RelatedPerson.name" />
+      <short value="Nome da Pessoa" />
+      <definition value="Nome(s) associado(s) a pessoa." />
+      <min value="1" />
+      <type>
+        <code value="HumanName" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/HumanName" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.telecom">
+      <path value="RelatedPerson.telecom" />
+      <short value="Meio de Contato" />
+      <definition value="Informações do(s) meio(s) de contato com o paciente." />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
+      </type>
+    </element>
+    <element id="RelatedPerson.gender">
+      <path value="RelatedPerson.gender" />
+      <short value="Sexo" />
+      <definition value="male: masculino.&#xD;&#xA;female: feminino.&#xD;&#xA;unknown: ignorado" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.birthDate">
+      <path value="RelatedPerson.birthDate" />
+      <short value="Data de Nascimento" />
+      <definition value="Data de nascimento da pessoa." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.address">
+      <path value="RelatedPerson.address" />
+      <short value="Dados de Endereçamento" />
+      <definition value="Dados do(s) endereço(s) onde a pessoa pode ser localizada." />
+      <type>
+        <code value="Address" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
+      </type>
+    </element>
+    <element id="RelatedPerson.address.line">
+      <path value="RelatedPerson.address.line" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="line" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="RelatedPerson.photo">
+      <path value="RelatedPerson.photo" />
+      <short value="Foto" />
+      <definition value="Foto do paciente." />
+      <max value="1" />
+      <type>
+        <code value="Attachment" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Attachment" />
+      </type>
+      <mustSupport value="false" />
+    </element>
+    <element id="RelatedPerson.period">
+      <path value="RelatedPerson.period" />
+      <short value="Período" />
+      <definition value="Período de tempo em que esta relação é considerada válida" />
+      <min value="1" />
+      <type>
+        <code value="Period" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

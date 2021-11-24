@@ -18,6 +18,13 @@
       <short value="Serviço de Saúde" />
       <definition value="Os detalhes de um serviço de saúde disponível em um local" />
     </element>
+    <element id="HealthcareService.identifier">
+      <path value="HealthcareService.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
     <element id="HealthcareService.active">
       <path value="HealthcareService.active" />
       <short value="Registro em uso" />
@@ -54,15 +61,21 @@
     <element id="HealthcareService.comment">
       <path value="HealthcareService.comment" />
       <short value="Descrição Adicional" />
-      <definition value="Descrição adicional e/ou quaisquer questões específicas não cobertas." />
+      <definition value="Descrição adicional e/ou quaisquer questões específicas não cobertas em outro lugar." />
     </element>
     <element id="HealthcareService.extraDetails">
       <path value="HealthcareService.extraDetails" />
-      <max value="0" />
+      <short value="Detalhes extras" />
+      <definition value="Detalhes extras sobre o serviço que não podem ser colocados em outros campos." />
     </element>
     <element id="HealthcareService.photo">
       <path value="HealthcareService.photo" />
-      <max value="0" />
+      <short value="Logo" />
+      <definition value="Se houver uma logo associada a este Servico de Saúde, ele pode ser incluído aqui para facilitar a identificação rápida do serviço em uma lista." />
+      <type>
+        <code value="Attachment" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Attachment" />
+      </type>
     </element>
     <element id="HealthcareService.telecom">
       <path value="HealthcareService.telecom" />
@@ -107,10 +120,6 @@
       <path value="HealthcareService.characteristic" />
       <short value="Características" />
       <definition value="Coleção de características" />
-    </element>
-    <element id="HealthcareService.communication">
-      <path value="HealthcareService.communication" />
-      <max value="0" />
     </element>
     <element id="HealthcareService.referralMethod">
       <path value="HealthcareService.referralMethod" />
@@ -161,16 +170,10 @@
       <path value="HealthcareService.notAvailable.during" />
       <short value="Tempo" />
       <definition value="Serviço não disponível a partir desta data" />
-    </element>
-    <element id="HealthcareService.notAvailable.during.start">
-      <path value="HealthcareService.notAvailable.during.start" />
-      <short value="Início" />
-      <definition value="Início" />
-    </element>
-    <element id="HealthcareService.notAvailable.during.end">
-      <path value="HealthcareService.notAvailable.during.end" />
-      <short value="Fim" />
-      <definition value="Fim" />
+      <type>
+        <code value="Period" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
+      </type>
     </element>
     <element id="HealthcareService.availabilityExceptions">
       <path value="HealthcareService.availabilityExceptions" />

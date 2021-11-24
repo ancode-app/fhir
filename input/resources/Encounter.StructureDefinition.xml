@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Encounter" />
+  <url value="https://ancode.app/fhir/StructureDefinition/Encounter" />
+  <version value="1.0" />
+  <name value="Encounter" />
+  <title value="Atendimento" />
+  <status value="draft" />
+  <description value="Uma interação entre um paciente e o(s) provedor(es) de saúde com a finalidade de fornecer serviço(s) de saúde ou avaliar o estado de saúde de um paciente." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Encounter" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Encounter">
+      <path value="Encounter" />
+      <short value="Atendimento" />
+      <definition value="Uma interação entre um paciente e o(s) provedor(es) de saúde com a finalidade de fornecer serviço(s) de saúde ou avaliar o estado de saúde de um paciente." />
+    </element>
+    <element id="Encounter.identifier">
+      <path value="Encounter.identifier" />
+      <short value="Identificação" />
+      <definition value="Identificador(es) pelos quais este atendimento é conhecido." />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="Encounter.status">
+      <path value="Encounter.status" />
+      <short value="Status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.statusHistory">
+      <path value="Encounter.statusHistory" />
+      <short value="Histórico de Status" />
+      <definition value="O histórico de status permite que o atendimento contenha o histórico de status." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.statusHistory.status">
+      <path value="Encounter.statusHistory.status" />
+      <short value="Status" />
+    </element>
+    <element id="Encounter.statusHistory.period">
+      <path value="Encounter.statusHistory.period" />
+      <short value="Período" />
+      <definition value="A Data/Hora em que esteve no status especificado." />
+      <type>
+        <code value="Period" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
+      </type>
+    </element>
+    <element id="Encounter.class">
+      <path value="Encounter.class" />
+      <short value="Classificação" />
+      <definition value="Conceitos que representam a classificação do atendimento do paciente, como ambulatorial (ambulatorial), hospitalar, de emergência, saúde doméstica ou outros devido a variações locais." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.classHistory">
+      <path value="Encounter.classHistory" />
+      <short value="Histórico Classificações" />
+      <definition value="O histórico da classe permite o rastreamento das transições dos atendimentos sem a necessidade de passar pelo histórico. Isso seria usado para um caso em que uma admissão começa como um atendimento de emergência e, em seguida, passa para um cenário de internação. Fazer isso e não reiniciar um novo encontro garante que qualquer resultado de laboratório / diagnóstico possa acompanhar o paciente com mais facilidade e não exigir reprocessamento e não ser perdido ou cancelado durante um tipo de alta de emergência para paciente internado." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.type">
+      <path value="Encounter.type" />
+      <short value="Tipo do Atendimento" />
+      <definition value="Tipo específico do atendimento (exemplo: consulta por e-mail, pré-operatório, enfermagem especializada, reabilitação)." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.serviceType">
+      <path value="Encounter.serviceType" />
+      <short value="Serviço Prestado" />
+      <definition value="Serviço prestado (por exemplo, cardiologia)." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.priority">
+      <path value="Encounter.priority" />
+      <short value="Prioridade" />
+      <definition value="Indica a urgência do atendimento." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.subject">
+      <path value="Encounter.subject" />
+      <short value="Paciente" />
+      <definition value="O paciente ou grupo presente no atendimento." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.episodeOfCare">
+      <path value="Encounter.episodeOfCare" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.basedOn">
+      <path value="Encounter.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.participant">
+      <path value="Encounter.participant" />
+      <short value="Particiapantes" />
+      <definition value="A lista de pessoas responsáveis pela prestação do serviço." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant.type">
+      <path value="Encounter.participant.type" />
+      <short value="Função do Participante" />
+      <definition value="Função do participante no atendimento." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant.period">
+      <path value="Encounter.participant.period" />
+      <short value="Período" />
+      <definition value="O período de tempo que o participante especificado participou do atendimento." />
+      <type>
+        <code value="Period" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
+      </type>
+    </element>
+    <element id="Encounter.participant.individual">
+      <path value="Encounter.participant.individual" />
+      <short value="Pessoa envolvida" />
+      <definition value="Pessoa envolvida no atendimento que não sejam o paciente." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.appointment">
+      <path value="Encounter.appointment" />
+      <short value="Compromisso" />
+      <definition value="O compromisso que marcou este atendimento." />
+    </element>
+    <element id="Encounter.period">
+      <path value="Encounter.period" />
+      <short value="Período do Atendimento" />
+      <definition value="A hora de início e de término do atendimento." />
+      <min value="1" />
+      <type>
+        <code value="Period" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
+      </type>
+    </element>
+    <element id="Encounter.length">
+      <path value="Encounter.length" />
+      <short value="Quantidade de tempo" />
+      <definition value="Quantidade de tempo que o encontro durou." />
+    </element>
+    <element id="Encounter.reasonCode">
+      <path value="Encounter.reasonCode" />
+      <short value="Motivos do Atendimento" />
+      <definition value="A razão pela qual o encontro ocorre. Para admissões, isso pode ser usado para um diagnóstico de admissão." />
+    </element>
+    <element id="Encounter.reasonReference">
+      <path value="Encounter.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.diagnosis">
+      <path value="Encounter.diagnosis" />
+      <short value="Diagnósticos" />
+      <definition value="A lista de diagnósticos relevantes para este atendimento." />
+      <max value="0" />
+    </element>
+    <element id="Encounter.account">
+      <path value="Encounter.account" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization">
+      <path value="Encounter.hospitalization" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.location">
+      <path value="Encounter.location" />
+      <short value="Locais" />
+      <definition value="Lista de locais onde o paciente esteve durante este encontro." />
+    </element>
+    <element id="Encounter.location.location">
+      <path value="Encounter.location.location" />
+      <short value="Local Atendimento" />
+      <definition value="O local onde ocorre o atendimento." />
+    </element>
+    <element id="Encounter.location.status">
+      <path value="Encounter.location.status" />
+      <short value="Status" />
+      <definition value="O status da presença dos participantes no local especificado durante o período especificado. Caso o participante não esteja mais no local, o período terá data / horário de encerramento." />
+    </element>
+    <element id="Encounter.location.physicalType">
+      <path value="Encounter.location.physicalType" />
+      <short value="Tipo Físico" />
+      <definition value="Isso será usado para especificar os níveis necessários (cama/enfermaria/quarto/etc.)" />
+    </element>
+    <element id="Encounter.location.period">
+      <path value="Encounter.location.period" />
+      <short value="Período" />
+      <definition value="Período de tempo em que o paciente esteve presente no local." />
+      <type>
+        <code value="Period" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
+      </type>
+    </element>
+    <element id="Encounter.serviceProvider">
+      <path value="Encounter.serviceProvider" />
+      <short value="Organização Responsável" />
+      <definition value="A organização principal responsável pelos serviços deste atendimento." />
+      <min value="1" />
+    </element>
+    <element id="Encounter.partOf">
+      <path value="Encounter.partOf" />
+      <short value="Atendimento Origem" />
+      <definition value="Outro Atendimento do qual este atendimento faz parte" />
+    </element>
+  </differential>
+</StructureDefinition>

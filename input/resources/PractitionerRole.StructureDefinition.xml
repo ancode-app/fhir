@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="PractitionerRole" />
-  <url value="https://example.org/fhir/StructureDefinition/PractitionerRole" />
+  <url value="https://ancode.app/fhir/StructureDefinition/PractitionerRole" />
   <version value="1.0" />
   <name value="PractitionerRole" />
   <title value="Funções" />

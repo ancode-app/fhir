@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="HealthcareService" />
-  <url value="https://example.org/fhir/StructureDefinition/HealthcareService" />
+  <url value="https://ancode.app/fhir/StructureDefinition/HealthcareService" />
   <version value="1.0" />
   <name value="HealthcareService" />
   <status value="draft" />

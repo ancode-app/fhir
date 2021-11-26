@@ -82,6 +82,16 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
     </element>
+    <element id="Location.address.line">
+      <path value="Location.address.line" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="line" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
     <element id="Location.physicalType">
       <path value="Location.physicalType" />
       <short value="Forma física" />
@@ -97,13 +107,6 @@
       <short value="Organização responsável" />
       <definition value="Organização responsável pelo provisionamento e manutenção" />
       <min value="1" />
-    </element>
-    <element id="Location.managingOrganization.identifier">
-      <path value="Location.managingOrganization.identifier" />
-      <type>
-        <code value="Identifier" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
-      </type>
     </element>
     <element id="Location.partOf">
       <path value="Location.partOf" />

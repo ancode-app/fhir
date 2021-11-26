@@ -64,6 +64,16 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
     </element>
+    <element id="Person.address.line">
+      <path value="Person.address.line" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="line" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
     <element id="Person.photo">
       <path value="Person.photo" />
       <short value="Foto" />
@@ -71,13 +81,6 @@
       <type>
         <code value="Attachment" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Attachment" />
-      </type>
-    </element>
-    <element id="Person.managingOrganization.identifier">
-      <path value="Person.managingOrganization.identifier" />
-      <type>
-        <code value="Identifier" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
       </type>
     </element>
     <element id="Person.active">

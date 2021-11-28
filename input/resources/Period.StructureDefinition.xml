@@ -22,7 +22,6 @@
       <path value="Period.start" />
       <short value="Início" />
       <definition value="O início do período." />
-      <mustSupport value="true" />
     </element>
     <element id="Period.end">
       <path value="Period.end" />

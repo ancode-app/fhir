@@ -32,41 +32,35 @@
       <path value="AppointmentResponse.appointment" />
       <short value="Compromisso" />
       <definition value="Compromisso ao qual esta resposta está referenciada." />
-      <mustSupport value="true" />
     </element>
     <element id="AppointmentResponse.start">
       <path value="AppointmentResponse.start" />
       <short value="Horário Inicial" />
       <definition value="Data/hora em que o compromisso deve ocorrer ou nova hora de início solicitada." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="AppointmentResponse.end">
       <path value="AppointmentResponse.end" />
       <short value="Horário Final" />
       <definition value="Pode ser o mesmo horário final do compromisso ou, alternativamente, um novo horário para solicitar uma renegociação do horário de término." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="AppointmentResponse.participantType">
       <path value="AppointmentResponse.participantType" />
       <short value="Função do Participante" />
       <definition value="Função do Participante no compromisso." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="AppointmentResponse.actor">
       <path value="AppointmentResponse.actor" />
       <short value="Uma Pessoa, Local, Serviço de Saúde ou Dispositivo" />
       <definition value="Uma Pessoa, Local, Serviço de Saúde ou Dispositivo que está participando do compromisso." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="AppointmentResponse.participantStatus">
       <path value="AppointmentResponse.participantStatus" />
       <short value="Status" />
       <definition value="Status da participação. Quando o status é recusado ou provisório, se os horários de início/término forem diferentes do compromisso, esses horários devem ser interpretados como uma alteração de horário solicitada. Quando o status é aceito, os horários podem ser o horário do compromisso (como uma confirmação do horário)." />
-      <mustSupport value="true" />
     </element>
     <element id="AppointmentResponse.comment">
       <path value="AppointmentResponse.comment" />

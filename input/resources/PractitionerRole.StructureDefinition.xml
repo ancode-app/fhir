@@ -29,21 +29,18 @@
       <short value="Registro em Uso" />
       <definition value="Indica se o registro dessa função ainda está em uso.&#xD;&#xA;A codição de inativo pode indicar que tanto uma informação errada quanto o profissional não ter mais a função no Estabelecimento de Saúde." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.period">
       <path value="PractitionerRole.period" />
       <short value="Período da Função" />
       <definition value="Período em que o profissional exerce ou exerceu a função no Estabelecimento de Saúde." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.period.start">
       <path value="PractitionerRole.period.start" />
       <short value="Início da Função" />
       <definition value="Competência (mês/ano) ou data em que o profissional começou a exercer a função no Estabelecimento de Saúde." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.period.end">
       <path value="PractitionerRole.period.end" />

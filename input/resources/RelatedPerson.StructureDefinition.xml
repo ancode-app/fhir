@@ -28,27 +28,23 @@
         <code value="Identifier" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.active">
       <path value="RelatedPerson.active" />
       <short value="Registro em Uso" />
       <definition value="Indica se o registro dessa pessoa ainda está em uso." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.patient">
       <path value="RelatedPerson.patient" />
       <short value="Paciente" />
       <definition value="O paciente ao qual esta pessoa é parente" />
-      <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.relationship">
       <path value="RelatedPerson.relationship" />
       <short value="Tipo de Relacionamento" />
       <definition value="A natureza do relacionamento" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.name">
       <path value="RelatedPerson.name" />
@@ -59,7 +55,6 @@
         <code value="HumanName" />
         <profile value="https://ancode.app/fhir/StructureDefinition/HumanName" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.telecom">
       <path value="RelatedPerson.telecom" />
@@ -75,14 +70,12 @@
       <short value="Sexo" />
       <definition value="male: masculino.&#xD;&#xA;female: feminino.&#xD;&#xA;unknown: ignorado" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.birthDate">
       <path value="RelatedPerson.birthDate" />
       <short value="Data de Nascimento" />
       <definition value="Data de nascimento da pessoa." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.address">
       <path value="RelatedPerson.address" />
@@ -112,7 +105,6 @@
         <code value="Attachment" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Attachment" />
       </type>
-      <mustSupport value="false" />
     </element>
     <element id="RelatedPerson.period">
       <path value="RelatedPerson.period" />
@@ -123,7 +115,6 @@
         <code value="Period" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
       </type>
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

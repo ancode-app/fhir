@@ -16,14 +16,11 @@
     <element id="Identifier.use">
       <path value="Identifier.use" />
       <short value="Uso do identificador" />
-      <definition value="usual | oficial | temp | secundário | antigo (se conhecido)" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Identifier.type">
       <path value="Identifier.type" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Identifier.type.coding">
       <path value="Identifier.type.coding" />
@@ -34,34 +31,16 @@
       <path value="Identifier.type.coding.system" />
       <min value="1" />
     </element>
-    <element id="Identifier.type.coding.code">
-      <path value="Identifier.type.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Identifier.type.coding.display">
-      <path value="Identifier.type.coding.display" />
-      <max value="0" />
-    </element>
-    <element id="Identifier.type.coding.userSelected">
-      <path value="Identifier.type.coding.userSelected" />
-      <max value="0" />
-    </element>
-    <element id="Identifier.type.text">
-      <path value="Identifier.type.text" />
-      <max value="0" />
-    </element>
     <element id="Identifier.system">
       <path value="Identifier.system" />
       <short value="Sistema de Identificação" />
       <definition value="Sistema da Identificação utilizada para identificar a pessoa." />
-      <max value="0" />
     </element>
     <element id="Identifier.value">
       <path value="Identifier.value" />
       <short value="Número Identificação" />
       <definition value="Número do identificação, incluindo letras e outros caracteres utilizados." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Identifier.period">
       <path value="Identifier.period" />
@@ -72,13 +51,11 @@
       <path value="Identifier.period.start" />
       <short value="Data de Expedição/Inscrição/Cadastro" />
       <definition value="Data em que a identificação foi gerada." />
-      <mustSupport value="true" />
     </element>
     <element id="Identifier.period.end">
       <path value="Identifier.period.end" />
       <short value="Data de Suspensão/Cancelamento/Validade" />
       <definition value="Até quando (data) da identificação é ou foi válida." />
-      <mustSupport value="true" />
     </element>
     <element id="Identifier.assigner">
       <path value="Identifier.assigner" />

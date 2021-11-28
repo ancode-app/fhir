@@ -36,7 +36,6 @@
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/City" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Patient.extension:nacionality">
       <path value="Patient.extension" />
@@ -49,7 +48,6 @@
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Country" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Patient.extension:protectedPerson">
       <path value="Patient.extension" />
@@ -62,7 +60,6 @@
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/ProtectedPerson" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Patient.extension:race">
       <path value="Patient.extension" />
@@ -82,7 +79,6 @@
         <code value="Identifier" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Patient.active">
       <path value="Patient.active" />
@@ -91,7 +87,6 @@
       <comment value="Valor padrão é true." />
       <requirements value="Identificar registros que não estão mais em uso." />
       <min value="1" />
-      <mustSupport value="true" />
       <isModifierReason value="Indica que o registro não deve mais se tratado como válido." />
     </element>
     <element id="Patient.name">
@@ -103,7 +98,6 @@
         <code value="HumanName" />
         <profile value="https://ancode.app/fhir/StructureDefinition/HumanName" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom" />
@@ -118,20 +112,17 @@
       <short value="Sexo" />
       <definition value="male: masculino.&#xD;&#xA;female: feminino.&#xD;&#xA;unknown: ignorado." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Patient.birthDate">
       <path value="Patient.birthDate" />
       <short value="Data de Nascimento" />
       <definition value="Data de nascimento da pessoa." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Patient.deceased[x]">
       <path value="Patient.deceased[x]" />
       <short value="Óbito" />
       <definition value="Indica se o paciente foi a óbito. O óbito pode ser interpretado pelo booleano = true ou pela existência de uma data/hora." />
-      <mustSupport value="true" />
     </element>
     <element id="Patient.address">
       <path value="Patient.address" />

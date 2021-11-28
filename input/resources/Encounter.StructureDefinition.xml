@@ -31,14 +31,12 @@
     <element id="Encounter.status">
       <path value="Encounter.status" />
       <short value="Status" />
-      <mustSupport value="true" />
     </element>
     <element id="Encounter.statusHistory">
       <path value="Encounter.statusHistory" />
       <short value="Histórico de Status" />
       <definition value="O histórico de status permite que o atendimento contenha o histórico de status." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Encounter.statusHistory.status">
       <path value="Encounter.statusHistory.status" />
@@ -57,14 +55,12 @@
       <path value="Encounter.class" />
       <short value="Classificação" />
       <definition value="Conceitos que representam a classificação do atendimento do paciente, como ambulatorial (ambulatorial), hospitalar, de emergência, saúde doméstica ou outros devido a variações locais." />
-      <mustSupport value="true" />
     </element>
     <element id="Encounter.classHistory">
       <path value="Encounter.classHistory" />
       <short value="Histórico Classificações" />
       <definition value="O histórico da classe permite o rastreamento das transições dos atendimentos sem a necessidade de passar pelo histórico. Isso seria usado para um caso em que uma admissão começa como um atendimento de emergência e, em seguida, passa para um cenário de internação. Fazer isso e não reiniciar um novo encontro garante que qualquer resultado de laboratório / diagnóstico possa acompanhar o paciente com mais facilidade e não exigir reprocessamento e não ser perdido ou cancelado durante um tipo de alta de emergência para paciente internado." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Encounter.type">
       <path value="Encounter.type" />
@@ -72,43 +68,30 @@
       <definition value="Tipo específico do atendimento (exemplo: consulta por e-mail, pré-operatório, enfermagem especializada, reabilitação)." />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Encounter.serviceType">
       <path value="Encounter.serviceType" />
       <short value="Serviço Prestado" />
       <definition value="Serviço prestado (por exemplo, cardiologia)." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Encounter.priority">
       <path value="Encounter.priority" />
       <short value="Prioridade" />
       <definition value="Indica a urgência do atendimento." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Encounter.subject">
       <path value="Encounter.subject" />
       <short value="Paciente" />
       <definition value="O paciente ou grupo presente no atendimento." />
       <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Encounter.episodeOfCare">
-      <path value="Encounter.episodeOfCare" />
-      <max value="0" />
-    </element>
-    <element id="Encounter.basedOn">
-      <path value="Encounter.basedOn" />
-      <max value="0" />
     </element>
     <element id="Encounter.participant">
       <path value="Encounter.participant" />
       <short value="Particiapantes" />
       <definition value="A lista de pessoas responsáveis pela prestação do serviço." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Encounter.participant.type">
       <path value="Encounter.participant.type" />
@@ -116,7 +99,6 @@
       <definition value="Função do participante no atendimento." />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Encounter.participant.period">
       <path value="Encounter.participant.period" />
@@ -132,7 +114,6 @@
       <short value="Pessoa envolvida" />
       <definition value="Pessoa envolvida no atendimento que não sejam o paciente." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Encounter.appointment">
       <path value="Encounter.appointment" />
@@ -159,23 +140,10 @@
       <short value="Motivos do Atendimento" />
       <definition value="A razão pela qual o encontro ocorre. Para admissões, isso pode ser usado para um diagnóstico de admissão." />
     </element>
-    <element id="Encounter.reasonReference">
-      <path value="Encounter.reasonReference" />
-      <max value="0" />
-    </element>
     <element id="Encounter.diagnosis">
       <path value="Encounter.diagnosis" />
       <short value="Diagnósticos" />
       <definition value="A lista de diagnósticos relevantes para este atendimento." />
-      <max value="0" />
-    </element>
-    <element id="Encounter.account">
-      <path value="Encounter.account" />
-      <max value="0" />
-    </element>
-    <element id="Encounter.hospitalization">
-      <path value="Encounter.hospitalization" />
-      <max value="0" />
     </element>
     <element id="Encounter.location">
       <path value="Encounter.location" />

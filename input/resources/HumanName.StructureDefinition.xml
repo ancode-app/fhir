@@ -20,7 +20,6 @@
       <short value="Tipo de Nome" />
       <definition value="official: nome oficial atual, conforme registrado na certidão de registro civil mais atual do indivíduo.&#xD;&#xA;maiden: nome oficial de solteiro(a), quando houve uma alteração de nome decorrente de uma união de qualquer tipo.&#xD;&#xA;old: nome oficial anterior, quando houve uma alteração de nome em uma certidão de registro civil ou decisão judicial decorrente de qualquer outra situação que não seja uma união.&#xD;&#xA;usual: nome social.&#xD;&#xA;temp: nome temporário, como aqueles utilizados em programas de proteção a testemunhas.&#xD;&#xA;anonymous: uso exclusivo para anonimização de registros de indivíudos." />
       <min value="1" />
-      <mustSupport value="true" />
       <isModifierReason value="É importante que as aplicações saibam interpretar corretamente o tipo de nome que está sendo utilizado, para dar a tratativa correta ao indivíduo." />
     </element>
     <element id="HumanName.text">
@@ -28,7 +27,6 @@
       <short value="Nome Completo" />
       <definition value="Nome completo do indivíduo, composto pelo nome próprio, que pode ser mais de um quando trata-se de um nome composto, pelo sobrenome e pelo sufixo (Filho, Neto, Júnior etc.) quando aplicável." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="HumanName.family">
       <path value="HumanName.family" />
@@ -59,13 +57,11 @@
       <path value="HumanName.period.start" />
       <short value="Data Inicial" />
       <definition value="Quando o uso do nome iniciou." />
-      <mustSupport value="true" />
     </element>
     <element id="HumanName.period.end">
       <path value="HumanName.period.end" />
       <short value="Data Final" />
       <definition value="Quando o uso do nome terminou." />
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

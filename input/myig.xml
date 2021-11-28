@@ -286,6 +286,13 @@
       <name value="Slot"/>
       <description value="Slot da Agenda"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Person/Example1"/>
+      </reference>
+      <name value="Example1"/>
+      <description value="Person Example"/>
+    </resource>    
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

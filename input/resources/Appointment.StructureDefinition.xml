@@ -121,11 +121,6 @@
       <short value="Instruções ao Paciente" />
       <definition value="Enquanto o Comentário contém informações para uso interno, Instruções ao Paciente é usado para capturar informações para o paciente sobre a consulta (por exemplo, traga sua referência ou jejue a partir das 20h da noite anterior)." />
     </element>
-    <element id="Appointment.basedOn">
-      <path value="Appointment.basedOn" />
-      <definition value="The service request this appointment is allocated to assess (e.g. incoming referral or procedure request).&#xD;&#xA;A solicitação de serviço que este compromisso está alocado para avaliar (por exemplo, encaminhamento de entrada ou solicitação de procedimento)." />
-      <max value="0" />
-    </element>
     <element id="Appointment.participant">
       <path value="Appointment.participant" />
       <short value="Participantes" />

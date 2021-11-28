@@ -21,7 +21,6 @@
       <path value="Quantity.value" />
       <short value="Valor Numérico" />
       <definition value="O valor da quantidade medida. O valor inclui uma precisão implícita na apresentação do valor." />
-      <mustSupport value="true" />
     </element>
     <element id="Quantity.comparator">
       <path value="Quantity.comparator" />

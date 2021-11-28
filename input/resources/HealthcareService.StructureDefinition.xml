@@ -30,7 +30,6 @@
       <short value="Registro em uso" />
       <definition value="Se este registro está em uso." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="HealthcareService.providedBy">
       <path value="HealthcareService.providedBy" />

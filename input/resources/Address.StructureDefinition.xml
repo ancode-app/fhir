@@ -19,29 +19,26 @@
       <path value="Address" />
       <short value="Dados de Endereçamento" />
       <definition value="Dados do(s) endereço(s) onde o sujeito do endereço pode ser localizado." />
-      <mustSupport value="true" />
     </element>
     <element id="Address.use">
       <path value="Address.use" />
       <short value="Uso do Endereço" />
       <definition value="home: endereço residencial atual.&#xD;&#xA;work: endereço comercial ou de trabalho atual.&#xD;&#xA;temp: endereço temporário, como um hotel, a casa de amigos ou familiares, uma instalação/edificação provisória, etc.&#xD;&#xA;old: endereço anterior." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Address.type">
       <path value="Address.type" />
       <short value="Tipo de Endereço" />
       <definition value="physical: um endereço físico de um edificação ou espaço geográfico real, como de uma casa, prédio, loja, galpão, lote, etc.&#xD;&#xA;postal: um endereço virtual, como de uma Caixa Postal ou serviço de logística de mercadorias, p.ex." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Address.text">
       <path value="Address.text" />
       <short value="Texto completo do endereço" />
       <definition value="Texto completo do endereço" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
+    <!-- 
     <element id="Address.line">
       <path value="Address.line" />
       <slicing>
@@ -49,7 +46,7 @@
           <type value="value" />
           <path value="line" />
         </discriminator>
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
       <short value="Endereço" />
       <definition value="This component contains the house number, apartment number, street name, street direction, P.O. Box number, delivery hints, and similar address information" />
@@ -62,7 +59,6 @@
       <definition value="Tipo de logradouro do endereço." />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Address.line:street">
       <path value="Address.line" />
@@ -71,7 +67,6 @@
       <definition value="Logradouro do endereço (ex.: Visconde do Rio Branco, das Laranjeiras, QRSW 8 Bloco A-1) . Quando não for possível utilizar o elemento streetType, incluir textualmente no início do nome do logradouro o tipo de logradouro abreviado (ex.: R. Visconde do Rio Branco, Av. das Laranjeiras, Quadra QRSW 8 Bloco A-1)." />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Address.line:number">
       <path value="Address.line" />
@@ -80,7 +75,6 @@
       <definition value="Número do endereço." />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Address.line:complement">
       <path value="Address.line" />
@@ -88,7 +82,6 @@
       <short value="Complemento" />
       <definition value="Complemento do endereço, como o nome do edifício, bloco, número do apartamento, número da sala etc." />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Address.line:neighborhood">
       <path value="Address.line" />
@@ -97,8 +90,7 @@
       <definition value="Bairro do endereço." />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
-    </element>
+    </element> -->
     <element id="Address.city">
       <path value="Address.city" />
       <short value="Município" />
@@ -110,21 +102,18 @@
       <short value="UF" />
       <definition value="Unidade Federativa (estados ou Distrito Federal) do endereço." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Address.postalCode">
       <path value="Address.postalCode" />
       <short value="CEP" />
       <definition value="Código de Endereçamento Postal. Utilizar a máscara XXXXX-XXXX." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Address.country">
       <path value="Address.country" />
       <short value="País" />
       <definition value="País - uma nação como comumente entendida ou geralmente aceita." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Address.period">
       <path value="Address.period" />
@@ -135,13 +124,11 @@
       <path value="Address.period.start" />
       <short value="Data de Inicio do Endereço" />
       <definition value="Data em que o endereço foi cadastrado ou começou a ser utilizado." />
-      <mustSupport value="true" />
     </element>
     <element id="Address.period.end">
       <path value="Address.period.end" />
       <short value="Data de Término do Endereço" />
       <definition value="Data em que o endereço foi desativado ou parou de ser utilizado." />
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

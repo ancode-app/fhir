@@ -51,24 +51,20 @@
       <path value="Slot.schedule" />
       <short value="Agenda" />
       <definition value="Agenda referenciada." />
-      <mustSupport value="true" />
     </element>
     <element id="Slot.status">
       <path value="Slot.status" />
       <short value="Status" />
-      <mustSupport value="true" />
     </element>
     <element id="Slot.start">
       <path value="Slot.start" />
       <short value="Início" />
       <definition value="Data/hora em que o slot deve começar." />
-      <mustSupport value="true" />
     </element>
     <element id="Slot.end">
       <path value="Slot.end" />
       <short value="Fim" />
       <definition value="Data/Hora de conclusão do slot." />
-      <mustSupport value="true" />
     </element>
     <element id="Slot.overbooked">
       <path value="Slot.overbooked" />

@@ -23,14 +23,12 @@
       <short value="Identificação" />
       <definition value="Identificadores de negócios específicos para esta função" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="OrganizationAffiliation.active">
       <path value="OrganizationAffiliation.active" />
       <short value="Registro em uso?" />
       <definition value="Se este registro de afiliação de organização está em uso ativo" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="OrganizationAffiliation.period">
       <path value="OrganizationAffiliation.period" />
@@ -39,21 +37,18 @@
         <code value="Period" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="OrganizationAffiliation.organization">
       <path value="OrganizationAffiliation.organization" />
       <short value="Organization Disponínel" />
       <definition value="Organização onde a função está disponível (organização primária/tem membros)." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="OrganizationAffiliation.participatingOrganization">
       <path value="OrganizationAffiliation.participatingOrganization" />
       <short value="Organização Exerce Função" />
       <definition value="A Organização que desempenha a(s) função(ões) definida(s) pelo código para a Organização Principal." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="OrganizationAffiliation.network">
       <path value="OrganizationAffiliation.network" />

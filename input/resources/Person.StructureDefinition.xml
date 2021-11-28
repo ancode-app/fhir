@@ -21,7 +21,6 @@
         <code value="Identifier" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Person.name">
       <path value="Person.name" />
@@ -31,8 +30,7 @@
       <type>
         <code value="HumanName" />
         <profile value="https://ancode.app/fhir/StructureDefinition/HumanName" />
-      </type>
-      <mustSupport value="true" />
+      </type>      
     </element>
     <element id="Person.telecom">
       <path value="Person.telecom" />
@@ -47,14 +45,12 @@
       <short value="Sexo" />
       <definition value="male: masculino.&#xD;&#xA;female: feminino.&#xD;&#xA;unknown: ignorado." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Person.birthDate">
       <path value="Person.birthDate" />
       <short value="Data de Nascimento" />
       <definition value="Data de nascimento da pessoa." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Person.address">
       <path value="Person.address" />
@@ -63,16 +59,6 @@
         <code value="Address" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
-    </element>
-    <element id="Person.address.line">
-      <path value="Person.address.line" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="line" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
     </element>
     <element id="Person.photo">
       <path value="Person.photo" />
@@ -88,7 +74,6 @@
       <short value="Registro em Uso" />
       <definition value="Indica se o registro dessa pessoa ainda está em uso." />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

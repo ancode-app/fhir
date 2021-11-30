@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProtectedPerson" />
   <language value="pt-BR" />
   <url value="https://ancode.app/fhir/StructureDefinition/ProtectedPerson" />
   <version value="1.0" />
   <name value="ProtectedPerson" />
-  <title value="Pessoa Protegida?" />
   <status value="active" />
   <date value="2020-11-11" />
   <publisher value="Ancode" />
-  <description value="Extensão utilizada para identificar pessoas que possuem  maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -20,11 +19,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Pessoa Protegida?" />
-      <definition value="Identifica pessoas que possuem maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros." />
-    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="https://ancode.app/fhir/StructureDefinition/ProtectedPerson" />

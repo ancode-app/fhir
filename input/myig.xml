@@ -29,6 +29,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/AddressComplement"/>
+      </reference>
+      <name value="AddressComplement"/>
+      <description value="Address Complement"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Appointment"/>
       </reference>
       <name value="Appointment"/>
@@ -43,24 +50,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/Attachment"/>
-      </reference>
-      <name value="Attachment"/>
-      <description value="Padrão de anexo"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="CodeSystem/BrazilianState"/>
       </reference>
       <name value="BrazilianState"/>
       <description value="Terminologia de unidades federativas do Brasil."/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BrazilianState"/>
-      </reference>
-      <name value="BrazilianState"/>
-      <description value="Utilizada para informar um estado brasileiro."/>
     </resource>
     <resource>
       <reference>
@@ -134,6 +127,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/IBGECode"/>
+      </reference>
+      <name value="IBGECode"/>
+      <description value="IBGE Code"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Identifier"/>
       </reference>
       <name value="Identifier"/>
@@ -141,10 +141,31 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/Location"/>
+        <reference value="CodeSystem/IdentifierType"/>
       </reference>
+      <name value="IdentifierType"/>
+      <description value="Identifier Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/IdentifierType"/>
+      </reference>
+      <name value="IdentifierType"/>
+      <description value="Identifier Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Location"/>
+      </reference>                                                                                
       <name value="Location"/>
       <description value="Local"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Neighborhood"/>
+      </reference>
+      <name value="Neighborhood"/>
+      <description value="Neighborhood"/>
     </resource>
     <resource>
       <reference>
@@ -159,34 +180,13 @@
       </reference>
       <name value="OrganizationAffiliation"/>
       <description value="Afiliação de Organização"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/OrganizationType"/>
-      </reference>
-      <name value="OrganizationType"/>
-      <description value="Códigos para representação de tipos do estabelecimento de saúde, de acordo com codificação já existente para o Cadastro Nacional de Estabelecimentos de Saúde (CNES)."/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/OrganizationType"/>
-      </reference>
-      <name value="OrganizationType"/>
-      <description value="Classificação do tipo do estabelecimento de saúde."/>
-    </resource>
+    </resource>    
     <resource>
       <reference>
         <reference value="StructureDefinition/Patient"/>
       </reference>
       <name value="Patient"/>
       <description value="Paciente"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Period"/>
-      </reference>
-      <name value="Period"/>
-      <description value="Período"/>
     </resource>
     <resource>
       <reference>
@@ -208,41 +208,13 @@
       </reference>
       <name value="PractitionerRole"/>
       <description value="Função"/>
-    </resource>    
-    <resource>
-      <reference>
-        <reference value="CodeSystem/ProfessionalCouncil"/>
-      </reference>
-      <name value="ProfessionalCouncil"/>
-      <description value="Terminologia de conselho profissional."/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/ProfessionalCouncil"/>
-      </reference>
-      <name value="ProfessionalCouncil"/>
-      <description value="Utilizada para classificação do conselho profissional."/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/ProfessionalCouncil"/>
-      </reference>
-      <name value="ProfessionalCouncil"/>
-      <description value="Domínio de valores que classificam o conselho profissional."/>
-    </resource>
+    </resource>        
     <resource>
       <reference>
         <reference value="StructureDefinition/ProtectedPerson"/>
       </reference>
       <name value="ProtectedPerson"/>
       <description value="Utilizada para identificar pessoas que possuem  maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros."/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Quantity"/>
-      </reference>
-      <name value="Quantity"/>
-      <description value="Quantidade"/>
     </resource>
     <resource>
       <reference>
@@ -285,6 +257,27 @@
       </reference>
       <name value="Slot"/>
       <description value="Slot da Agenda"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/StreetName"/>
+      </reference>
+      <name value="StreetName"/>
+      <description value="Street Name"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/StreetNumber"/>
+      </reference>
+      <name value="StreetNumber"/>
+      <description value="Street Number"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/StreetType"/>
+      </reference>
+      <name value="StreetType"/>
+      <description value="Street Type"/>
     </resource>
     <resource>
       <reference>

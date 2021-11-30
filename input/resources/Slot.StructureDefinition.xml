@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Slot" />
   <url value="https://ancode.app/fhir/StructureDefinition/Slot" />
   <version value="1.0" />
   <name value="Slot" />
-  <title value="Slot da Agenda" />
   <status value="draft" />
-  <description value="Um intervalo de tempo em uma agenda que pode estar disponível para reservar compromissos." />
+  <publisher value="Ancode" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -13,68 +13,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Slot" />
   <derivation value="constraint" />
   <differential>
-    <element id="Slot">
-      <path value="Slot" />
-      <short value="Slot da Agenda" />
-      <definition value="Um intervalo de tempo em uma agenda que pode estar disponível para reservar compromissos." />
-    </element>
-    <element id="Slot.identifier">
-      <path value="Slot.identifier" />
-      <short value="Identificação" />
-      <definition value="Ids externos para este item." />
-      <type>
-        <code value="Identifier" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
-      </type>
-    </element>
-    <element id="Slot.serviceCategory">
-      <path value="Slot.serviceCategory" />
-      <short value="Categorias" />
-      <definition value="de serviços a ser executado durante este comprimsso." />
-    </element>
-    <element id="Slot.serviceType">
-      <path value="Slot.serviceType" />
-      <short value="Serviços Prestados" />
-      <definition value="Serviços a serem prestados (por exemplo, cardiologia)." />
-    </element>
-    <element id="Slot.specialty">
-      <path value="Slot.specialty" />
-      <short value="Especialidades necessárias" />
-      <definition value="A especialidade de um profissional que seria necessário para realizar o serviço solicitado nesta agenda." />
-    </element>
     <element id="Slot.appointmentType">
       <path value="Slot.appointmentType" />
-      <short value="Tipo do Compromisso" />
-      <definition value="O tipo do compromisso que foi agendado (não o tipo de serviço)." />
-    </element>
-    <element id="Slot.schedule">
-      <path value="Slot.schedule" />
-      <short value="Agenda" />
-      <definition value="Agenda referenciada." />
-    </element>
-    <element id="Slot.status">
-      <path value="Slot.status" />
-      <short value="Status" />
-    </element>
-    <element id="Slot.start">
-      <path value="Slot.start" />
-      <short value="Início" />
-      <definition value="Data/hora em que o slot deve começar." />
-    </element>
-    <element id="Slot.end">
-      <path value="Slot.end" />
-      <short value="Fim" />
-      <definition value="Data/Hora de conclusão do slot." />
-    </element>
-    <element id="Slot.overbooked">
-      <path value="Slot.overbooked" />
-      <short value="Slot Lotado" />
-      <definition value="Esta faixa de horários já está lotada, é improvável que os compromissos sejam aceitos neste momento." />
-    </element>
-    <element id="Slot.comment">
-      <path value="Slot.comment" />
-      <short value="Comentários" />
-      <definition value="Comentários sobre o slot para descrever quaisquer informações estendidas. Como restrições personalizadas no slot." />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

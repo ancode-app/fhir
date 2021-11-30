@@ -4,9 +4,8 @@
   <url value="https://ancode.app/fhir/StructureDefinition/Practitioner" />
   <version value="1.0" />
   <name value="Practitioner" />
-  <title value="Profissional" />
   <status value="draft" />
-  <description value="Profissional que realiza atividades profissionais." />
+  <publisher value="Ancode" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -21,14 +20,10 @@
     </element>
     <element id="Practitioner.active">
       <path value="Practitioner.active" />
-      <short value="Registro em Uso" />
-      <definition value="Indica se o registro desse profissional ainda está em uso.&#xD;&#xA;A codição de inativo pode indicar que tanto uma informação errada quanto um profissional que não está mais atuando." />
       <min value="1" />
     </element>
     <element id="Practitioner.name">
       <path value="Practitioner.name" />
-      <short value="Nome do Profissional" />
-      <definition value="Nome(s) associado(s) ao profissional." />
       <min value="1" />
       <type>
         <code value="HumanName" />
@@ -37,7 +32,6 @@
     </element>
     <element id="Practitioner.telecom">
       <path value="Practitioner.telecom" />
-      <definition value="Informações do(s) meio(s) de contato com o profissional. Não devem ser informados meios de contato pessoais, apenas profissionais." />
       <type>
         <code value="ContactPoint" />
         <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
@@ -45,7 +39,6 @@
     </element>
     <element id="Practitioner.address">
       <path value="Practitioner.address" />
-      <definition value="Dados do(s) endereço(s) onde o profissional pode ser localizado. Não devem ser informados endereços pessoais, apenas profissionais." />
       <type>
         <code value="Address" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
@@ -53,14 +46,10 @@
     </element>
     <element id="Practitioner.gender">
       <path value="Practitioner.gender" />
-      <short value="Sexo" />
-      <definition value="male: masculino.&#xD;&#xA;female: feminino.&#xD;&#xA;unknown: ignorado." />
       <min value="1" />
     </element>
     <element id="Practitioner.birthDate">
       <path value="Practitioner.birthDate" />
-      <short value="Data de Nascimento" />
-      <definition value="Data de nascimento do profissional" />
       <min value="1" />
     </element>
     <element id="Practitioner.photo">
@@ -68,29 +57,6 @@
       <short value="Foto" />
       <definition value="Foto do profissional" />
       <max value="1" />
-      <type>
-        <code value="Attachment" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Attachment" />
-      </type>
-    </element>
-    <element id="Practitioner.qualification">
-      <path value="Practitioner.qualification" />
-      <short value="Qualificação" />
-      <definition value="A(s) qualificação(ões), conforme a formação, certificações ou acreditações que o profissional possui." />
-    </element>
-    <element id="Practitioner.qualification.identifier">
-      <path value="Practitioner.qualification.identifier" />
-      <type>
-        <code value="Identifier" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
-      </type>
-    </element>
-    <element id="Practitioner.qualification.period">
-      <path value="Practitioner.qualification.period" />
-      <type>
-        <code value="Period" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>

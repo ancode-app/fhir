@@ -2,10 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="OrganizationAffiliation" />
   <url value="https://ancode.app/fhir/StructureDefinition/OrganizationAffiliation" />
+  <version value="1.0" />
   <name value="OrganizationAffiliation" />
-  <title value="Afiliação de Organização" />
   <status value="draft" />
-  <description value="Define uma afiliação/associação/relacionamento entre 2 organizações distintas, que não faz parte de um relacionamento/subdivisão." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -13,79 +12,36 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation" />
   <derivation value="constraint" />
   <differential>
-    <element id="OrganizationAffiliation">
-      <path value="OrganizationAffiliation" />
-      <short value="Afiliação de Organização" />
-      <definition value="Um relacionamento entre 2 organizações durante um período de tempo, em que as entidades são entidades comerciais separadas. O relacionamento pode incluir opcionalmente detalhes de locais / serviços da organização participante." />
-    </element>
     <element id="OrganizationAffiliation.identifier">
       <path value="OrganizationAffiliation.identifier" />
-      <short value="Identificação" />
-      <definition value="Identificadores de negócios específicos para esta função" />
       <min value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
     </element>
     <element id="OrganizationAffiliation.active">
       <path value="OrganizationAffiliation.active" />
-      <short value="Registro em uso?" />
-      <definition value="Se este registro de afiliação de organização está em uso ativo" />
       <min value="1" />
     </element>
     <element id="OrganizationAffiliation.period">
       <path value="OrganizationAffiliation.period" />
       <min value="1" />
-      <type>
-        <code value="Period" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
-      </type>
     </element>
     <element id="OrganizationAffiliation.organization">
       <path value="OrganizationAffiliation.organization" />
-      <short value="Organization Disponínel" />
-      <definition value="Organização onde a função está disponível (organização primária/tem membros)." />
       <min value="1" />
     </element>
     <element id="OrganizationAffiliation.participatingOrganization">
       <path value="OrganizationAffiliation.participatingOrganization" />
-      <short value="Organização Exerce Função" />
-      <definition value="A Organização que desempenha a(s) função(ões) definida(s) pelo código para a Organização Principal." />
       <min value="1" />
-    </element>
-    <element id="OrganizationAffiliation.network">
-      <path value="OrganizationAffiliation.network" />
-      <short value="Rede Plano de Saúde" />
-      <definition value="Rede de provedor de seguro saúde em que a organização participante fornece os serviços da função (se definido) nos locais indicados (se definido)." />
-    </element>
-    <element id="OrganizationAffiliation.code">
-      <path value="OrganizationAffiliation.code" />
-      <short value="Definição" />
-      <definition value="Definição do papel que a organização participante desempenha na associação." />
-    </element>
-    <element id="OrganizationAffiliation.specialty">
-      <path value="OrganizationAffiliation.specialty" />
-      <short value="Especialidade" />
-      <definition value="Especialidade específica da organização participante no contexto da função." />
-    </element>
-    <element id="OrganizationAffiliation.location">
-      <path value="OrganizationAffiliation.location" />
-      <short value="Locais" />
-      <definition value="Os locais em que a função ocorre." />
-    </element>
-    <element id="OrganizationAffiliation.healthcareService">
-      <path value="OrganizationAffiliation.healthcareService" />
-      <short value="Serviços de saúde" />
-      <definition value="Serviços de saúde prestados por meio da função." />
     </element>
     <element id="OrganizationAffiliation.telecom">
       <path value="OrganizationAffiliation.telecom" />
-      <definition value="Detalhes de contato na organização participante relevante para esta afiliação" />
       <type>
         <code value="ContactPoint" />
         <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
       </type>
-    </element>
-    <element id="OrganizationAffiliation.endpoint">
-      <path value="OrganizationAffiliation.endpoint" />
-      <short value="End Points" />
     </element>
   </differential>
 </StructureDefinition>

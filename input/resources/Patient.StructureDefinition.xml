@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Patient" />
   <url value="https://ancode.app/fhir/StructureDefinition/Patient" />
   <version value="1.0" />
   <name value="Patient" />
-  <title value="Paciente" />
   <status value="active" />
   <date value="2021-11-10" />
-  <description value="Paciente, sujeito da assistência à saúde." />
+  <publisher value="Ancode" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -23,13 +23,11 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="2" />
+      <min value="0" />
     </element>
     <element id="Patient.extension:birthCity">
       <path value="Patient.extension" />
       <sliceName value="birthCity" />
-      <short value="Município de Nascimento" />
-      <definition value="Município onde o indivíduo nasceu." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -40,9 +38,7 @@
     <element id="Patient.extension:nacionality">
       <path value="Patient.extension" />
       <sliceName value="nacionality" />
-      <short value="Nacionalidade" />
-      <definition value="Nacionalidade do indivíduo." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -52,9 +48,7 @@
     <element id="Patient.extension:protectedPerson">
       <path value="Patient.extension" />
       <sliceName value="protectedPerson" />
-      <short value="Paciente com Dados Protegidos" />
-      <definition value="Paciente com maior restrição à disponibilização de seus dados, por possuir grande exposição pública (ex.: político, esportista, artista famoso etc.), estar em programa de proteção à testemunha, o objeto de seu trabalho colocá-lo em risco (investigadores da inteligência, p.ex.), dentre outros." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -65,6 +59,7 @@
       <path value="Patient.extension" />
       <sliceName value="race" />
       <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Race" />
@@ -72,8 +67,6 @@
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
-      <short value="Identificação" />
-      <definition value="Identificações do paciente." />
       <min value="1" />
       <type>
         <code value="Identifier" />
@@ -82,17 +75,10 @@
     </element>
     <element id="Patient.active">
       <path value="Patient.active" />
-      <short value="Registro em Uso" />
-      <definition value="Indica se o registro desse paciente ainda está em uso.&#xD;&#xA;A codição de inativo pode indicar que tanto uma informação errada quanto um indivíduo falecido, e indivíduos falecidos podem permanecer ativos por algum tempo após o falecimento para fins de registro da informação.&#xD;&#xA;Logo, esta não deve ser opção para identificar um indivíduo falecido, sendo mais adequado o elemento deceased." />
-      <comment value="Valor padrão é true." />
-      <requirements value="Identificar registros que não estão mais em uso." />
       <min value="1" />
-      <isModifierReason value="Indica que o registro não deve mais se tratado como válido." />
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />
-      <short value="Nome do Paciente" />
-      <definition value="Nome(s) associado(s) ao paciente." />
       <min value="1" />
       <type>
         <code value="HumanName" />
@@ -101,7 +87,6 @@
     </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom" />
-      <definition value="Informações do(s) meio(s) de contato com a pessoa." />
       <type>
         <code value="ContactPoint" />
         <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
@@ -109,54 +94,22 @@
     </element>
     <element id="Patient.gender">
       <path value="Patient.gender" />
-      <short value="Sexo" />
-      <definition value="male: masculino.&#xD;&#xA;female: feminino.&#xD;&#xA;unknown: ignorado." />
       <min value="1" />
     </element>
     <element id="Patient.birthDate">
       <path value="Patient.birthDate" />
-      <short value="Data de Nascimento" />
-      <definition value="Data de nascimento da pessoa." />
       <min value="1" />
-    </element>
-    <element id="Patient.deceased[x]">
-      <path value="Patient.deceased[x]" />
-      <short value="Óbito" />
-      <definition value="Indica se o paciente foi a óbito. O óbito pode ser interpretado pelo booleano = true ou pela existência de uma data/hora." />
     </element>
     <element id="Patient.address">
       <path value="Patient.address" />
-      <definition value="Dados do(s) endereço(s) onde o paciente pode ser localizado." />
       <type>
         <code value="Address" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
     </element>
-    <element id="Patient.address.line">
-      <path value="Patient.address.line" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="line" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Patient.maritalStatus">
-      <path value="Patient.maritalStatus" />
-      <short value="Estado civil" />
-      <definition value="Estado civil do paciente." />
-    </element>
     <element id="Patient.photo">
       <path value="Patient.photo" />
-      <short value="Foto" />
-      <definition value="Foto do paciente." />
-      <min value="1" />
       <max value="1" />
-      <type>
-        <code value="Attachment" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Attachment" />
-      </type>
     </element>
     <element id="Patient.contact">
       <path value="Patient.contact" />

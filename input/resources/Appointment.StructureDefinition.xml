@@ -4,9 +4,8 @@
   <url value="https://ancode.app/fhir/StructureDefinition/Appointment" />
   <version value="1.0" />
   <name value="Appointment" />
-  <title value="Compromisso" />
   <status value="draft" />
-  <description value="Um compromisso entre paciente(s), médico(s), pessoa(s) relacionada(s) e/ou dispositivo(s) para uma data/hora específica. Isso pode resultar em um ou mais Atentimentos." />
+  <publisher value="Ancode" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -14,154 +13,25 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment" />
   <derivation value="constraint" />
   <differential>
-    <element id="Appointment">
-      <path value="Appointment" />
-      <short value="Compromisso" />
-      <definition value="Um compromisso entre paciente(s), médico(s), pessoa(s) relacionada(s) e/ou dispositivo(s) para uma data/hora específica. Isso pode resultar em um ou mais Atentimentos." />
-    </element>
-    <element id="Appointment.identifier">
-      <path value="Appointment.identifier" />
-      <short value="Identificadores" />
-      <definition value="Identificadores associados com este compromisso." />
-      <type>
-        <code value="Identifier" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
-      </type>
-    </element>
-    <element id="Appointment.status">
-      <path value="Appointment.status" />
-      <short value="Status do Compromisso" />
-      <definition value="O status geral do Compromisso. Cada um dos participantes tem seu próprio status de participação que indica seu envolvimento no processo, porém este status indica o status compartilhado." />
-    </element>
-    <element id="Appointment.cancelationReason">
-      <path value="Appointment.cancelationReason" />
-      <short value="Motivo do Cancelamento" />
-      <definition value="O motivo do cancelamento do compromisso. Isso é frequentemente usado em relatórios/faturamento/processamento posterior para determinar se outras ações são necessárias ou se taxas específicas se aplicam." />
-    </element>
-    <element id="Appointment.serviceCategory">
-      <path value="Appointment.serviceCategory" />
-      <short value="Categorias" />
-      <definition value="Categorias de serviços a ser executado durante este comprimsso." />
-    </element>
-    <element id="Appointment.serviceType">
-      <path value="Appointment.serviceType" />
-      <short value="Serviços Prestados" />
-      <definition value="Serviços a serem prestados (por exemplo, cardiologia)." />
-    </element>
-    <element id="Appointment.specialty">
-      <path value="Appointment.specialty" />
-      <short value="Especialidades necessárias" />
-      <definition value="A especialidade de um profissional que seria necessário para realizar o serviço solicitado nesta consulta." />
-    </element>
-    <element id="Appointment.appointmentType">
-      <path value="Appointment.appointmentType" />
-      <short value="Tipo do Compromisso" />
-      <definition value="O tipo do compromisso que foi agendado (não o tipo de serviço)." />
-    </element>
-    <element id="Appointment.reasonCode">
-      <path value="Appointment.reasonCode" />
-      <definition value="O motivo pelo qual este compromisso está sendo agendado. Isso é mais clínico do que administrativo." />
-      <binding>
-        <strength value="preferred" />
-        <description value="Motivo do Compromisso" />
-      </binding>
-    </element>
-    <element id="Appointment.reasonReference">
-      <path value="Appointment.reasonReference" />
-      <short value="Origem do compromisso" />
-      <definition value="Origem do compromisso" />
-    </element>
     <element id="Appointment.priority">
       <path value="Appointment.priority" />
-      <short value="Prioridade" />
-      <definition value="A prioridade do compromisso. Pode ser usado para tomar decisões informadas caso seja necessário priorizar novamente os compromissos. (O padrão iCal especifica 0 como indefinido, 1 como a prioridade mais alta, 9 como a prioridade mais baixa)." />
       <min value="1" />
     </element>
     <element id="Appointment.description">
       <path value="Appointment.description" />
-      <short value="Descrição" />
-      <definition value="A breve descrição do compromisso como seria mostrada em uma linha de assunto em uma solicitação de reunião ou lista de compromissos. Informações detalhadas ou expandidas devem ser colocadas no campo de comentários." />
       <min value="1" />
     </element>
     <element id="Appointment.start">
       <path value="Appointment.start" />
-      <short value="Início" />
-      <definition value="Data/hora em que o compromisso deve ocorrer." />
       <min value="1" />
     </element>
     <element id="Appointment.end">
       <path value="Appointment.end" />
-      <short value="Fim" />
-      <definition value="Data/hora de conclusão do compromisso." />
       <min value="1" />
-    </element>
-    <element id="Appointment.minutesDuration">
-      <path value="Appointment.minutesDuration" />
-      <short value="Minutos de Duração" />
-      <definition value="Número de minutos que o compromisso deve durar. Isso pode ser menor do que a duração entre os horários de início e término. Por exemplo, quando o horário real do compromisso é apenas uma estimativa ou se um compromisso de 30 minutos está sendo solicitado, mas qualquer horário funcionaria. Além disso, se houver, por exemplo, um intervalo planejado de 15 minutos no meio de um compromisso longo, a duração pode ser 15 minutos a menos do que a diferença entre o início e o fim." />
-    </element>
-    <element id="Appointment.slot">
-      <path value="Appointment.slot" />
-      <short value="Slots" />
-      <definition value="Os slots da agenda dos participantes que serão preenchidos pelo compromisso." />
     </element>
     <element id="Appointment.created">
       <path value="Appointment.created" />
-      <short value="Data de criação" />
-      <definition value="A data em que este compromisso foi criado inicialmente. Isso pode ser diferente do valor última modificação, já que pode ter sido antes do recurso ser criado e deve permanecer inalterado durante a vida útil do compromisso." />
       <min value="1" />
-    </element>
-    <element id="Appointment.comment">
-      <path value="Appointment.comment" />
-      <short value="Comentários adicionais" />
-      <definition value="Comentários adicionais sobre o compromisso." />
-    </element>
-    <element id="Appointment.patientInstruction">
-      <path value="Appointment.patientInstruction" />
-      <short value="Instruções ao Paciente" />
-      <definition value="Enquanto o Comentário contém informações para uso interno, Instruções ao Paciente é usado para capturar informações para o paciente sobre a consulta (por exemplo, traga sua referência ou jejue a partir das 20h da noite anterior)." />
-    </element>
-    <element id="Appointment.participant">
-      <path value="Appointment.participant" />
-      <short value="Participantes" />
-      <definition value="Lista de participantes envolvidos no compromisso." />
-    </element>
-    <element id="Appointment.participant.type">
-      <path value="Appointment.participant.type" />
-      <short value="Participação" />
-      <definition value="Papel do participante na nomeação." />
-    </element>
-    <element id="Appointment.participant.actor">
-      <path value="Appointment.participant.actor" />
-      <short value="Pessoa, Local, Serviço de saúde ou Dispositivo" />
-      <definition value="Uma Pessoa, Local / Serviço de saúde ou Dispositivo que está participando do compromisso." />
-    </element>
-    <element id="Appointment.participant.required">
-      <path value="Appointment.participant.required" />
-      <short value="Obrigatório" />
-      <definition value="Se esse participante é obrigado a estar presente na reunião. Isso cobre um caso de uso em que dois médicos precisam se reunir para discutir os resultados de um paciente específico e o paciente não precisa estar presente." />
-    </element>
-    <element id="Appointment.participant.status">
-      <path value="Appointment.participant.status" />
-      <short value="Status" />
-      <definition value="Status de participação do ator." />
-    </element>
-    <element id="Appointment.participant.period">
-      <path value="Appointment.participant.period" />
-      <definition value="Período de participação do ator." />
-      <type>
-        <code value="Period" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
-      </type>
-    </element>
-    <element id="Appointment.requestedPeriod">
-      <path value="Appointment.requestedPeriod" />
-      <short value="Períodos Possíveis" />
-      <definition value="Um conjunto de intervalos de datas (potencialmente incluindo horários) nos quais o compromisso deve ser agendado.&#xA;&#xA;A duração (geralmente em minutos) também pode ser fornecida para indicar a duração do compromisso a ser preenchido e preencher os horários de início / término para o tempo real alocado. Porém, em outras situações, a duração pode ser calculada pelo sistema de agendamento." />
-      <type>
-        <code value="Period" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>

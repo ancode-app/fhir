@@ -4,9 +4,8 @@
   <url value="https://ancode.app/fhir/StructureDefinition/Schedule" />
   <version value="1.0" />
   <name value="Schedule" />
-  <title value="Agenda" />
   <status value="draft" />
-  <description value="Um contêiner para os intervalos de tempo que podem estar disponíveis para a reserva de compromissos." />
+  <publisher value="Ancode" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -14,55 +13,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Schedule" />
   <derivation value="constraint" />
   <differential>
-    <element id="Schedule">
-      <path value="Schedule" />
-      <short value="Agenda" />
-      <definition value="Um contêiner para os intervalos de tempo que podem estar disponíveis para a reserva de compromissos." />
-    </element>
-    <element id="Schedule.identifier">
-      <path value="Schedule.identifier" />
-      <short value="Identificações" />
-      <definition value="Ids externos para este item." />
-      <type>
-        <code value="Identifier" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
-      </type>
-    </element>
     <element id="Schedule.active">
       <path value="Schedule.active" />
-      <short value="Agenda está ativa?" />
-      <definition value="Se a agenda está ativa ou não deve ser usada." />
       <min value="1" />
-    </element>
-    <element id="Schedule.serviceCategory">
-      <path value="Schedule.serviceCategory" />
-      <short value="Categorias" />
-      <definition value="Categorias de serviços a ser executado durante este comprimsso." />
-    </element>
-    <element id="Schedule.serviceType">
-      <path value="Schedule.serviceType" />
-      <short value="Serviços Prestados" />
-      <definition value="Serviços a serem prestados (por exemplo, cardiologia)." />
-    </element>
-    <element id="Schedule.specialty">
-      <path value="Schedule.specialty" />
-      <short value="Especialidades necessárias" />
-      <definition value="A especialidade de um profissional que seria necessário para realizar o serviço solicitado nesta agenda." />
-    </element>
-    <element id="Schedule.actor">
-      <path value="Schedule.actor" />
-      <short value="Atores" />
-      <definition value="Os atores que fazem parte dessa agenda." />
-    </element>
-    <element id="Schedule.planningHorizon">
-      <path value="Schedule.planningHorizon" />
-      <short value="Plano de Programação" />
-      <definition value="O período de tempo que abrange a Agenda. Eles cobrem o horizonte de tempo do planejamento de uma organização e o intervalo para o qual eles estão aceitando compromissos no momento. Isso não define um &quot;modelo&quot; para o planejamento fora dessas datas." />
-    </element>
-    <element id="Schedule.comment">
-      <path value="Schedule.comment" />
-      <short value="Comentários Sobre Disponibilidade" />
-      <definition value="Comentários sobre a disponibilidade para descrever qualquer informação estendida. Como restrições personalizadas nos slots que podem estar associados." />
     </element>
   </differential>
 </StructureDefinition>

@@ -17,51 +17,12 @@
   <differential>
     <element id="HumanName.use">
       <path value="HumanName.use" />
-      <short value="Tipo de Nome" />
-      <definition value="official: nome oficial atual, conforme registrado na certidão de registro civil mais atual do indivíduo.&#xD;&#xA;maiden: nome oficial de solteiro(a), quando houve uma alteração de nome decorrente de uma união de qualquer tipo.&#xD;&#xA;old: nome oficial anterior, quando houve uma alteração de nome em uma certidão de registro civil ou decisão judicial decorrente de qualquer outra situação que não seja uma união.&#xD;&#xA;usual: nome social.&#xD;&#xA;temp: nome temporário, como aqueles utilizados em programas de proteção a testemunhas.&#xD;&#xA;anonymous: uso exclusivo para anonimização de registros de indivíudos." />
       <min value="1" />
       <isModifierReason value="É importante que as aplicações saibam interpretar corretamente o tipo de nome que está sendo utilizado, para dar a tratativa correta ao indivíduo." />
     </element>
     <element id="HumanName.text">
       <path value="HumanName.text" />
-      <short value="Nome Completo" />
-      <definition value="Nome completo do indivíduo, composto pelo nome próprio, que pode ser mais de um quando trata-se de um nome composto, pelo sobrenome e pelo sufixo (Filho, Neto, Júnior etc.) quando aplicável." />
       <min value="1" />
-    </element>
-    <element id="HumanName.family">
-      <path value="HumanName.family" />
-      <short value="Sobrenome" />
-      <definition value="O(s) sobrenome(s) do indivíduo, quando é possível coletar esta informação desagregada." />
-    </element>
-    <element id="HumanName.given">
-      <path value="HumanName.given" />
-      <short value="Nome Próprio" />
-      <definition value="O nome próprio do paciente, incluindo todos aqueles que não são o sobrenome no caso de nomes compostos, quando é possível coletar esta informação desagregada." />
-    </element>
-    <element id="HumanName.prefix">
-      <path value="HumanName.prefix" />
-      <short value="Prefixo do Nome" />
-      <definition value="Prefixo do nome tipicamente utilizado quando se adquire títulos acadêmicos (Prof. ou Dr.), estados maritais (Sr., Sra., Srta.) etc., e é possível coletar esta informação." />
-    </element>
-    <element id="HumanName.suffix">
-      <path value="HumanName.suffix" />
-      <short value="Sufixo do Nome" />
-      <definition value="Sufixo do nome, tipicamente utilizado para identificar a geração do indivíduo (Filho, Neto, Júnior etc.), quando é possível coletar esta informação desagregada." />
-    </element>
-    <element id="HumanName.period">
-      <path value="HumanName.period" />
-      <short value="Período de Uso do Nome" />
-      <definition value="Indica a data inicial e final do uso do nome." />
-    </element>
-    <element id="HumanName.period.start">
-      <path value="HumanName.period.start" />
-      <short value="Data Inicial" />
-      <definition value="Quando o uso do nome iniciou." />
-    </element>
-    <element id="HumanName.period.end">
-      <path value="HumanName.period.end" />
-      <short value="Data Final" />
-      <definition value="Quando o uso do nome terminou." />
     </element>
   </differential>
 </StructureDefinition>

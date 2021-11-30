@@ -4,9 +4,8 @@
   <url value="https://ancode.app/fhir/StructureDefinition/PractitionerRole" />
   <version value="1.0" />
   <name value="PractitionerRole" />
-  <title value="Funções" />
   <status value="draft" />
-  <description value="Funcões de um profissional e Estabelecimento de Saúde." />
+  <publisher value="Ancode" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -14,130 +13,28 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
   <derivation value="constraint" />
   <differential>
-    <element id="PractitionerRole">
-      <path value="PractitionerRole" />
-      <short value="Funções" />
-      <definition value="Um conjunto específico de funções / locais / especialidades / serviços que um profissional pode executar em uma organização por um período de tempo." />
-    </element>
-    <element id="PractitionerRole.identifier">
-      <path value="PractitionerRole.identifier" />
-      <short value="Identificação" />
-      <definition value="Indentificação da função" />
-    </element>
     <element id="PractitionerRole.active">
       <path value="PractitionerRole.active" />
-      <short value="Registro em Uso" />
-      <definition value="Indica se o registro dessa função ainda está em uso.&#xD;&#xA;A codição de inativo pode indicar que tanto uma informação errada quanto o profissional não ter mais a função no Estabelecimento de Saúde." />
       <min value="1" />
     </element>
     <element id="PractitionerRole.period">
       <path value="PractitionerRole.period" />
-      <short value="Período da Função" />
-      <definition value="Período em que o profissional exerce ou exerceu a função no Estabelecimento de Saúde." />
       <min value="1" />
     </element>
     <element id="PractitionerRole.period.start">
       <path value="PractitionerRole.period.start" />
-      <short value="Início da Função" />
-      <definition value="Competência (mês/ano) ou data em que o profissional começou a exercer a função no Estabelecimento de Saúde." />
       <min value="1" />
-    </element>
-    <element id="PractitionerRole.period.end">
-      <path value="PractitionerRole.period.end" />
-      <short value="Término da Função" />
-      <definition value="Competência (mês/ano) ou data em que o profissional foi desligado da função no Estabelecimento de Saúde." />
-    </element>
-    <element id="PractitionerRole.practitioner">
-      <path value="PractitionerRole.practitioner" />
-      <short value="Profissional" />
-      <definition value="O profissional que exerce a função no Estabelecimento de Saúde." />
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
-      <short value="Estabelecimento de Saúde" />
-      <definition value="O Estabelecimento de Saúde onde o profissional exerce ou exerceu a função." />
       <min value="1" />
-    </element>
-    <element id="PractitionerRole.code">
-      <path value="PractitionerRole.code" />
-      <short value="Funções" />
-      <definition value="Funções que o profissional pode desempenhar." />
-    </element>
-    <element id="PractitionerRole.specialty">
-      <path value="PractitionerRole.specialty" />
-      <short value="Especialidades" />
-      <definition value="Especialidade(s) do profissional" />
-    </element>
-    <element id="PractitionerRole.location">
-      <path value="PractitionerRole.location" />
-      <short value="Locais" />
-      <definition value="Os locais em que o profissional presta cuidados" />
-    </element>
-    <element id="PractitionerRole.healthcareService">
-      <path value="PractitionerRole.healthcareService" />
-      <short value="Serviços de Saúde" />
-      <definition value="Lista de serviços de saúde que o profissional fornece para a Organização/Localizações desta função" />
     </element>
     <element id="PractitionerRole.telecom">
       <path value="PractitionerRole.telecom" />
-      <definition value="Informações do(s) meio(s) de contato com a função." />
       <type>
         <code value="ContactPoint" />
         <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
       </type>
-    </element>
-    <element id="PractitionerRole.availableTime">
-      <path value="PractitionerRole.availableTime" />
-      <short value="Tempo disponível" />
-      <definition value="Horários em que o do serviço está disponível" />
-    </element>
-    <element id="PractitionerRole.availableTime.daysOfWeek">
-      <path value="PractitionerRole.availableTime.daysOfWeek" />
-      <short value="Dias da Semana" />
-      <definition value="mon | ter | wed | qui | sex | sat | sun" />
-    </element>
-    <element id="PractitionerRole.availableTime.allDay">
-      <path value="PractitionerRole.availableTime.allDay" />
-      <short value="Dia Todo" />
-      <definition value="Sempre disponível? por exemplo, serviço 24 horas" />
-    </element>
-    <element id="PractitionerRole.availableTime.availableStartTime">
-      <path value="PractitionerRole.availableTime.availableStartTime" />
-      <short value="Horário de abertura" />
-      <definition value="Horário de abertura do dia (ignorado se allDay = true)" />
-    </element>
-    <element id="PractitionerRole.availableTime.availableEndTime">
-      <path value="PractitionerRole.availableTime.availableEndTime" />
-      <short value="Hora de fechamento" />
-      <definition value="Hora de fechamento do dia (ignorado se allDay = true)" />
-    </element>
-    <element id="PractitionerRole.notAvailable">
-      <path value="PractitionerRole.notAvailable" />
-      <short value="Não disponível" />
-      <definition value="Não disponível durante este período devido ao motivo fornecido" />
-    </element>
-    <element id="PractitionerRole.notAvailable.description">
-      <path value="PractitionerRole.notAvailable.description" />
-      <short value="Descrição" />
-      <definition value="Motivo apresentado explicando porque o tempo não está disponível" />
-    </element>
-    <element id="PractitionerRole.notAvailable.during">
-      <path value="PractitionerRole.notAvailable.during" />
-      <short value="Tempo" />
-      <definition value="Serviço não disponível a partir desta data" />
-      <type>
-        <code value="Period" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Period" />
-      </type>
-    </element>
-    <element id="PractitionerRole.availabilityExceptions">
-      <path value="PractitionerRole.availabilityExceptions" />
-      <short value="Exceções de disponibilidade" />
-      <definition value="Descrição das exceções de disponibilidade." />
-    </element>
-    <element id="PractitionerRole.endpoint">
-      <path value="PractitionerRole.endpoint" />
-      <short value="End Points" />
     </element>
   </differential>
 </StructureDefinition>

@@ -7,11 +7,10 @@
         <use value="official"/>
         <type>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="SS"/>
+                <system value="https://ancode.app/fhir/CodeSystem/IdentifierType"/>
+                <code value="CPF"/>
             </coding>
-        </type>
-        <system value="http://hl7.org/fhir/sid/us-ssn"/>
+        </type>        
         <value value="444444444"/>
     </identifier>
     <name>

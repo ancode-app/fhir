@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ProcedureTable" />
+  <url value="https://ancode.app/fhir/ValueSet/ProcedureTable" />
+  <version value="1.0" />
+  <name value="ProcedureTable" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2020-03-12T13:25:38.9038219+00:00" />
+  <publisher value="Ancode" />
+  <description value="Procedure Table." />
+  <immutable value="false" />
+  <compose>
+    <include>
+      <system value="https://ancode.app/fhir/CodeSystem/ProcedureTable" />
+    </include>
+  </compose>
+</ValueSet>

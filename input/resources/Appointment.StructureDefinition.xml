@@ -13,6 +13,27 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment" />
   <derivation value="constraint" />
   <differential>
+    <element id="Appointment.extension">
+      <path value="Appointment.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Appointment.extension:healthInsurance">
+      <path value="Appointment.extension" />
+      <sliceName value="healthInsurance" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/HealthInsurance" />
+      </type>
+    </element>
     <element id="Appointment.priority">
       <path value="Appointment.priority" />
       <min value="1" />

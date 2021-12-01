@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Consent" />
+  <url value="https://ancode.app/fhir/StructureDefinition/Consent" />
+  <version value="1.0" />
+  <name value="Consent" />
+  <status value="draft" />
+  <date value="2021-11-30" />
+  <publisher value="Ancode" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Consent" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
+  <derivation value="constraint" />
+</StructureDefinition>

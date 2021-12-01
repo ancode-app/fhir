@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="InsurancePlan" />
+  <url value="https://ancode.app/fhir/StructureDefinition/InsurancePlan" />
+  <version value="1.0" />
+  <name value="InsurancePlan" />
+  <status value="draft" />
+  <date value="2022-01-01" />
+  <publisher value="Ancode" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="InsurancePlan" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/InsurancePlan" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="InsurancePlan.name">
+      <path value="InsurancePlan.name" />
+      <min value="1" />
+    </element>
+    <element id="InsurancePlan.ownedBy">
+      <path value="InsurancePlan.ownedBy" />
+      <min value="1" />
+    </element>
+    <element id="InsurancePlan.administeredBy">
+      <path value="InsurancePlan.administeredBy" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

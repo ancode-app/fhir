@@ -71,6 +71,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Consent"/>
+      </reference>
+      <name value="Consent"/>
+      <description value="Consent."/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ContactPoint"/>
       </reference>
       <name value="ContactPoint"/>
@@ -99,6 +106,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Coverage"/>
+      </reference>
+      <name value="Coverage"/>
+      <description value="Coverage"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Encounter"/>
       </reference>
       <name value="Encounter"/>
@@ -110,6 +124,13 @@
       </reference>
       <name value="HealthcareService"/>
       <description value="Serviço de Saúde"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/HealthInsurance"/>
+      </reference>
+      <name value="HealthInsurance"/>
+      <description value="HealthInsurance"/>
     </resource>
     <resource>
       <reference>
@@ -152,6 +173,13 @@
       </reference>
       <name value="IdentifierType"/>
       <description value="Identifier Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/InsurancePlan"/>
+      </reference>                                                                                
+      <name value="InsurancePlan"/>
+      <description value="Insurance Plan"/>
     </resource>
     <resource>
       <reference>
@@ -208,7 +236,35 @@
       </reference>
       <name value="PractitionerRole"/>
       <description value="Função"/>
-    </resource>        
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Procedure"/>
+      </reference>
+      <name value="Procedure"/>
+      <description value="Procedure"/>
+     </resource>  
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ProcedureTable"/>
+      </reference>
+      <name value="ProcedureTable"/>
+      <description value="Procedure Table"/>
+    </resource>  
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ProcedureTable"/>
+      </reference>
+      <name value="ProcedureTable"/>
+      <description value="Procedure Table"/>
+    </resource>  
+    <resource>
+      <reference>
+        <reference value="ValueSet/ProcedureTable"/>
+      </reference>
+      <name value="ProcedureTable"/>
+      <description value="Procedure Table"/>
+    </resource>   
     <resource>
       <reference>
         <reference value="StructureDefinition/ProtectedPerson"/>
@@ -250,6 +306,13 @@
       </reference>
       <name value="Schedule"/>
       <description value="Agenda"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ServiceRequest"/>
+      </reference>
+      <name value="ServiceRequest"/>
+      <description value="Service Request"/>
     </resource>
     <resource>
       <reference>

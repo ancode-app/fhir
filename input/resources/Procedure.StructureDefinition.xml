@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Procedure" />
+  <url value="https://ancode.app/fhir/StructureDefinition/Procedure" />
+  <version value="1.0" />
+  <name value="Procedure" />
+  <status value="draft" />
+  <date value="2021-11-30" />
+  <publisher value="Ancode" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Procedure" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Procedure.identifier">
+      <path value="Procedure.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.encounter">
+      <path value="Procedure.encounter" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

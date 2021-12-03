@@ -13,27 +13,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Schedule" />
   <derivation value="constraint" />
   <differential>
-    <element id="Schedule.extension">
-      <path value="Schedule.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Schedule.extension:healthInsurance">
-      <path value="Schedule.extension" />
-      <sliceName value="healthInsurance" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/HealthInsurance" />
-      </type>
-    </element>
     <element id="Schedule.active">
       <path value="Schedule.active" />
       <min value="1" />

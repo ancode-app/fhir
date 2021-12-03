@@ -22,10 +22,17 @@
   <definition>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Account"/>
+      </reference>
+      <name value="Account"/>
+      <description value="Account"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Address"/>
       </reference>
       <name value="Address"/>
-      <description value="Padronização de endereço"/>
+      <description value="Address"/>
     </resource>
     <resource>
       <reference>
@@ -36,73 +43,101 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/AllergyIntolerance"/>
+      </reference>
+      <name value="AllergyIntolerance"/>
+      <description value="Allergy Intolerance"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Appointment"/>
       </reference>
       <name value="Appointment"/>
-      <description value="Compromisso"/>
+      <description value="Appointment"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/AppointmentResponse"/>
       </reference>
       <name value="AppointmentResponse"/>
-      <description value="Resposta do Compromisso"/>
+      <description value="Appointment Response"/>
     </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/BrazilianState"/>
       </reference>
       <name value="BrazilianState"/>
-      <description value="Terminologia de unidades federativas do Brasil."/>
+      <description value="Brazilian State"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/BrazilianState"/>
       </reference>
       <name value="BrazilianState"/>
-      <description value="Domínio de valores de Unidade Federativa para classificação."/>
+      <description value="Brazilian State"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ChargeItem"/>
+      </reference>
+      <name value="ChargeItem"/>
+      <description value="Charge Item"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ChargeItemDefinition"/>
+      </reference>
+      <name value="ChargeItemDefinition"/>
+      <description value="Charge Item Definition"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/City"/>
       </reference>
       <name value="City"/>
-      <description value="Utilizada para informar um município."/>
+      <description value="City"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Condition"/>
+      </reference>
+      <name value="Condition"/>
+      <description value="Condition"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Consent"/>
       </reference>
       <name value="Consent"/>
-      <description value="Consent."/>
+      <description value="Consent"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/ContactPoint"/>
       </reference>
       <name value="ContactPoint"/>
-      <description value="Padronização de meios de contato"/>
+      <description value="Contact Point"/>
     </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/Country"/>
       </reference>
       <name value="Country"/>
-      <description value="Códigos para representação de países."/>
+      <description value="Country"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Country"/>
       </reference>
       <name value="Country"/>
-      <description value="Utilizada para informar um país."/>
+      <description value="Country"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/Country"/>
       </reference>
       <name value="Country"/>
-      <description value="Códigos para representação de países."/>
+      <description value="Country"/>
     </resource>
     <resource>
       <reference>
@@ -113,38 +148,66 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Device"/>
+      </reference>
+      <name value="Device"/>
+      <description value="Device"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/DeviceUseStatement"/>
+      </reference>
+      <name value="DeviceUseStatement"/>
+      <description value="Device Use Statement"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/DiagnosticReport"/>
+      </reference>
+      <name value="DiagnosticReport"/>
+      <description value="Diagnostic Report"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Encounter"/>
       </reference>
       <name value="Encounter"/>
-      <description value="Atendimento"/>
+      <description value="Encounter"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/FamilyMemberHistory"/>
+      </reference>
+      <name value="FamilyMemberHistory"/>
+      <description value="Family Member History"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/HealthcareService"/>
       </reference>
       <name value="HealthcareService"/>
-      <description value="Serviço de Saúde"/>
+      <description value="Healthcare Service"/>
     </resource>
-    <resource>
+     <resource>
       <reference>
         <reference value="StructureDefinition/HealthInsurance"/>
       </reference>
       <name value="HealthInsurance"/>
-      <description value="HealthInsurance"/>
+      <description value="Health Insurance"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/HealthPublicSevice"/>
       </reference>
       <name value="HealthPublicSevice"/>
-      <description value="Utilizada para identificar se um profissional ou estabelecimento de saúde oferece atendimento pelo Serviço Público de Saúde."/>
+      <description value="Health Public Sevice"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/HumanName"/>
       </reference>
       <name value="HumanName"/>
-      <description value="Padronização de uso de nomes"/>
+      <description value="Human Name"/>
     </resource>
     <resource>
       <reference>
@@ -158,7 +221,7 @@
         <reference value="StructureDefinition/Identifier"/>
       </reference>
       <name value="Identifier"/>
-      <description value="Estrutura de identificação"/>
+      <description value="Identifier"/>
     </resource>
     <resource>
       <reference>
@@ -176,6 +239,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Immunization"/>
+      </reference>                                                                                
+      <name value="Immunization"/>
+      <description value="Immunization"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/InsurancePlan"/>
       </reference>                                                                                
       <name value="InsurancePlan"/>
@@ -183,10 +253,31 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Invoice"/>
+      </reference>                                                                                
+      <name value="Invoice"/>
+      <description value="Invoice"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Location"/>
       </reference>                                                                                
       <name value="Location"/>
-      <description value="Local"/>
+      <description value="Location"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Medication"/>
+      </reference>                                                                                
+      <name value="Medication"/>
+      <description value="Medication"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/MedicationStatement"/>
+      </reference>                                                                                
+      <name value="MedicationStatement"/>
+      <description value="Medication Statement"/>
     </resource>
     <resource>
       <reference>
@@ -197,45 +288,59 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Observation"/>
+      </reference>
+      <name value="Observation"/>
+      <description value="Observation"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ObservationDefinition"/>
+      </reference>
+      <name value="ObservationDefinition"/>
+      <description value="Observation Definition"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Organization"/>
       </reference>
       <name value="Organization"/>
-      <description value="Estabelecimento de Saúde"/>
+      <description value="Organization"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/OrganizationAffiliation"/>
       </reference>
       <name value="OrganizationAffiliation"/>
-      <description value="Afiliação de Organização"/>
+      <description value="OrganizationAffiliation"/>
     </resource>    
     <resource>
       <reference>
         <reference value="StructureDefinition/Patient"/>
       </reference>
       <name value="Patient"/>
-      <description value="Paciente"/>
+      <description value="Patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Person"/>
       </reference>
       <name value="Person"/>
-      <description value="Pessoa"/>
+      <description value="Person"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Practitioner"/>
       </reference>
       <name value="Practitioner"/>
-      <description value="Profissional"/>
+      <description value="Practitioner"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/PractitionerRole"/>
       </reference>
       <name value="PractitionerRole"/>
-      <description value="Função"/>
+      <description value="PractitionerRole"/>
     </resource>
     <resource>
       <reference>
@@ -270,42 +375,56 @@
         <reference value="StructureDefinition/ProtectedPerson"/>
       </reference>
       <name value="ProtectedPerson"/>
-      <description value="Utilizada para identificar pessoas que possuem  maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros."/>
+      <description value="ProtectedPerson"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Questionnaire"/>
+      </reference>
+      <name value="Questionnaire"/>
+      <description value="Questionnaire"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/QuestionnaireResponse"/>
+      </reference>
+      <name value="QuestionnaireResponse"/>
+      <description value="Questionnaire Response"/>
     </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/Race"/>
       </reference>
       <name value="Race"/>
-      <description value="Códigos para representação de raça/cor no Brasil."/>
+      <description value="Race"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Race"/>
       </reference>
       <name value="Race"/>
-      <description value="Utilizada representar dados relacionados à raça/cor de uma pessoa."/>
+      <description value="Race"/>
     </resource>
     <resource>
       <reference>
         <reference value="ValueSet/Race"/>
       </reference>
       <name value="Race"/>
-      <description value="Códigos para representação de raça/cor no Brasil."/>
+      <description value="Race"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/RelatedPerson"/>
       </reference>
       <name value="RelatedPerson"/>
-      <description value="Pessoa Relacionada"/>
+      <description value="RelatedPerson"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Schedule"/>
       </reference>
       <name value="Schedule"/>
-      <description value="Agenda"/>
+      <description value="Schedule"/>
     </resource>
     <resource>
       <reference>
@@ -319,7 +438,14 @@
         <reference value="StructureDefinition/Slot"/>
       </reference>
       <name value="Slot"/>
-      <description value="Slot da Agenda"/>
+      <description value="Slot"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Specimen"/>
+      </reference>
+      <name value="Specimen"/>
+      <description value="Specimen"/>
     </resource>
     <resource>
       <reference>

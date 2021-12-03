@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ChargeItem" />
+  <url value="https://ancode.app/fhir/StructureDefinition/ChargeItem" />
+  <version value="1.0" />
+  <name value="ChargeItem" />
+  <status value="draft" />
+  <date value="2021-12-02" />
+  <publisher value="Ancode" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ChargeItem" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ChargeItem" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ChargeItem.context">
+      <path value="ChargeItem.context" />
+      <min value="1" />
+    </element>
+    <element id="ChargeItem.performingOrganization">
+      <path value="ChargeItem.performingOrganization" />
+      <min value="1" />
+    </element>
+    <element id="ChargeItem.requestingOrganization">
+      <path value="ChargeItem.requestingOrganization" />
+      <min value="1" />
+    </element>
+    <element id="ChargeItem.costCenter">
+      <path value="ChargeItem.costCenter" />
+      <min value="1" />
+    </element>
+    <element id="ChargeItem.enteredDate">
+      <path value="ChargeItem.enteredDate" />
+      <min value="1" />
+    </element>
+    <element id="ChargeItem.service">
+      <path value="ChargeItem.service" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

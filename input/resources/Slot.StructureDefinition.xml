@@ -13,27 +13,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Slot" />
   <derivation value="constraint" />
   <differential>
-    <element id="Slot.extension">
-      <path value="Slot.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Slot.extension:healthInsurance">
-      <path value="Slot.extension" />
-      <sliceName value="healthInsurance" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/HealthInsurance" />
-      </type>
-    </element>
     <element id="Slot.appointmentType">
       <path value="Slot.appointmentType" />
       <min value="1" />

@@ -18,5 +18,11 @@
       <path value="DeviceUseStatement.source" />
       <min value="1" />
     </element>
+    <element id="DeviceUseStatement.bodySite">
+      <path value="DeviceUseStatement.bodySite" />
+      <binding>
+        <strength value="extensible" />
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>

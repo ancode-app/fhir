@@ -14,27 +14,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Coverage" />
   <derivation value="constraint" />
   <differential>
-    <element id="Coverage.extension">
-      <path value="Coverage.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Coverage.extension:healthInsurance">
-      <path value="Coverage.extension" />
-      <sliceName value="healthInsurance" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/HealthInsurance" />
-      </type>
-    </element>
     <element id="Coverage.subscriberId">
       <path value="Coverage.subscriberId" />
       <min value="1" />

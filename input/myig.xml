@@ -78,6 +78,21 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/BRCBO"/>
+      </reference>
+      <name value="BRCBO"/>
+      <description value="BR CBO"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRCBO"/>
+      </reference>
+      <name value="BRCBO"/>
+      <description value="BR CBO"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ChargeItem"/>
       </reference>
       <name value="ChargeItem"/>
@@ -188,20 +203,6 @@
       <name value="HealthcareService"/>
       <description value="Healthcare Service"/>
     </resource>
-     <resource>
-      <reference>
-        <reference value="StructureDefinition/HealthInsurance"/>
-      </reference>
-      <name value="HealthInsurance"/>
-      <description value="Health Insurance"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/HealthPublicSevice"/>
-      </reference>
-      <name value="HealthPublicSevice"/>
-      <description value="Health Public Sevice"/>
-    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/HumanName"/>
@@ -250,6 +251,13 @@
       </reference>                                                                                
       <name value="InsurancePlan"/>
       <description value="Insurance Plan"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/InsuranceProvider"/>
+      </reference>                                                                                
+      <name value="InsuranceProvider"/>
+      <description value="Insurance Insurance Provider"/>
     </resource>
     <resource>
       <reference>
@@ -348,28 +356,7 @@
       </reference>
       <name value="Procedure"/>
       <description value="Procedure"/>
-     </resource>  
-    <resource>
-      <reference>
-        <reference value="CodeSystem/ProcedureTable"/>
-      </reference>
-      <name value="ProcedureTable"/>
-      <description value="Procedure Table"/>
-    </resource>  
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/ProcedureTable"/>
-      </reference>
-      <name value="ProcedureTable"/>
-      <description value="Procedure Table"/>
-    </resource>  
-    <resource>
-      <reference>
-        <reference value="ValueSet/ProcedureTable"/>
-      </reference>
-      <name value="ProcedureTable"/>
-      <description value="Procedure Table"/>
-    </resource>   
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/ProtectedPerson"/>
@@ -425,6 +412,27 @@
       </reference>
       <name value="Schedule"/>
       <description value="Schedule"/>
+    </resource>
+     <resource>
+      <reference>
+        <reference value="CodeSystem/ScheduleType"/>
+      </reference>
+      <name value="ScheduleType"/>
+      <description value="Schedule Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ScheduleType"/>
+      </reference>
+      <name value="ScheduleType"/>
+      <description value="ScheduleType"/>
+    </resource>   
+    <resource>
+      <reference>
+        <reference value="ValueSet/ScheduleType"/>
+      </reference>
+      <name value="ScheduleType"/>
+      <description value="Schedule Type"/>
     </resource>
     <resource>
       <reference>

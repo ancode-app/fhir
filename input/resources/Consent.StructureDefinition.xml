@@ -13,4 +13,17 @@
   <type value="Consent" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
   <derivation value="constraint" />
+  <differential>
+    <element id="Consent.identifier">
+      <path value="Consent.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="Consent.dateTime">
+      <path value="Consent.dateTime" />
+      <min value="1" />
+    </element>
+  </differential>
 </StructureDefinition>

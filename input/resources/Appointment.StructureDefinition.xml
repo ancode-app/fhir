@@ -13,6 +13,26 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment" />
   <derivation value="constraint" />
   <differential>
+    <element id="Appointment.cancelationReason">
+      <path value="Appointment.cancelationReason" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Appointment.specialty">
+      <path value="Appointment.specialty" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/BRCBO" />
+      </binding>
+    </element>
+    <element id="Appointment.appointmentType">
+      <path value="Appointment.appointmentType" />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
     <element id="Appointment.priority">
       <path value="Appointment.priority" />
       <min value="1" />
@@ -21,6 +41,27 @@
       <path value="Appointment.description" />
       <min value="1" />
     </element>
+    <element id="Appointment.supportingInformation">
+      <path value="Appointment.supportingInformation" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Appointment.supportingInformation:organization">
+      <path value="Appointment.supportingInformation" />
+      <sliceName value="organization" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
     <element id="Appointment.start">
       <path value="Appointment.start" />
       <min value="1" />
@@ -28,6 +69,15 @@
     <element id="Appointment.end">
       <path value="Appointment.end" />
       <min value="1" />
+    </element>
+    <element id="Appointment.minutesDuration">
+      <path value="Appointment.minutesDuration" />
+      <min value="1" />
+    </element>
+    <element id="Appointment.slot">
+      <path value="Appointment.slot" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Appointment.created">
       <path value="Appointment.created" />

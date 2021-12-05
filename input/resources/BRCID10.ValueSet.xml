@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BRCID10"/>
+  <url value="https://ancode.app/fhir/ValueSet/BRCID10" />
+  <version value="1.0" />
+  <name value="BRCID10" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2021-12-04" />
+  <publisher value="Ancode" />
+  <description value="BR CBO" />
+  <compose>
+    <include>
+      <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10" />
+      <version value="*" />
+    </include>
+  </compose>
+</ValueSet>

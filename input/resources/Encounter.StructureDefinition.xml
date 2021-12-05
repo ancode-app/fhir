@@ -21,18 +21,12 @@
       <path value="Encounter.classHistory.period.start" />
       <min value="1" />
     </element>
-    <element id="Encounter.type">
-      <path value="Encounter.type" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Encounter.serviceType">
-      <path value="Encounter.serviceType" />
-      <min value="1" />
-    </element>
     <element id="Encounter.priority">
       <path value="Encounter.priority" />
       <min value="1" />
+      <binding>
+        <strength value="required" />
+      </binding>
     </element>
     <element id="Encounter.subject">
       <path value="Encounter.subject" />
@@ -54,6 +48,13 @@
     <element id="Encounter.period">
       <path value="Encounter.period" />
       <min value="1" />
+    </element>
+    <element id="Encounter.reasonCode">
+      <path value="Encounter.reasonCode" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/BRCID10" />
+      </binding>
     </element>
     <element id="Encounter.serviceProvider">
       <path value="Encounter.serviceProvider" />

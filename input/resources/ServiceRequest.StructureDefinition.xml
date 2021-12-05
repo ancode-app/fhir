@@ -17,6 +17,26 @@
       <path value="ServiceRequest.identifier" />
       <min value="1" />
     </element>
+    <element id="ServiceRequest.requisition">
+      <path value="ServiceRequest.requisition" />
+      <min value="1" />
+    </element>
+    <element id="ServiceRequest.priority">
+      <path value="ServiceRequest.priority" />
+      <min value="1" />
+    </element>
+    <element id="ServiceRequest.doNotPerform">
+      <path value="ServiceRequest.doNotPerform" />
+      <min value="1" />
+    </element>
+    <element id="ServiceRequest.code">
+      <path value="ServiceRequest.code" />
+      <min value="1" />
+    </element>
+    <element id="ServiceRequest.quantity[x]">
+      <path value="ServiceRequest.quantity[x]" />
+      <min value="1" />
+    </element>
     <element id="ServiceRequest.requester">
       <path value="ServiceRequest.requester" />
       <min value="1" />
@@ -25,6 +45,25 @@
       <path value="ServiceRequest.insurance" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="ServiceRequest.supportingInfo">
+      <path value="ServiceRequest.supportingInfo" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="ServiceRequest.supportingInfo:appointment">
+      <path value="ServiceRequest.supportingInfo" />
+      <sliceName value="appointment" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/Appointment" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

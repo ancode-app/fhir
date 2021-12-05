@@ -93,6 +93,21 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/BRCID10"/>
+      </reference>
+      <name value="BRCID10"/>
+      <description value="BR CID10"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRCID10"/>
+      </reference>
+      <name value="BRCID10"/>
+      <description value="BR CID10"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ChargeItem"/>
       </reference>
       <name value="ChargeItem"/>

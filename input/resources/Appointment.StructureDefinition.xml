@@ -33,6 +33,13 @@
         <strength value="required" />
       </binding>
     </element>
+    <element id="Appointment.reasonCode">
+      <path value="Appointment.reasonCode" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/BRCID10" />
+      </binding>
+    </element>
     <element id="Appointment.priority">
       <path value="Appointment.priority" />
       <min value="1" />
@@ -52,14 +59,24 @@
       </slicing>
       <min value="1" />
     </element>
-    <element id="Appointment.supportingInformation:organization">
+    <element id="Appointment.supportingInformation:insuranceProvider">
       <path value="Appointment.supportingInformation" />
-      <sliceName value="organization" />
+      <sliceName value="insuranceProvider" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://ancode.app/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+    <element id="Appointment.supportingInformation:coverage">
+      <path value="Appointment.supportingInformation" />
+      <sliceName value="coverage" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/Coverage" />
       </type>
     </element>
     <element id="Appointment.start">

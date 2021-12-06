@@ -428,7 +428,28 @@
       <name value="Schedule"/>
       <description value="Schedule"/>
     </resource>
-     <resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ScheduleDuration"/>
+      </reference>
+      <name value="ScheduleDuration"/>
+      <description value="Schedule Duration"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ScheduleOnlyOneSlot"/>
+      </reference>
+      <name value="ScheduleOnlyOneSlot"/>
+      <description value="Schedule Only One Slot"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/SchedulePlan"/>
+      </reference>
+      <name value="SchedulePlan"/>
+      <description value="Schedule Plan"/>
+    </resource>
+    <resource>
       <reference>
         <reference value="CodeSystem/ScheduleType"/>
       </reference>

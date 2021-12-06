@@ -29,9 +29,6 @@
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
       <min value="1" />
-      <binding>
-        <strength value="required" />
-      </binding>
     </element>
     <element id="Appointment.reasonCode">
       <path value="Appointment.reasonCode" />

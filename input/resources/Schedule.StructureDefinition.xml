@@ -22,24 +22,44 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="4" />
     </element>
-    <element id="Schedule.extension:insuranceProvider">
+    <element id="Schedule.extension:type">
       <path value="Schedule.extension" />
-      <sliceName value="insuranceProvider" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/InsuranceProvider" />
-      </type>
-    </element>
-    <element id="Schedule.extension:scheduleType">
-      <path value="Schedule.extension" />
-      <sliceName value="scheduleType" />
+      <sliceName value="type" />
       <min value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/ScheduleType" />
+      </type>
+    </element>
+    <element id="Schedule.extension:plan">
+      <path value="Schedule.extension" />
+      <sliceName value="plan" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/SchedulePlan" />
+      </type>
+    </element>
+    <element id="Schedule.extension:durationMinutes">
+      <path value="Schedule.extension" />
+      <sliceName value="durationMinutes" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ScheduleDuration" />
+      </type>
+    </element>
+    <element id="Schedule.extension:onlyOneSlot">
+      <path value="Schedule.extension" />
+      <sliceName value="onlyOneSlot" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ScheduleOnlyOneSlot" />
       </type>
     </element>
     <element id="Schedule.identifier">
@@ -91,6 +111,10 @@
     </element>
     <element id="Schedule.planningHorizon.end">
       <path value="Schedule.planningHorizon.end" />
+      <min value="1" />
+    </element>
+    <element id="Schedule.comment">
+      <path value="Schedule.comment" />
       <min value="1" />
     </element>
   </differential>

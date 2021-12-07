@@ -42,9 +42,9 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/SchedulePlan" />
       </type>
     </element>
-    <element id="Schedule.extension:durationMinutes">
+    <element id="Schedule.extension:durationMinute">
       <path value="Schedule.extension" />
-      <sliceName value="durationMinutes" />
+      <sliceName value="durationMinute" />
       <min value="1" />
       <max value="1" />
       <type>

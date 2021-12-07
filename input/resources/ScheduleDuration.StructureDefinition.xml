@@ -25,8 +25,12 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
-        <code value="positiveInt" />
+        <code value="code" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/DurationMinute" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

@@ -199,6 +199,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/DurationMinute"/>
+      </reference>
+      <name value="DurationMinute"/>
+      <description value="Duration Minute"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/DurationMinute"/>
+      </reference>
+      <name value="DurationMinute"/>
+      <description value="Duration Minute"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Encounter"/>
       </reference>
       <name value="Encounter"/>

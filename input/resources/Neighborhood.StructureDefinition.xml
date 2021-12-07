@@ -3,7 +3,7 @@
   <url value="https://ancode.app/fhir/StructureDefinition/Neighborhood" />
   <version value="1.0" />
   <name value="Neighborhood" />
-  <status value="active" />
+  <status value="draft" />
   <date value="2020-11-30" />
   <publisher value="Ancode" />
   <description value="Neighborhood" />

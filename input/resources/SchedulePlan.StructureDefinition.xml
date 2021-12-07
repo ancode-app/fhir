@@ -29,23 +29,23 @@
       </slicing>
       <min value="3" />
     </element>
-    <element id="Extension.extension:dayOfWeek">
+    <element id="Extension.extension:daysOfWeek">
       <path value="Extension.extension" />
-      <sliceName value="dayOfWeek" />
+      <sliceName value="daysOfWeek" />
       <min value="1" />
-      <max value="1" />
       <binding>
         <strength value="required" />
         <description value="dayOfWeek" />
         <valueSet value="http://hl7.org/fhir/ValueSet/days-of-week" />
       </binding>
     </element>
-    <element id="Extension.extension:dayOfWeek.url">
+    <element id="Extension.extension:daysOfWeek.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="dayOfWeek" />
+      <fixedUri value="daysOfWeek" />
     </element>
-    <element id="Extension.extension:dayOfWeek.value[x]">
+    <element id="Extension.extension:daysOfWeek.value[x]">
       <path value="Extension.extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="code" />
       </type>
@@ -76,6 +76,7 @@
     </element>
     <element id="Extension.extension:startTime.value[x]">
       <path value="Extension.extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="time" />
       </type>
@@ -92,14 +93,10 @@
     </element>
     <element id="Extension.extension:endTime.value[x]">
       <path value="Extension.extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="time" />
       </type>
-    </element>
-    <element id="Extension.extension:elem">
-      <path value="Extension.extension" />
-      <sliceName value="elem" />
-      <min value="0" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

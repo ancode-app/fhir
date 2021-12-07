@@ -52,14 +52,14 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/ScheduleDuration" />
       </type>
     </element>
-    <element id="Schedule.extension:onlyOneSlot">
+    <element id="Schedule.extension:dynamicSlot">
       <path value="Schedule.extension" />
-      <sliceName value="onlyOneSlot" />
+      <sliceName value="dynamicSlot" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/ScheduleOnlyOneSlot" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ScheduleDynamicSlot" />
       </type>
     </element>
     <element id="Schedule.identifier">

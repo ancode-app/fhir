@@ -4,7 +4,7 @@
   <url value="https://ancode.app/fhir/CodeSystem/Race" />
   <version value="1.0" />
   <name value="Race" />
-  <status value="active" />
+  <status value="draft" />
   <experimental value="false" />
   <date value="2020-03-11T18:20:40.0457007+00:00" />
   <publisher value="Ancode" />

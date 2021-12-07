@@ -437,10 +437,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ScheduleOnlyOneSlot"/>
+        <reference value="StructureDefinition/ScheduleDynamicSlot"/>
       </reference>
-      <name value="ScheduleOnlyOneSlot"/>
-      <description value="Schedule Only One Slot"/>
+      <name value="ScheduleDynamicSlot"/>
+      <description value="Schedule Dynamic Slot"/>
     </resource>
     <resource>
       <reference>

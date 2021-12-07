@@ -13,6 +13,27 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment" />
   <derivation value="constraint" />
   <differential>
+    <element id="Appointment.extension">
+      <path value="Appointment.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Appointment.extension:encounterWay">
+      <path value="Appointment.extension" />
+      <sliceName value="encounterWay" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/EncounterWay" />
+      </type>
+    </element>
     <element id="Appointment.cancelationReason">
       <path value="Appointment.cancelationReason" />
       <binding>
@@ -22,20 +43,13 @@
     <element id="Appointment.specialty">
       <path value="Appointment.specialty" />
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <valueSet value="https://ancode.app/fhir/ValueSet/BRCBO" />
       </binding>
     </element>
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
       <min value="1" />
-    </element>
-    <element id="Appointment.reasonCode">
-      <path value="Appointment.reasonCode" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://ancode.app/fhir/ValueSet/BRCID10" />
-      </binding>
     </element>
     <element id="Appointment.priority">
       <path value="Appointment.priority" />
@@ -65,28 +79,6 @@
         <code value="Reference" />
         <targetProfile value="https://ancode.app/fhir/StructureDefinition/Organization" />
       </type>
-    </element>
-    <element id="Appointment.supportingInformation:coverage">
-      <path value="Appointment.supportingInformation" />
-      <sliceName value="coverage" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://ancode.app/fhir/StructureDefinition/Coverage" />
-      </type>
-    </element>
-    <element id="Appointment.start">
-      <path value="Appointment.start" />
-      <min value="1" />
-    </element>
-    <element id="Appointment.end">
-      <path value="Appointment.end" />
-      <min value="1" />
-    </element>
-    <element id="Appointment.minutesDuration">
-      <path value="Appointment.minutesDuration" />
-      <min value="1" />
     </element>
     <element id="Appointment.slot">
       <path value="Appointment.slot" />

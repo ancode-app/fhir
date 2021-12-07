@@ -22,12 +22,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="0" />
     </element>
     <element id="Slot.extension:InsuranceProvider">
       <path value="Slot.extension" />
       <sliceName value="InsuranceProvider" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

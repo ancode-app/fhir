@@ -206,6 +206,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/EncounterWay"/>
+      </reference>
+      <name value="EncounterWay"/>
+      <description value="EncounterWay"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/EncounterWay"/>
+      </reference>
+      <name value="EncounterWay"/>
+      <description value="EncounterWay"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/EncounterWay"/>
+      </reference>
+      <name value="EncounterWay"/>
+      <description value="EncounterWay"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/FamilyMemberHistory"/>
       </reference>
       <name value="FamilyMemberHistory"/>

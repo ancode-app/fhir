@@ -17,18 +17,6 @@
       <path value="ServiceRequest.identifier" />
       <min value="1" />
     </element>
-    <element id="ServiceRequest.requisition">
-      <path value="ServiceRequest.requisition" />
-      <min value="1" />
-    </element>
-    <element id="ServiceRequest.priority">
-      <path value="ServiceRequest.priority" />
-      <min value="1" />
-    </element>
-    <element id="ServiceRequest.doNotPerform">
-      <path value="ServiceRequest.doNotPerform" />
-      <min value="1" />
-    </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code" />
       <min value="1" />
@@ -36,10 +24,9 @@
     <element id="ServiceRequest.quantity[x]">
       <path value="ServiceRequest.quantity[x]" />
       <min value="1" />
-    </element>
-    <element id="ServiceRequest.requester">
-      <path value="ServiceRequest.requester" />
-      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
     </element>
     <element id="ServiceRequest.insurance">
       <path value="ServiceRequest.insurance" />
@@ -63,6 +50,16 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://ancode.app/fhir/StructureDefinition/Appointment" />
+      </type>
+    </element>
+    <element id="ServiceRequest.supportingInfo:procedureDefinition">
+      <path value="ServiceRequest.supportingInfo" />
+      <sliceName value="procedureDefinition" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/ChargeItemDefinition" />
       </type>
     </element>
   </differential>

@@ -22,6 +22,10 @@
       <path value="ChargeItemDefinition.effectivePeriod" />
       <min value="1" />
     </element>
+    <element id="ChargeItemDefinition.effectivePeriod.start">
+      <path value="ChargeItemDefinition.effectivePeriod.start" />
+      <min value="1" />
+    </element>
     <element id="ChargeItemDefinition.code">
       <path value="ChargeItemDefinition.code" />
       <min value="1" />

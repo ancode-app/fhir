@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
   <derivation value="constraint" />
   <differential>
+    <element id="HealthcareService.identifier">
+      <path value="HealthcareService.identifier" />
+      <min value="1" />
+    </element>
     <element id="HealthcareService.active">
       <path value="HealthcareService.active" />
       <min value="1" />
@@ -21,12 +25,31 @@
       <path value="HealthcareService.providedBy" />
       <min value="1" />
     </element>
+    <element id="HealthcareService.category">
+      <path value="HealthcareService.category" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/ServiceCategory" />
+      </binding>
+    </element>
     <element id="HealthcareService.telecom">
       <path value="HealthcareService.telecom" />
       <type>
         <code value="ContactPoint" />
         <profile value="https://ancode.app/fhir/StructureDefinition/ContactPoint" />
       </type>
+    </element>
+    <element id="HealthcareService.serviceProvisionCode">
+      <path value="HealthcareService.serviceProvisionCode" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="HealthcareService.appointmentRequired">
+      <path value="HealthcareService.appointmentRequired" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

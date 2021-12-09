@@ -30,6 +30,16 @@
       <path value="ChargeItemDefinition.code" />
       <min value="1" />
     </element>
+    <element id="ChargeItemDefinition.instance">
+      <path value="ChargeItemDefinition.instance" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="htts://ancode.app/fhir/StructureDefinition/HealthcareService" />
+      </type>
+    </element>
     <element id="ChargeItemDefinition.propertyGroup.priceComponent">
       <path value="ChargeItemDefinition.propertyGroup.priceComponent" />
       <min value="1" />

@@ -52,14 +52,14 @@
         <targetProfile value="https://ancode.app/fhir/StructureDefinition/Appointment" />
       </type>
     </element>
-    <element id="ServiceRequest.supportingInfo:procedureDefinition">
+    <element id="ServiceRequest.supportingInfo:healthCareService">
       <path value="ServiceRequest.supportingInfo" />
-      <sliceName value="procedureDefinition" />
+      <sliceName value="healthCareService" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://ancode.app/fhir/StructureDefinition/ChargeItemDefinition" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/HealthCareService" />
       </type>
     </element>
   </differential>

@@ -95,11 +95,19 @@
       <sliceName value="healthcareService" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/HealthcareService" />
+      </type>
     </element>
     <element id="Schedule.actor:practitioner">
       <path value="Schedule.actor" />
       <sliceName value="practitioner" />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/Practitioner" />
+      </type>
     </element>
     <element id="Schedule.planningHorizon">
       <path value="Schedule.planningHorizon" />

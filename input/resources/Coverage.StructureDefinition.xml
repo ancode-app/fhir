@@ -18,5 +18,11 @@
       <path value="Coverage.subscriberId" />
       <min value="1" />
     </element>
+    <element id="Coverage.relationship">
+      <path value="Coverage.relationship" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>

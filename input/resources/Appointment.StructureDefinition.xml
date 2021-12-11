@@ -28,7 +28,6 @@
       <path value="Appointment.extension" />
       <sliceName value="encounterWay" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/EncounterWay" />
@@ -108,7 +107,7 @@
       <path value="Appointment.participant.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://ancode.app/StructureDefinition/HealthcareService" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/HealthcareService" />
       </type>
     </element>
   </differential>

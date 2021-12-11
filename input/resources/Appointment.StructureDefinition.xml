@@ -89,5 +89,27 @@
       <path value="Appointment.created" />
       <min value="1" />
     </element>
+    <element id="Appointment.participant">
+      <path value="Appointment.participant" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="actor.type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Appointment.participant:healthcareService">
+      <path value="Appointment.participant" />
+      <sliceName value="healthcareService" />
+      <min value="1" />
+    </element>
+    <element id="Appointment.participant:healthcareService.actor">
+      <path value="Appointment.participant.actor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://ancode.app/StructureDefinition/HealthcareService" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>

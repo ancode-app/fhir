@@ -43,23 +43,14 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="ServiceRequest.supportingInfo:appointment">
+    <element id="ServiceRequest.supportingInfo:healthcareService">
       <path value="ServiceRequest.supportingInfo" />
-      <sliceName value="appointment" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://ancode.app/fhir/StructureDefinition/Appointment" />
-      </type>
-    </element>
-    <element id="ServiceRequest.supportingInfo:healthCareService">
-      <path value="ServiceRequest.supportingInfo" />
-      <sliceName value="healthCareService" />
+      <sliceName value="healthcareService" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://ancode.app/fhir/StructureDefinition/HealthCareService" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/HealthcareService" />
       </type>
     </element>
   </differential>

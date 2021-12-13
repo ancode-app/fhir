@@ -20,7 +20,6 @@
     </element>
     <element id="Identifier.type">
       <path value="Identifier.type" />
-      <min value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="https://ancode.app/fhir/ValueSet/IdentifierType" />

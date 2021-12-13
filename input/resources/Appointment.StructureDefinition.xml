@@ -58,27 +58,6 @@
       <path value="Appointment.description" />
       <min value="1" />
     </element>
-    <element id="Appointment.supportingInformation">
-      <path value="Appointment.supportingInformation" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Appointment.supportingInformation:insuranceProvider">
-      <path value="Appointment.supportingInformation" />
-      <sliceName value="insuranceProvider" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://ancode.app/fhir/StructureDefinition/Organization" />
-      </type>
-    </element>
     <element id="Appointment.slot">
       <path value="Appointment.slot" />
       <min value="1" />
@@ -98,16 +77,17 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Appointment.participant:healthcareService">
+    <element id="Appointment.participant:location">
       <path value="Appointment.participant" />
-      <sliceName value="healthcareService" />
+      <sliceName value="location" />
       <min value="1" />
+      <max value="1" />
     </element>
-    <element id="Appointment.participant:healthcareService.actor">
+    <element id="Appointment.participant:location.actor">
       <path value="Appointment.participant.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://ancode.app/fhir/StructureDefinition/HealthcareService" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/Location" />
       </type>
     </element>
   </differential>

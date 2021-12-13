@@ -34,6 +34,10 @@
         <strength value="required" />
       </binding>
     </element>
+    <element id="Encounter.basedOn">
+      <path value="Encounter.basedOn" />
+      <min value="1" />
+    </element>
     <element id="Encounter.participant.type">
       <path value="Encounter.participant.type" />
       <min value="1" />
@@ -42,6 +46,11 @@
     <element id="Encounter.participant.individual">
       <path value="Encounter.participant.individual" />
       <min value="1" />
+    </element>
+    <element id="Encounter.appointment">
+      <path value="Encounter.appointment" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Encounter.period">
       <path value="Encounter.period" />

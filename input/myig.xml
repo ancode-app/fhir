@@ -108,6 +108,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/CBOHealthcare"/>
+      </reference>
+      <name value="CBOHealthcare"/>
+      <description value="CBOHealthcare"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/CBOHealthcare"/>
+      </reference>
+      <name value="CBOHealthcare"/>
+      <description value="CBOHealthcare"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ChargeItem"/>
       </reference>
       <name value="ChargeItem"/>
@@ -511,6 +525,13 @@
       </reference>
       <name value="ServiceCategory"/>
       <description value="Service Category"/>
+    </resource>
+     <resource>
+      <reference>
+        <reference value="StructureDefinition/ServiceProvider"/>
+      </reference>
+      <name value="ServiceProvider"/>
+      <description value="Service Provider"/>
     </resource>
     <resource>
       <reference>

@@ -22,7 +22,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="4" />
+      <min value="5" />
     </element>
     <element id="Schedule.extension:type">
       <path value="Schedule.extension" />
@@ -62,6 +62,16 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/ScheduleDynamicSlot" />
       </type>
     </element>
+    <element id="Schedule.extension:serviceProvider">
+      <path value="Schedule.extension" />
+      <sliceName value="serviceProvider" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ServiceProvider" />
+      </type>
+    </element>
     <element id="Schedule.identifier">
       <path value="Schedule.identifier" />
       <type>
@@ -77,7 +87,7 @@
       <path value="Schedule.specialty" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://ancode.app/fhir/ValueSet/BRCBO" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/CBOHealthcare" />
       </binding>
     </element>
     <element id="Schedule.actor">

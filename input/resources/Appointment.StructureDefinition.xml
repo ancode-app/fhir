@@ -43,7 +43,7 @@
       <path value="Appointment.specialty" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://ancode.app/fhir/ValueSet/BRCBO" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/CBOHealthcare" />
       </binding>
     </element>
     <element id="Appointment.appointmentType">

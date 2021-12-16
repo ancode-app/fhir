@@ -14,13 +14,66 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
   <derivation value="constraint" />
   <differential>
-    <element id="Procedure.identifier">
-      <path value="Procedure.identifier" />
+    <element id="Procedure.basedOn">
+      <path value="Procedure.basedOn" />
       <min value="1" />
+      <max value="1" />
     </element>
-    <element id="Procedure.encounter">
-      <path value="Procedure.encounter" />
-      <min value="1" />
+    <element id="Procedure.category">
+      <path value="Procedure.category" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/ServiceCategory" />
+      </binding>
+    </element>
+    <element id="Procedure.performed[x]">
+      <path value="Procedure.performed[x]" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Procedure.reasonCode">
+      <path value="Procedure.reasonCode" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/BRCID10" />
+      </binding>
+    </element>
+    <element id="Procedure.bodySite">
+      <path value="Procedure.bodySite" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Procedure.outcome">
+      <path value="Procedure.outcome" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Procedure.complication">
+      <path value="Procedure.complication" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Procedure.followUp">
+      <path value="Procedure.followUp" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Procedure.focalDevice.action">
+      <path value="Procedure.focalDevice.action" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Procedure.usedCode">
+      <path value="Procedure.usedCode" />
+      <binding>
+        <strength value="required" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

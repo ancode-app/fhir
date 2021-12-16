@@ -17,9 +17,21 @@
       <path value="Location.status" />
       <min value="1" />
     </element>
+    <element id="Location.operationalStatus">
+      <path value="Location.operationalStatus" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
     <element id="Location.name">
       <path value="Location.name" />
       <min value="1" />
+    </element>
+    <element id="Location.type">
+      <path value="Location.type" />
+      <binding>
+        <strength value="required" />
+      </binding>
     </element>
     <element id="Location.telecom">
       <path value="Location.telecom" />
@@ -34,6 +46,12 @@
         <code value="Address" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
+    </element>
+    <element id="Location.physicalType">
+      <path value="Location.physicalType" />
+      <binding>
+        <strength value="required" />
+      </binding>
     </element>
     <element id="Location.managingOrganization">
       <path value="Location.managingOrganization" />

@@ -53,10 +53,6 @@
       <path value="RelatedPerson.gender" />
       <min value="1" />
     </element>
-    <element id="RelatedPerson.birthDate">
-      <path value="RelatedPerson.birthDate" />
-      <min value="1" />
-    </element>
     <element id="RelatedPerson.address">
       <path value="RelatedPerson.address" />
       <type>
@@ -67,10 +63,6 @@
     <element id="RelatedPerson.photo">
       <path value="RelatedPerson.photo" />
       <max value="1" />
-    </element>
-    <element id="RelatedPerson.period">
-      <path value="RelatedPerson.period" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

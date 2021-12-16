@@ -37,10 +37,6 @@
       <path value="Organization.name" />
       <min value="1" />
     </element>
-    <element id="Organization.alias">
-      <path value="Organization.alias" />
-      <min value="1" />
-    </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom" />
       <type>
@@ -50,7 +46,6 @@
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />
-      <min value="1" />
       <type>
         <code value="Address" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />

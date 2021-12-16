@@ -25,9 +25,28 @@
       <path value="PractitionerRole.period.start" />
       <min value="1" />
     </element>
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner" />
+      <min value="1" />
+    </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
       <min value="1" />
+    </element>
+    <element id="PractitionerRole.code">
+      <path value="PractitionerRole.code" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="PractitionerRole.specialty">
+      <path value="PractitionerRole.specialty" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/CBOHealthcare" />
+      </binding>
     </element>
     <element id="PractitionerRole.telecom">
       <path value="PractitionerRole.telecom" />

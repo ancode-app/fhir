@@ -63,6 +63,10 @@
         <valueSet value="https://ancode.app/fhir/ValueSet/BRCID10" />
       </binding>
     </element>
+    <element id="Encounter.location">
+      <path value="Encounter.location" />
+      <min value="1" />
+    </element>
     <element id="Encounter.serviceProvider">
       <path value="Encounter.serviceProvider" />
       <min value="1" />

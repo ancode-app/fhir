@@ -14,6 +14,21 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Coverage" />
   <derivation value="constraint" />
   <differential>
+    <element id="Coverage.type">
+      <path value="Coverage.type" />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Coverage.policyHolder">
+      <path value="Coverage.policyHolder" />
+      <min value="1" />
+    </element>
+    <element id="Coverage.subscriber">
+      <path value="Coverage.subscriber" />
+      <min value="1" />
+    </element>
     <element id="Coverage.subscriberId">
       <path value="Coverage.subscriberId" />
       <min value="1" />
@@ -23,6 +38,28 @@
       <binding>
         <strength value="required" />
       </binding>
+    </element>
+    <element id="Coverage.period">
+      <path value="Coverage.period" />
+      <min value="1" />
+    </element>
+    <element id="Coverage.period.start">
+      <path value="Coverage.period.start" />
+      <min value="1" />
+    </element>
+    <element id="Coverage.payor">
+      <path value="Coverage.payor" />
+      <max value="1" />
+    </element>
+    <element id="Coverage.costToBeneficiary.type">
+      <path value="Coverage.costToBeneficiary.type" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Coverage.subrogation">
+      <path value="Coverage.subrogation" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

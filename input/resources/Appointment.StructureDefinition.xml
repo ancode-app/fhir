@@ -58,6 +58,28 @@
       <path value="Appointment.description" />
       <min value="1" />
     </element>
+    <element id="Appointment.supportingInformation">
+      <path value="Appointment.supportingInformation" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Appointment.supportingInformation:schedule">
+      <path value="Appointment.supportingInformation" />
+      <sliceName value="schedule" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/Schedule" />
+      </type>
+    </element>
     <element id="Appointment.slot">
       <path value="Appointment.slot" />
       <min value="1" />

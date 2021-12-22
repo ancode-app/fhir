@@ -23,7 +23,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="2" />
     </element>
     <element id="ChargeItemDefinition.extension:insuranceProvider">
       <path value="ChargeItemDefinition.extension" />
@@ -33,6 +33,16 @@
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/InsuranceProvider" />
+      </type>
+    </element>
+    <element id="ChargeItemDefinition.extension:serviceProvider">
+      <path value="ChargeItemDefinition.extension" />
+      <sliceName value="serviceProvider" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ServiceProvider" />
       </type>
     </element>
     <element id="ChargeItemDefinition.date">
@@ -58,16 +68,8 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-        <targetProfile value="htts://ancode.app/fhir/StructureDefinition/HealthcareService" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/HealthcareService" />
       </type>
-    </element>
-    <element id="ChargeItemDefinition.propertyGroup.priceComponent">
-      <path value="ChargeItemDefinition.propertyGroup.priceComponent" />
-      <min value="1" />
-    </element>
-    <element id="ChargeItemDefinition.propertyGroup.priceComponent.code">
-      <path value="ChargeItemDefinition.propertyGroup.priceComponent.code" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

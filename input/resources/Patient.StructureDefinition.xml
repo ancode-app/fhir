@@ -100,6 +100,12 @@
       <path value="Patient.birthDate" />
       <min value="1" />
     </element>
+    <element id="Patient.deceased[x]">
+      <path value="Patient.deceased[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
     <element id="Patient.address">
       <path value="Patient.address" />
       <type>
@@ -107,13 +113,15 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
     </element>
+    <element id="Patient.multipleBirth[x]">
+      <path value="Patient.multipleBirth[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
     <element id="Patient.photo">
       <path value="Patient.photo" />
       <max value="1" />
-    </element>
-    <element id="Patient.contact">
-      <path value="Patient.contact" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

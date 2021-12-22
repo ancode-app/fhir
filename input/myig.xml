@@ -64,6 +64,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/BillingTable"/>
+      </reference>
+      <name value="BillingTable"/>
+      <description value="Billing Table"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BillingTable"/>
+      </reference>
+      <name value="BillingTable"/>
+      <description value="Billing Table"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BillingTable"/>
+      </reference>
+      <name value="BillingTable"/>
+      <description value="Billing Table"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/BrazilianState"/>
       </reference>
       <name value="BrazilianState"/>

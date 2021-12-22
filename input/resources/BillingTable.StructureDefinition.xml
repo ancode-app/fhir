@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ServiceProvider" />
-  <url value="https://ancode.app/fhir/StructureDefinition/ServiceProvider" />
-  <version value="1.0" />
-  <name value="ServiceProvider" />
+  <url value="https://ancode.app/fhir/StructureDefinition/BillingTable" />
+  <name value="BillingTable" />
   <status value="draft" />
-  <date value="2021-12-15" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Schedule" />
-  </context>
-  <context>
-    <type value="element" />
-    <expression value="ChargeItemDefinition" />
+    <expression value="Organization" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -23,15 +16,19 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://ancode.app/fhir/StructureDefinition/ServiceProvider" />
+      <fixedUri value="https://ancode.app/fhir/StructureDefinition/BillingTable" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <min value="1" />
       <type>
-        <code value="Reference" />
-        <targetProfile value="https://ancode.app/fhir/StructureDefinition/Organization" />
+        <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="BillingTable" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/BillingTable" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

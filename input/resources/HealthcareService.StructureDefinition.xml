@@ -48,10 +48,20 @@
     </element>
     <element id="HealthcareService.category">
       <path value="HealthcareService.category" />
+      <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="https://ancode.app/fhir/ValueSet/ServiceCategory" />
+      </binding>
+    </element>
+    <element id="HealthcareService.type">
+      <path value="HealthcareService.type" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/ServiceType" />
       </binding>
     </element>
     <element id="HealthcareService.telecom">

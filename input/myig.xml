@@ -577,6 +577,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/ServiceType"/>
+      </reference>
+      <name value="ServiceType"/>
+      <description value="Service Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ServiceType"/>
+      </reference>
+      <name value="ServiceType"/>
+      <description value="Service Type"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Slot"/>
       </reference>
       <name value="Slot"/>

@@ -393,6 +393,13 @@
       <name value="ObservationDefinition"/>
       <description value="Observation Definition"/>
     </resource>
+     <resource>
+      <reference>
+        <reference value="StructureDefinition/Occupation"/>
+      </reference>
+      <name value="Occupation"/>
+      <description value="Occupation"/>
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Organization"/>

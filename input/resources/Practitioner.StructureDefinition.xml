@@ -57,8 +57,6 @@
     </element>
     <element id="Practitioner.photo">
       <path value="Practitioner.photo" />
-      <short value="Foto" />
-      <definition value="Foto do profissional" />
       <max value="1" />
     </element>
     <element id="Practitioner.qualification.code">

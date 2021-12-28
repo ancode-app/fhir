@@ -99,6 +99,21 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/BRCBHPMTUSS"/>
+      </reference>
+      <name value="BRCBHPMTUSS"/>
+      <description value="BR CBHPM TUSS"/>
+      <exampleCanonical value="https://br-core.gointerop.com/fhir/CodeSystem/BRCBHPMTUSS"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRCBHPMTUSS"/>
+      </reference>
+      <name value="BRCBHPMTUSS"/>
+      <description value="BR CBHPM TUSS"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/BRCBO"/>
       </reference>
       <name value="BRCBO"/>
@@ -127,6 +142,21 @@
       <name value="BRCID10"/>
       <description value="BR CID10"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/BRTabelaSUS"/>
+      </reference>
+      <name value="BRTabelaSUS"/>
+      <description value="BR Tabela SUS"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTabelaSUS"/>                               
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRTabelaSUS"/>
+      </reference>
+      <name value="BRTabelaSUS"/>
+      <description value="BR Tabela SUS"/>
+    </resource>    
     <resource>
       <reference>
         <reference value="CodeSystem/CBOHealthcare"/>

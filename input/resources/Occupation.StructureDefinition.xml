@@ -31,7 +31,7 @@
       <binding>
         <strength value="required" />
         <description value="Occupation" />
-        <valueSet value="https://ancode.app/fhir/ValueSet/Race" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/BRCBO" />
       </binding>
     </element>
     <element id="Extension.value[x].coding">

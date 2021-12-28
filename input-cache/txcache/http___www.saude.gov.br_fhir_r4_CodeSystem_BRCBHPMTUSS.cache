@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS",
+      "version" : "*"
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------

@@ -40,10 +40,6 @@
       <path value="Person.gender" />
       <min value="1" />
     </element>
-    <element id="Person.birthDate">
-      <path value="Person.birthDate" />
-      <min value="1" />
-    </element>
     <element id="Person.address">
       <path value="Person.address" />
       <type>

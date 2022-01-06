@@ -82,7 +82,6 @@
     </element>
     <element id="Appointment.slot">
       <path value="Appointment.slot" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Appointment.created">

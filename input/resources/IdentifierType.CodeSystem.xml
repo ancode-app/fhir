@@ -44,12 +44,12 @@
     <display value="Número de Registro do Trabalhador" />
   </concept>
   <concept>
-    <code value="PASSAPORT" />
+    <code value="PASSPORT" />
     <display value="Passaporte" />
   </concept>
   <concept>
-    <code value="BIOMETRIA/FACIAL" />
-    <display value="Biometria Facial" />
+    <code value="FACERECOGNITION" />
+    <display value="Face Recognition" />
   </concept>
   <concept>
     <code value="AUTH" />
@@ -179,4 +179,20 @@
     <code value="CNES" />
     <display value="Código Nacional Estabelecimento Saúde" />
   </concept>
+  <concept>
+    <code value="ANS" />
+    <display value="Código na Agência Nacional de Saúde"/>
+  </concept>
+  <concept>
+    <code value="HealthProvider" />
+    <display value="Health Provider Code"/>
+  </concept>
+  <concept>
+    <code value="LEGACY" />
+    <display value="Legacy System ID" />
+  </concept>
+  <concept>
+    <code value="OTHER" />
+    <display value="Other Identifier"/>
+  </concept>  
 </CodeSystem>

@@ -285,6 +285,34 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/EncounterCode"/>
+      </reference>
+      <name value="EncounterCode"/>
+      <description value="Encounter Code"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/EncounterCode"/>
+      </reference>
+      <name value="EncounterCode"/>
+      <description value="Encounter Code"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/EncounterPriority"/>
+      </reference>
+      <name value="EncounterPriority"/>
+      <description value="Encounter Priority"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/EncounterPriority"/>
+      </reference>
+      <name value="EncounterPriority"/>
+      <description value="Encounter Priority"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/EncounterWay"/>
       </reference>
       <name value="EncounterWay"/>
@@ -401,6 +429,20 @@
       </reference>                                                                                
       <name value="MedicationStatement"/>
       <description value="Medication Statement"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Metaphone"/>
+      </reference>
+      <name value="Metaphone"/>
+      <description value="Metaphone"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/MotherName"/>
+      </reference>
+      <name value="MotherName"/>
+      <description value="MotherName"/>
     </resource>
     <resource>
       <reference>

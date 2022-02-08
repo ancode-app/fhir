@@ -85,13 +85,6 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/MotherName" />
       </type>
     </element>
-    <element id="Patient.extension:motherName.value[x]">
-      <path value="Patient.extension.value[x]" />
-      <min value="1" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <min value="1" />

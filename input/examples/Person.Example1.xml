@@ -11,6 +11,7 @@
                 <code value="CPF"/>
             </coding>
         </type>        
+        <system value="https://ancode.app/fhir/CodeSystem/IdentifierType/CPF"/>
         <value value="444444444"/>
     </identifier>
     <name>

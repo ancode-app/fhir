@@ -47,14 +47,6 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
     </element>
-    <element id="Practitioner.gender">
-      <path value="Practitioner.gender" />
-      <min value="1" />
-    </element>
-    <element id="Practitioner.birthDate">
-      <path value="Practitioner.birthDate" />
-      <min value="1" />
-    </element>
     <element id="Practitioner.photo">
       <path value="Practitioner.photo" />
       <max value="1" />

@@ -123,4 +123,8 @@
     <code value="28" />
     <display value="MEDICINA NUCLEAR" />
   </concept>
+  <concept>
+    <code value="99" />
+    <display value="NÃO DEFINIDO" />
+  </concept>
 </CodeSystem>

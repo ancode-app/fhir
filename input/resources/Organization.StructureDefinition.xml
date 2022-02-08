@@ -13,6 +13,14 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
   <derivation value="constraint" />
   <differential>
+    <element id="Organization">
+      <path value="Organization" />
+      <constraint>
+        <key value="org-5" />
+        <severity value="error" />
+        <human value="When type is HealthcareProvider, Location is required" />
+      </constraint>
+    </element>
     <element id="Organization.extension">
       <path value="Organization.extension" />
       <slicing>
@@ -41,6 +49,12 @@
         <code value="Identifier" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
       </type>
+      <constraint>
+        <key value="org-4" />
+        <severity value="error" />
+        <human value="CNPJ validation" />
+        <source value="https://ancode.app/fhir/StructureDefinition/Organization" />
+      </constraint>
     </element>
     <element id="Organization.active">
       <path value="Organization.active" />

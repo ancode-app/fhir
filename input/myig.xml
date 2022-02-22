@@ -64,6 +64,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/AppointmentType"/>
+      </reference>
+      <name value="AppointmentType"/>
+      <description value="Appointment Type"/>
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="ValueSet/AppointmentType"/>
+      </reference>
+      <name value="AppointmentType"/>
+      <description value="Appointment Type"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/BillingTable"/>
       </reference>
       <name value="BillingTable"/>
@@ -710,7 +724,6 @@
       <name value="StartTime"/>
       <description value="Start Time"/>
     </resource>
-
     <resource>
       <reference>
         <reference value="StructureDefinition/StreetName"/>

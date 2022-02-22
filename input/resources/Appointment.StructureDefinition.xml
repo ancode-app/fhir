@@ -49,6 +49,10 @@
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
       <min value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/AppointmentType" />
+      </binding>
     </element>
     <element id="Appointment.priority">
       <path value="Appointment.priority" />

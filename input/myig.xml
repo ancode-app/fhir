@@ -240,6 +240,13 @@
       </reference>
       <name value="Coverage"/>
       <description value="Coverage"/>
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/DaysOfWeek"/>
+      </reference>
+      <name value="DaysOfWeek"/>
+      <description value="Days Of Week"/>
     </resource>
     <resource>
       <reference>
@@ -331,6 +338,13 @@
       </reference>
       <name value="EncounterWay"/>
       <description value="EncounterWay"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/EndTime"/>
+      </reference>
+      <name value="EndTime"/>
+      <description value="End Time"/>
     </resource>
     <resource>
       <reference>
@@ -530,6 +544,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/Qualification"/>
+      </reference>
+      <name value="Qualification"/>
+      <description value="Qualification"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/Qualification"/>
+      </reference>
+      <name value="Qualification"/>
+      <description value="Qualification"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Questionnaire"/>
       </reference>
       <name value="Questionnaire"/>
@@ -675,6 +703,14 @@
       <name value="Specimen"/>
       <description value="Specimen"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/StartTime"/>
+      </reference>
+      <name value="StartTime"/>
+      <description value="Start Time"/>
+    </resource>
+
     <resource>
       <reference>
         <reference value="StructureDefinition/StreetName"/>

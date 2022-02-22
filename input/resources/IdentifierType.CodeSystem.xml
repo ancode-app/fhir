@@ -36,8 +36,8 @@
     <display value="Instituto Nacional do Seguro Social" />
   </concept>
   <concept>
-    <code value="PIS/PASEP" />
-    <display value="Programa de Integração Social / Programa de Formação do Patrimônio do Servidor Público" />
+    <code value="PISPASEP" />
+    <display value="Programa de Integração Social/Programa de Formação do Patrimônio do Servidor Público" />
   </concept>
   <concept>
     <code value="NIT" />

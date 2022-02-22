@@ -26,6 +26,12 @@
         <human value="CPF validation" />
         <source value="https://ancode.app/fhir/StructureDefinition/Person" />
       </constraint>
+      <constraint>
+        <key value="ide-1" />
+        <severity value="error" />
+        <human value="The Resource must have at least one Oficial Identifier" />
+        <source value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </constraint>
     </element>
     <element id="Person.name">
       <path value="Person.name" />

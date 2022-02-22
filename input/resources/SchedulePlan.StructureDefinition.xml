@@ -29,27 +29,6 @@
       </slicing>
       <min value="3" />
     </element>
-    <element id="Extension.extension:daysOfWeek">
-      <path value="Extension.extension" />
-      <sliceName value="daysOfWeek" />
-      <min value="1" />
-      <binding>
-        <strength value="required" />
-        <description value="dayOfWeek" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/days-of-week" />
-      </binding>
-    </element>
-    <element id="Extension.extension:daysOfWeek.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="daysOfWeek" />
-    </element>
-    <element id="Extension.extension:daysOfWeek.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <min value="1" />
-      <type>
-        <code value="code" />
-      </type>
-    </element>
     <element id="Extension.extension:insuranceProvider">
       <path value="Extension.extension" />
       <sliceName value="insuranceProvider" />
@@ -64,11 +43,40 @@
       <path value="Extension.extension.url" />
       <fixedUri value="insuranceProvider" />
     </element>
+    <element id="Extension.extension:daysOfWeek">
+      <path value="Extension.extension" />
+      <sliceName value="daysOfWeek" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/DaysOfWeek" />
+      </type>
+    </element>
+    <element id="Extension.extension:daysOfWeek.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="daysOfWeek" />
+    </element>
+    <element id="Extension.extension:daysOfWeek.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="daysOfWeek" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/days-of-week" />
+      </binding>
+    </element>
     <element id="Extension.extension:startTime">
       <path value="Extension.extension" />
       <sliceName value="startTime" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/StartTime" />
+      </type>
     </element>
     <element id="Extension.extension:startTime.url">
       <path value="Extension.extension.url" />
@@ -86,6 +94,10 @@
       <sliceName value="endTime" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/EndTime" />
+      </type>
     </element>
     <element id="Extension.extension:endTime.url">
       <path value="Extension.extension.url" />

@@ -19,6 +19,7 @@
         <key value="org-5" />
         <severity value="error" />
         <human value="When type is HealthcareProvider, Location is required" />
+        <source value="https://ancode.app/fhir/StructureDefinition/Organization" />
       </constraint>
     </element>
     <element id="Organization.extension">
@@ -54,6 +55,12 @@
         <severity value="error" />
         <human value="CNPJ validation" />
         <source value="https://ancode.app/fhir/StructureDefinition/Organization" />
+      </constraint>
+      <constraint>
+        <key value="ide-1" />
+        <severity value="error" />
+        <human value="The Resource must have at least one Oficial Identifier" />
+        <source value="https://ancode.app/fhir/StructureDefinition/Identifier" />
       </constraint>
     </element>
     <element id="Organization.active">

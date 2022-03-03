@@ -13,27 +13,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
   <derivation value="constraint" />
   <differential>
-    <element id="HealthcareService.extension">
-      <path value="HealthcareService.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="HealthcareService.extension:insuranceProvider">
-      <path value="HealthcareService.extension" />
-      <sliceName value="insuranceProvider" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/InsuranceProvider" />
-      </type>
-    </element>
     <element id="HealthcareService.identifier">
       <path value="HealthcareService.identifier" />
       <min value="1" />

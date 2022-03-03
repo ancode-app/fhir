@@ -411,6 +411,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/IdentifierTypeOrganization"/>
+      </reference>
+      <name value="IdentifierTypeOrganization"/>
+      <description value="Identifier Type Organization"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/IdentifierTypePerson"/>
+      </reference>
+      <name value="IdentifierTypePerson"/>
+      <description value="Identifier Type Person"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/IdentifierTypePractitioner"/>
+      </reference>
+      <name value="IdentifierTypePractitioner"/>
+      <description value="Identifier Type Practitioner"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Immunization"/>
       </reference>                                                                                
       <name value="Immunization"/>

@@ -118,6 +118,13 @@
       <name value="BrazilianState"/>
       <description value="Brazilian State"/>
     </resource>
+     <resource>
+      <reference>
+        <reference value="ValueSet/BrazilianMaritalStatus"/>
+      </reference>
+      <name value="BrazilianMaritalStatus"/>
+      <description value="Brazilian Marital Status"/>
+    </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/BRCBO"/>

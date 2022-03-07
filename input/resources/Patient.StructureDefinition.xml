@@ -139,6 +139,13 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/Address" />
       </type>
     </element>
+    <element id="Patient.maritalStatus">
+      <path value="Patient.maritalStatus" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/BrazilianMaritalStatus" />
+      </binding>
+    </element>
     <element id="Patient.multipleBirth[x]">
       <path value="Patient.multipleBirth[x]" />
       <type>

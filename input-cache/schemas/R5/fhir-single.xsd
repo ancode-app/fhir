@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Mar 3, 2022 23:02+0000 for FHIR v4.6.0 
+  Generated on Mon, Mar 7, 2022 06:09+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -22443,12 +22443,12 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
   </xs:complexType>
   <xs:element name="Endpoint" type="Endpoint">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information.</xs:documentation>
+      <xs:documentation xml:lang="en">The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b, a REST endpoint for another FHIR server, or a s/Mime email address. This may include any security context information.</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="Endpoint">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b or a REST endpoint for another FHIR server. This may include any security context information.</xs:documentation>
+      <xs:documentation xml:lang="en">The technical details of an endpoint that can be used for electronic services, such as for web services providing XDS.b, a REST endpoint for another FHIR server, or a s/Mime email address. This may include any security context information.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -23063,6 +23063,11 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">The identifier that is used to identify this version of the summary when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the summary author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A natural language name identifying the evidence. This name should be usable as an identifier for the module by machine processing applications such as code generation.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="title" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A short, descriptive, user-friendly title for the summary.</xs:documentation>
@@ -23078,6 +23083,11 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           <xs:element name="status" minOccurs="1" maxOccurs="1" type="PublicationStatus">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of this summary. Enables tracking the life-cycle of the content.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="experimental" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A Boolean value to indicate that this resource is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="date" minOccurs="0" maxOccurs="1" type="dateTime">
@@ -23903,9 +23913,24 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">The status of this evidence variable. Enables tracking the life-cycle of the content.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="experimental" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A Boolean value to indicate that this resource is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="date" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
               <xs:documentation xml:lang="en">The date  (and optionally time) when the evidence variable was published. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the evidence variable changes.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The name of the organization or individual that published the evidence variable.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="contact" minOccurs="0" maxOccurs="unbounded" type="ContactDetail">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Contact details to assist a user in finding and communicating with the publisher.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
@@ -23923,14 +23948,24 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate evidence variable instances.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="markdown">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The name of the organization or individual that published the evidence variable.</xs:documentation>
+              <xs:documentation xml:lang="en">A copyright statement relating to the resource and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="contact" minOccurs="0" maxOccurs="unbounded" type="ContactDetail">
+          <xs:element name="approvalDate" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Contact details to assist a user in finding and communicating with the publisher.</xs:documentation>
+              <xs:documentation xml:lang="en">The date on which the resource content was approved by the publisher. Approval happens once when the content is officially approved for usage.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="lastReviewDate" minOccurs="0" maxOccurs="1" type="dateTime">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The date on which the resource content was last reviewed. Review happens periodically after approval but does not change the original approval date.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="effectivePeriod" minOccurs="0" maxOccurs="1" type="Period">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The period during which the resource content was or is planned to be in active use.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="ContactDetail">
@@ -23963,45 +23998,19 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">True if the actual variable measured, false if a conceptual representation of the intended variable.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="characteristicCombination" type="EvidenceVariable.CharacteristicCombination" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Used to specify how two or more characteristics are combined.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
           <xs:element name="characteristic" type="EvidenceVariable.Characteristic" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A characteristic that defines the members of the evidence element. Multiple characteristics are applied with &quot;and&quot; semantics.</xs:documentation>
+              <xs:documentation xml:lang="en">A defining factor of the EvidenceVariable. Multiple characteristics are applied with &quot;and&quot; semantics.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="handling" minOccurs="0" maxOccurs="1" type="EvidenceVariableHandling">
             <xs:annotation>
-              <xs:documentation xml:lang="en">continuous | dichotomous | ordinal | polychotomous.</xs:documentation>
+              <xs:documentation xml:lang="en">The method of handling in statistical analysis.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="category" type="EvidenceVariable.Category" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">A grouping for ordinal or polychotomous variables.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="EvidenceVariable.CharacteristicCombination">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">The EvidenceVariable resource describes an element that knowledge (Evidence) is about.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="code" minOccurs="1" maxOccurs="1" type="CharacteristicCombination">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Used to specify if two or more characteristics are combined with OR or AND.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="threshold" minOccurs="0" maxOccurs="1" type="positiveInt">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Provides the value of &quot;n&quot; when &quot;at-least&quot; or &quot;at-most&quot; codes are used.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -24015,24 +24024,49 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
+          <xs:element name="linkId" minOccurs="0" maxOccurs="1" type="id">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Label used for when a characteristic refers to another characteristic.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A short, natural language description of the characteristic that could be used to communicate the criteria to an end-user.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="note" minOccurs="0" maxOccurs="unbounded" type="Annotation">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Used to expressing the type of characteristic.</xs:documentation>
+              <xs:documentation xml:lang="en">A human-readable string to clarify or explain concepts about the characteristic.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="1" maxOccurs="1" >
+          <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">Define members of the evidence element using Codes (such as condition, medication, or observation), Expressions ( using an expression language such as FHIRPath or CQL) or DataRequirements (such as Diabetes diagnosis onset in the last year).</xs:documentation>
+              <xs:documentation xml:lang="en">Defines the characteristic using a single DataType element.</xs:documentation>
             </xs:annotation>
             <xs:element name="definitionReference" type="Reference"/>
             <xs:element name="definitionCanonical" type="canonical"/>
             <xs:element name="definitionCodeableConcept" type="CodeableConcept"/>
             <xs:element name="definitionExpression" type="Expression"/>
+            <xs:element name="definitionId" type="id"/>
+          </xs:choice>
+          <xs:choice minOccurs="0" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Used to express the type of characteristic.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="typeCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="typeReference" type="Reference"/>
+            <xs:element name="typeId" type="id"/>
+          </xs:choice>
+          <xs:choice minOccurs="0" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Defines the characteristic when paired with characteristic.type[x].</xs:documentation>
+            </xs:annotation>
+            <xs:element name="valueCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="valueBoolean" type="boolean"/>
+            <xs:element name="valueQuantity" type="Quantity"/>
+            <xs:element name="valueRange" type="Range"/>
+            <xs:element name="valueReference" type="Reference"/>
+            <xs:element name="valueId" type="id"/>
           </xs:choice>
           <xs:element name="method" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
@@ -24049,6 +24083,11 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">When true, members with this characteristic are excluded from the element.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="offset" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Defines the reference point for comparison when characteristic.valueQuantity is not compared to zero.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="timeFromEvent" type="EvidenceVariable.TimeFromEvent" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Observation time from study specified event.</xs:documentation>
@@ -24057,6 +24096,11 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           <xs:element name="groupMeasure" minOccurs="0" maxOccurs="1" type="GroupMeasure">
             <xs:annotation>
               <xs:documentation xml:lang="en">Value or set of values that define the grouping.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="combination" type="EvidenceVariable.Combination" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Used to specify how two or more characteristics are combined.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -24075,11 +24119,15 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">Human readable description.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="event" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
               <xs:documentation xml:lang="en">The event used as a base point (reference point) in time.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
+            </xs:annotation>
+            <xs:element name="eventCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="eventReference" type="Reference"/>
+            <xs:element name="eventDateTime" type="dateTime"/>
+            <xs:element name="eventId" type="id"/>
+          </xs:choice>
           <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="Quantity">
             <xs:annotation>
               <xs:documentation xml:lang="en">Used to express the observation at a defined amount of time after the study start.</xs:documentation>
@@ -24092,7 +24140,33 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           </xs:element>
           <xs:element name="note" minOccurs="0" maxOccurs="unbounded" type="Annotation">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A human-readable string to clarify or explain concepts about the resource.</xs:documentation>
+              <xs:documentation xml:lang="en">A human-readable string to clarify or explain concepts about the timeFromEvent.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EvidenceVariable.Combination">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The EvidenceVariable resource describes an element that knowledge (Evidence) is about.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="code" minOccurs="1" maxOccurs="1" type="CharacteristicCombination">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Used to specify if two or more characteristics are combined with OR or AND.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="threshold" minOccurs="0" maxOccurs="1" type="positiveInt">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Provides the value of &quot;n&quot; when &quot;at-least&quot; or &quot;at-most&quot; codes are used.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="characteristic" type="EvidenceVariable.Characteristic" minOccurs="1" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A defining factor of the characteristic.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -27099,7 +27173,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           </xs:element>
           <xs:element name="allDay" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Is this always available? (hence times are irrelevant) e.g. 24 hour service.</xs:documentation>
+              <xs:documentation xml:lang="en">Is this always available? (hence times are irrelevant) i.e. 24 hour service.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="availableStartTime" minOccurs="0" maxOccurs="1" type="time">
@@ -31976,7 +32050,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           </xs:element>
           <xs:element name="allDay" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The Location is open all day.</xs:documentation>
+              <xs:documentation xml:lang="en">Is this always available? (hence times are irrelevant) i.e. 24 hour service.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="openingTime" minOccurs="0" maxOccurs="1" type="time">
@@ -37035,7 +37109,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
           </xs:element>
           <xs:element name="author" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The logical author of the message - the person or device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions.</xs:documentation>
+              <xs:documentation xml:lang="en">The logical author of the message - the personor device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="source" type="MessageHeader.Source" minOccurs="1" maxOccurs="1">
@@ -37089,7 +37163,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
               <xs:documentation xml:lang="en">Identifies the target end system in situations where the initial message transmission is to an intermediary system.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="endpoint" minOccurs="1" maxOccurs="1" type="url">
+          <xs:element name="endpoint" minOccurs="0" maxOccurs="1" type="url">
             <xs:annotation>
               <xs:documentation xml:lang="en">Indicates where the message should be routed to.</xs:documentation>
            </xs:annotation>
@@ -37130,7 +37204,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
               <xs:documentation xml:lang="en">An e-mail, phone, website or other contact point to use to resolve issues with message communications.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="endpoint" minOccurs="1" maxOccurs="1" type="url">
+          <xs:element name="endpoint" minOccurs="0" maxOccurs="1" type="url">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies the routing target to send acknowledgements to.</xs:documentation>
            </xs:annotation>
@@ -37146,7 +37220,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="identifier" minOccurs="1" maxOccurs="1" type="id">
+          <xs:element name="identifier" minOccurs="1" maxOccurs="1" type="Identifier">
             <xs:annotation>
               <xs:documentation xml:lang="en">The MessageHeader.id of the message to which this message is a response.</xs:documentation>
            </xs:annotation>
@@ -42406,7 +42480,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="allDay" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Indicates always available, hence times are irrelevant.  (e.g. 24-hour service).</xs:documentation>
+              <xs:documentation xml:lang="en">Indicates always available, hence times are irrelevant.  (i.e. 24-hour service).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="availableStartTime" minOccurs="0" maxOccurs="1" type="time">

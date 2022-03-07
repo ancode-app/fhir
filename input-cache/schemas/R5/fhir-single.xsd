@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Mon, Feb 28, 2022 22:25+0000 for FHIR v4.6.0 
+  Generated on Thu, Mar 3, 2022 23:02+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -1613,6 +1613,15 @@
           <xs:documentation xml:lang="zh">结构映射</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="SubscriptionTopic">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
+          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
+          <xs:documentation xml:lang="fr">Souscription Sujet</xs:documentation>
+          <xs:documentation xml:lang="es">Tema de Suscripción</xs:documentation>
+          <xs:documentation xml:lang="zh">话题</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="TerminologyCapabilities">
         <xs:annotation>
           <xs:documentation xml:lang="en">TerminologyCapabilities</xs:documentation>
@@ -2442,15 +2451,6 @@
         <xs:annotation>
           <xs:documentation xml:lang="en">SubscriptionStatus</xs:documentation>
           <xs:documentation xml:lang="en">SubscriptionStatus</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SubscriptionTopic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
-          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
-          <xs:documentation xml:lang="fr">Souscription Sujet</xs:documentation>
-          <xs:documentation xml:lang="es">Tema de Suscripción</xs:documentation>
-          <xs:documentation xml:lang="zh">话题</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Substance">
@@ -33248,6 +33248,15 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           <xs:documentation xml:lang="zh">结构映射</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="SubscriptionTopic">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
+          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
+          <xs:documentation xml:lang="fr">Souscription Sujet</xs:documentation>
+          <xs:documentation xml:lang="es">Tema de Suscripción</xs:documentation>
+          <xs:documentation xml:lang="zh">话题</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="TerminologyCapabilities">
         <xs:annotation>
           <xs:documentation xml:lang="en">TerminologyCapabilities</xs:documentation>
@@ -34077,15 +34086,6 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
         <xs:annotation>
           <xs:documentation xml:lang="en">SubscriptionStatus</xs:documentation>
           <xs:documentation xml:lang="en">SubscriptionStatus</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SubscriptionTopic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
-          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
-          <xs:documentation xml:lang="fr">Souscription Sujet</xs:documentation>
-          <xs:documentation xml:lang="es">Tema de Suscripción</xs:documentation>
-          <xs:documentation xml:lang="zh">话题</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Substance">
@@ -47220,11 +47220,6 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">How much of the resource content to deliver in the notification payload. The choices are an empty payload, only the resource id, or the full resource content.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="notificationUrlLocation" minOccurs="0" maxOccurs="1" type="SubscriptionUrlLocation">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">If present, where to place URLs of resources in notifications.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
           <xs:element name="maxCount" minOccurs="0" maxOccurs="1" type="positiveInt">
             <xs:annotation>
               <xs:documentation xml:lang="en">If present, the maximum number of triggering resources that will be included in a notification bundle (e.g., a server will not include more than this number of trigger resources in a single notification).  Note that this is not a strict limit on the number of entries in a bundle, as dependent resources can be included.</xs:documentation>
@@ -47246,14 +47241,14 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">If the element is a reference to another resource, this element contains &quot;Reference&quot;, and the targetProfile element defines what resources can be referenced. The targetProfile may be a reference to the general definition of a resource (e.g. http://hl7.org/fhir/StructureDefinition/Patient).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="searchParamName" minOccurs="1" maxOccurs="1" type="string">
+          <xs:element name="filterParameter" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The filter label (=key) as defined in the `SubscriptionTopic.canfilterBy.searchParamName`  element.</xs:documentation>
+              <xs:documentation xml:lang="en">The filter label (=key) as defined in the `SubscriptionTopic.canfilterBy.filterParameter`  element.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="searchModifier" minOccurs="0" maxOccurs="1" type="code">
+          <xs:element name="modifier" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The operator to apply to the filter value when determining matches (Search modifiers).</xs:documentation>
+              <xs:documentation xml:lang="en">Operator to apply when determining matches (Search Modifiers), from the list of allowed modifiers for this filter in the relevant SubscriptionTopic.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="value" minOccurs="1" maxOccurs="1" type="string">
@@ -47295,41 +47290,6 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:simpleType name="SubscriptionUrlLocationEnum">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="none">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">none</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="full-url">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">full-url</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="request-response">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">request-response</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="all">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">all</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="SubscriptionUrlLocation">
-    <xs:annotation>
-      <xs:documentation xml:lang="en"></xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="SubscriptionUrlLocationEnum" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
   <xs:element name="SubscriptionStatus" type="SubscriptionStatus">
     <xs:annotation>
       <xs:documentation xml:lang="en">The SubscriptionStatus resource describes the state of a Subscription during notifications.</xs:documentation>
@@ -47356,11 +47316,6 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           <xs:element name="eventsSinceSubscriptionStart" minOccurs="0" maxOccurs="1" type="integer64">
             <xs:annotation>
               <xs:documentation xml:lang="en">The total number of actual events which have been generated since the Subscription was created (inclusive of this notification) - regardless of how many have been successfully communicated.  This number is NOT incremented for handshake and heartbeat notifications.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="eventsInNotification" minOccurs="0" maxOccurs="1" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The total number of actual events represented within this notification.  For handshake and heartbeat notifications, this will be zero or not present.  For event-notifications, this number may be one or more, depending on server batching.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="notificationEvent" type="SubscriptionStatus.NotificationEvent" minOccurs="0" maxOccurs="unbounded">
@@ -47469,21 +47424,21 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="DomainResource">
+      <xs:extension base="CanonicalResource">
         <xs:sequence>
           <xs:element name="url" minOccurs="1" maxOccurs="1" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An absolute URL that is used to identify this SubscriptionTopic when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this Topic is (or will be) published. The URL SHOULD include the major version of the Topic. For more information see [Technical and Business Versions](resource.html#versions).</xs:documentation>
+              <xs:documentation xml:lang="en">An absolute URI that is used to identify this subscription topic when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which at which an authoritative instance of this subscription topic is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the subscription topic is stored on different servers.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Business identifiers assigned to this SubscriptionTopic by the performer and/or other systems.  These identifiers remain constant as the resource is updated and propagates from server to server.</xs:documentation>
+              <xs:documentation xml:lang="en">Business identifiers assigned to this subscription topic by the performer and/or other systems.  These identifiers remain constant as the resource is updated and propagates from server to server.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The identifier that is used to identify this version of the SubscriptionTopic when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Topic author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions are orderable.</xs:documentation>
+              <xs:documentation xml:lang="en">The identifier that is used to identify this version of the subscription topic when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Topic author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions are orderable.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="title" minOccurs="0" maxOccurs="1" type="string">
@@ -47635,7 +47590,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="resultForCreate" minOccurs="0" maxOccurs="1" type="CriteriaNotExistsBehavior">
             <xs:annotation>
-              <xs:documentation xml:lang="en">What behavior a server will exhibit if the previous state of a resource does NOT exist (e.g., prior to a create).</xs:documentation>
+              <xs:documentation xml:lang="en">For &quot;create&quot; interactions, should the &quot;previous&quot; criteria count as an automatic pass or an automatic fail.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="current" minOccurs="0" maxOccurs="1" type="string">
@@ -47645,7 +47600,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="resultForDelete" minOccurs="0" maxOccurs="1" type="CriteriaNotExistsBehavior">
             <xs:annotation>
-              <xs:documentation xml:lang="en">What behavior a server will exhibit if the current state of a resource does NOT exist (e.g., after a DELETE).</xs:documentation>
+              <xs:documentation xml:lang="en">For &quot;delete&quot; interactions, should the &quot;current&quot; criteria count as an automatic pass or an automatic fail.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="requireBoth" minOccurs="0" maxOccurs="1" type="boolean">
@@ -47700,14 +47655,19 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">URL of the Resource that is the type used in this filter. This is the &quot;focus&quot; of the topic (or one of them if there are more than one). It will be the same, a generality, or a specificity of SubscriptionTopic.resourceTrigger.resource or SubscriptionTopic.eventTrigger.resource when they are present.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="filterParameter" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="filterParameter" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Either the canonical URL to a search parameter (like &quot;http://hl7.org/fhir/SearchParameter/encounter-patient&quot;) or topic-defined parameter (like &quot;hub.event&quot;) which is a label for the filter.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="filterDefinition" minOccurs="0" maxOccurs="1" type="uri">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Either the canonical URL to a search parameter (like &quot;http://hl7.org/fhir/SearchParameter/encounter-patient&quot;) or the officially-defined URI for a shared filter concept (like &quot;http://example.org/concepts/shared-common-event&quot;).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="modifier" minOccurs="0" maxOccurs="unbounded" type="code">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Allowable operators to apply when determining matches (Search Modifiers).</xs:documentation>
+              <xs:documentation xml:lang="en">Allowable operators to apply when determining matches (Search Modifiers).  If the filterParameter is a SearchParameter, this list of modifiers SHALL be a strict subset of the modifiers defined on that SearchParameter.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -52355,6 +52315,15 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           <xs:documentation xml:lang="zh">结构映射</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="SubscriptionTopic">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
+          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
+          <xs:documentation xml:lang="fr">Souscription Sujet</xs:documentation>
+          <xs:documentation xml:lang="es">Tema de Suscripción</xs:documentation>
+          <xs:documentation xml:lang="zh">话题</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="TerminologyCapabilities">
         <xs:annotation>
           <xs:documentation xml:lang="en">TerminologyCapabilities</xs:documentation>
@@ -53184,15 +53153,6 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
         <xs:annotation>
           <xs:documentation xml:lang="en">SubscriptionStatus</xs:documentation>
           <xs:documentation xml:lang="en">SubscriptionStatus</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="SubscriptionTopic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
-          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
-          <xs:documentation xml:lang="fr">Souscription Sujet</xs:documentation>
-          <xs:documentation xml:lang="es">Tema de Suscripción</xs:documentation>
-          <xs:documentation xml:lang="zh">话题</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Substance">

@@ -64,6 +64,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="SearchParameter/AppointmentSupportingInformation"/>
+      </reference>
+      <name value="AppointmentSupportingInformation"/>
+      <description value="Appointment SupportingInformation"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/AppointmentType"/>
       </reference>
       <name value="AppointmentType"/>
@@ -110,21 +117,6 @@
       </reference>
       <name value="BrazilianState"/>
       <description value="Brazilian State"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/BRCBHPMTUSS"/>
-      </reference>
-      <name value="BRCBHPMTUSS"/>
-      <description value="BR CBHPM TUSS"/>
-      <exampleCanonical value="https://br-core.gointerop.com/fhir/CodeSystem/BRCBHPMTUSS"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/BRCBHPMTUSS"/>
-      </reference>
-      <name value="BRCBHPMTUSS"/>
-      <description value="BR CBHPM TUSS"/>
     </resource>
     <resource>
       <reference>
@@ -198,6 +190,13 @@
       </reference>
       <name value="ChargeItemDefinition"/>
       <description value="Charge Item Definition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/ChargeItemDefinitionInstance"/>
+      </reference>
+      <name value="ChargeItemDefinitionInstance"/>
+      <description value="ChargeItemDefinition Instance"/>
     </resource>
     <resource>
       <reference>
@@ -639,6 +638,13 @@
       </reference>
       <name value="Schedule"/>
       <description value="Schedule"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/ScheduleComment"/>
+      </reference>
+      <name value="ScheduleComment"/>
+      <description value="Schedule Comment"/>
     </resource>
     <resource>
       <reference>

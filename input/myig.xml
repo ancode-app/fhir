@@ -261,7 +261,7 @@
       <name value="Coverage"/>
       <description value="Coverage"/>
     </resource>    
-     <resource>
+    <resource>
       <reference>
         <reference value="ValueSet/CoverageTypeMostUsed"/>
       </reference>
@@ -576,6 +576,13 @@
       <name value="PractitionerRole"/>
       <description value="PractitionerRole"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/PractitionerRoleMostUsed"/>
+      </reference>
+      <name value="PractitionerRoleMostUsed"/>
+      <description value="Practitioner Role MostUsed"/>
+    </resource>  
     <resource>
       <reference>
         <reference value="StructureDefinition/Procedure"/>

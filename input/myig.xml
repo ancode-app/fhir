@@ -261,6 +261,13 @@
       <name value="Coverage"/>
       <description value="Coverage"/>
     </resource>    
+     <resource>
+      <reference>
+        <reference value="ValueSet/CoverageTypeMostUsed"/>
+      </reference>
+      <name value="CoverageTypeMostUsed"/>
+      <description value="Coverage Type Most Used"/>
+    </resource>  
     <resource>
       <reference>
         <reference value="StructureDefinition/DaysOfWeek"/>

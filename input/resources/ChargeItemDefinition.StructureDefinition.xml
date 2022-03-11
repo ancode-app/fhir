@@ -23,7 +23,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="2" />
+      <min value="1" />
     </element>
     <element id="ChargeItemDefinition.extension:insuranceProvider">
       <path value="ChargeItemDefinition.extension" />
@@ -38,16 +38,12 @@
     <element id="ChargeItemDefinition.extension:serviceProvider">
       <path value="ChargeItemDefinition.extension" />
       <sliceName value="serviceProvider" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/ServiceProvider" />
       </type>
-    </element>
-    <element id="ChargeItemDefinition.date">
-      <path value="ChargeItemDefinition.date" />
-      <min value="1" />
     </element>
     <element id="ChargeItemDefinition.effectivePeriod">
       <path value="ChargeItemDefinition.effectivePeriod" />
@@ -63,6 +59,8 @@
     </element>
     <element id="ChargeItemDefinition.instance">
       <path value="ChargeItemDefinition.instance" />
+      <min value="1" />
+      <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />

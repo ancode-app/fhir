@@ -19,6 +19,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/CoverageTypeMostUsed" />
       </binding>
     </element>
     <element id="Coverage.policyHolder">
@@ -27,10 +28,6 @@
     </element>
     <element id="Coverage.subscriber">
       <path value="Coverage.subscriber" />
-      <min value="1" />
-    </element>
-    <element id="Coverage.subscriberId">
-      <path value="Coverage.subscriberId" />
       <min value="1" />
     </element>
     <element id="Coverage.relationship">

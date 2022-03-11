@@ -36,7 +36,6 @@
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />
       <min value="1" />
-      <max value="1" />
       <binding>
         <strength value="required" />
       </binding>

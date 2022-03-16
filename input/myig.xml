@@ -585,6 +585,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/PractitionerRoleMostUsed"/>
+      </reference>
+      <name value="PractitionerRoleMostUsed"/>
+      <description value="Practitioner Role Most Used"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/PractitionerRoleMostUsed"/>
       </reference>
       <name value="PractitionerRoleMostUsed"/>

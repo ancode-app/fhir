@@ -38,6 +38,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/PractitionerRoleMostUsed" />
       </binding>
     </element>
     <element id="PractitionerRole.specialty">

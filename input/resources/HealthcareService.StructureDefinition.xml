@@ -17,6 +17,13 @@
       <path value="HealthcareService.identifier" />
       <min value="1" />
     </element>
+    <element id="HealthcareService.identifier.type">
+      <path value="HealthcareService.identifier.type" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/IdentifierTypeCommon" />
+      </binding>
+    </element>
     <element id="HealthcareService.active">
       <path value="HealthcareService.active" />
       <min value="1" />

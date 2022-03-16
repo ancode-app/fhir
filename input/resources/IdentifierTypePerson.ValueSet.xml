@@ -66,6 +66,10 @@
         <display value="Número da Identidade Funcional" />
       </concept>
       <concept>
+        <code value="IDENTIFIER" />
+        <display value="Identifier"/>
+      </concept>
+      <concept>
         <code value="LEGACY" />
         <display value="Legacy System ID" />
       </concept>

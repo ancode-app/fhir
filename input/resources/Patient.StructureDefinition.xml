@@ -99,6 +99,13 @@
         <source value="https://ancode.app/fhir/StructureDefinition/Identifier" />
       </constraint>
     </element>
+    <element id="Patient.identifier.type">
+      <path value="Patient.identifier.type" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/IdentifierTypePerson" />
+      </binding>
+    </element>
     <element id="Patient.active">
       <path value="Patient.active" />
       <min value="1" />

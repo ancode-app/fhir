@@ -424,6 +424,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/IdentifierTypeCommon"/>
+      </reference>
+      <name value="IdentifierTypeCommon"/>
+      <description value="Identifier Type Common"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/IdentifierTypeOrganization"/>
       </reference>
       <name value="IdentifierTypeOrganization"/>

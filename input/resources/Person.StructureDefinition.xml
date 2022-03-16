@@ -33,6 +33,13 @@
         <source value="https://ancode.app/fhir/StructureDefinition/Identifier" />
       </constraint>
     </element>
+    <element id="Person.identifier.type">
+      <path value="Person.identifier.type" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/IdentifierTypePerson" />
+      </binding>
+    </element>
     <element id="Person.name">
       <path value="Person.name" />
       <min value="1" />

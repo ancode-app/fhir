@@ -27,6 +27,13 @@
         <source value="https://ancode.app/fhir/StructureDefinition/Identifier" />
       </constraint>
     </element>
+    <element id="Practitioner.identifier.type">
+      <path value="Practitioner.identifier.type" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/IdentifierTypePractitioner" />
+      </binding>
+    </element>
     <element id="Practitioner.active">
       <path value="Practitioner.active" />
       <min value="1" />

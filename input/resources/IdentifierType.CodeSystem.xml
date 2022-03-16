@@ -136,8 +136,8 @@
     <display value="Código na Agência Nacional de Saúde"/>
   </concept>
   <concept>
-    <code value="HealthProvider" />
-    <display value="Health Provider Code"/>
+    <code value="IDENTIFIER" />
+    <display value="Identifier"/>
   </concept>
   <concept>
     <code value="LEGACY" />

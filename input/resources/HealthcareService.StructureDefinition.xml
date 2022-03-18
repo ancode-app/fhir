@@ -28,10 +28,6 @@
       <path value="HealthcareService.active" />
       <min value="1" />
     </element>
-    <element id="HealthcareService.providedBy">
-      <path value="HealthcareService.providedBy" />
-      <min value="1" />
-    </element>
     <element id="HealthcareService.category">
       <path value="HealthcareService.category" />
       <min value="1" />

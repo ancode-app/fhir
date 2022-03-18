@@ -82,27 +82,13 @@
       </reference>
       <name value="AppointmentType"/>
       <description value="Appointment Type"/>
-    </resource>
+    </resource>    
     <resource>
       <reference>
-        <reference value="CodeSystem/BillingTable"/>
+        <reference value="StructureDefinition/BillingTableProvider"/>
       </reference>
-      <name value="BillingTable"/>
-      <description value="Billing Table"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/BillingTable"/>
-      </reference>
-      <name value="BillingTable"/>
-      <description value="Billing Table"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/BillingTable"/>
-      </reference>
-      <name value="BillingTable"/>
-      <description value="Billing Table"/>
+      <name value="BillingTableProvider"/>
+      <description value="BillingTable Provider"/>
     </resource>
     <resource>
       <reference>
@@ -172,6 +158,20 @@
     </resource>    
     <resource>
       <reference>
+        <reference value="CodeSystem/BRTabelaTUSS22"/>
+      </reference>
+      <name value="BRTabelaTUSS22"/>
+      <description value="BR Tabela TUSS22"/>                          
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRTabelaTUSS22"/>
+      </reference>
+      <name value="BRTabelaTUSS22"/>
+      <description value="BR Tabela TUSS 22"/>
+    </resource>    
+    <resource>
+      <reference>
         <reference value="CodeSystem/CBOHealthcare"/>
       </reference>
       <name value="CBOHealthcare"/>
@@ -211,7 +211,7 @@
       </reference>
       <name value="City"/>
       <description value="City"/>
-    </resource>
+    </resource>    
     <resource>
       <reference>
         <reference value="StructureDefinition/Condition"/>
@@ -806,6 +806,27 @@
       </reference>
       <name value="StreetType"/>
       <description value="Street Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/TerminologyType"/>
+      </reference>
+      <name value="TerminologyType"/>
+      <description value="Terminology Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/TerminologyType"/>
+      </reference>
+      <name value="TerminologyType"/>
+      <description value="Terminology Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/TerminologyType"/>
+      </reference>
+      <name value="TerminologyType"/>
+      <description value="Terminology Type"/>
     </resource>
     <resource>
       <reference>

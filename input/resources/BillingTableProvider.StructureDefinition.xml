@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ServiceProvider" />
-  <url value="https://ancode.app/fhir/StructureDefinition/ServiceProvider" />
+  <id value="BillingTableProvider" />
+  <url value="https://ancode.app/fhir/StructureDefinition/BillingTableProvider" />
   <version value="1.0" />
-  <name value="ServiceProvider" />
+  <name value="BillingTableProvider" />
   <status value="draft" />
-  <date value="2021-12-15" />
+  <date value="2022-03-17" />
   <publisher value="Ancode" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Schedule" />
+    <expression value="Organization" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -20,7 +20,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://ancode.app/fhir/StructureDefinition/ServiceProvider" />
+      <fixedUri value="https://ancode.app/fhir/StructureDefinition/BillingTableProvider" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

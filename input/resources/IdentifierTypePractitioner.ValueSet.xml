@@ -42,7 +42,7 @@
         <display value="Número de Registro do Trabalhador" />
       </concept>
       <concept>
-        <code value="PASSPORT" />
+        <code value="PPN" />
         <display value="Passaporte" />
       </concept>
       <concept>

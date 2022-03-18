@@ -33,14 +33,24 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Organization.extension:billingTable">
+    <element id="Organization.extension:terminologyType">
       <path value="Organization.extension" />
-      <sliceName value="billingTable" />
+      <sliceName value="terminologyType" />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/BillingTable" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/TerminologyType" />
+      </type>
+    </element>
+    <element id="Organization.extension:billingTableProvider">
+      <path value="Organization.extension" />
+      <sliceName value="billingTableProvider" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/BillingTableProvider" />
       </type>
     </element>
     <element id="Organization.identifier">

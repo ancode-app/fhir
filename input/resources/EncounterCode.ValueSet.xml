@@ -1,20 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="EncounterCode"/>
-  <language value="pt-BR"/>  
-  <url value="https://ancode.app/fhir/ValueSet/EncounterCode"/>
-  <version value="1.0"/>
-  <name value="EncounterCode"/>
-  <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2022-01-06"/>
-  <publisher value="Ancode"/>
-  <description value="Encounter Code"/>
-  <immutable value="false"/>
+  <id value="EncounterCode" />
+  <url value="https://ancode.app/fhir/ValueSet/EncounterCode" />
+  <version value="1.0" />
+  <name value="EncounterCode" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2022-01-06" />
+  <publisher value="Ancode" />
+  <description value="Encounter Code" />
+  <immutable value="false" />
   <compose>
     <include>
-      <system value="https://ancode.app/fhir/CodeSystem/EncounterCode"/>
-      <version value="*"/>
+      <system value="https://ancode.app/fhir/CodeSystem/EncounterCode" />
+      <version value="*" />
     </include>
   </compose>
 </ValueSet>

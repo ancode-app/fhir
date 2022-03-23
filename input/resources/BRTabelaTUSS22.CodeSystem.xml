@@ -1,21 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="BRTabelaTUSS22"/>
-	<url value="https://ancode.app/fhir/CodeSystem/BRTabelaTUSS22"/>
-	<version value="0.1"/>
-	<name value="Tuss22"/>
-	<status value="draft"/>
-	<experimental value="false"/>
-	<publisher value="Ancode"/>
-	<contact>
-		<telecom>
-			<system value="url"/>
-			<value value="https://ancode.app"/>
-		</telecom>
-	</contact>
-	<description value="Tabela 22 - Terminologia de procedimentos e eventos em saúde"/>
-	<caseSensitive value="true"/>
-	<content value="complete"/>
+	<id value="BRTabelaTUSS22" />
+	<language value="pt-BR" />
+	<url value="https://ancode.app/fhir/CodeSystem/BRTabelaTUSS22" />
+	<version value="1" />
+	<name value="BRTabelaTUSS22" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-03-23" />
+	<publisher value="Ancode" />
+	<description value="BR Tabela TUSS 22" />
+	<content value="complete" />
 	<concept>
 		<code value="10101012"/>
 		<display value="Consulta em consultório (no horário normal ou preestabelecido)"/>
@@ -23739,5 +23734,9 @@
 	<concept>
 		<code value="40314650"/>
 		<display value="Mycobacterium leprae (bacilo de hansen), pesquisa PCR em tempo real"/>
+	</concept>
+	<concept>
+		<code value="40325040"/>
+		<display value="Mycobacterium leprae (bacilo de hansen), IgM, anticorpos (teste rápido)"/>
 	</concept>
 </CodeSystem>

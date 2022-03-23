@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Fri, Mar 18, 2022 16:13+0000 for FHIR v4.6.0 
+  Generated on Wed, Mar 23, 2022 18:01+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -1340,6 +1340,14 @@
           <xs:documentation xml:lang="zh">预约响应</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="ArtifactAssessment">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
+          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
+          <xs:documentation xml:lang="it">ArtefattoValutazione</xs:documentation>
+          <xs:documentation xml:lang="es">ArtefactoEvaluacion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="AuditEvent">
         <xs:annotation>
           <xs:documentation xml:lang="en">AuditEvent</xs:documentation>
@@ -1476,14 +1484,6 @@
           <xs:documentation xml:lang="it">DefinizioneAttivita</xs:documentation>
           <xs:documentation xml:lang="es">DefinicionDeActividad</xs:documentation>
           <xs:documentation xml:lang="zh">活动定义</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ArtifactAssessment">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
-          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
-          <xs:documentation xml:lang="it">ArtefattoValutazione</xs:documentation>
-          <xs:documentation xml:lang="es">ArtefactoEvaluacion</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="ChargeItemDefinition">
@@ -3076,6 +3076,14 @@
           <xs:documentation xml:lang="zh">预约响应</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="ArtifactAssessment">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
+          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
+          <xs:documentation xml:lang="it">ArtefattoValutazione</xs:documentation>
+          <xs:documentation xml:lang="es">ArtefactoEvaluacion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="AuditEvent">
         <xs:annotation>
           <xs:documentation xml:lang="en">AuditEvent</xs:documentation>
@@ -3212,14 +3220,6 @@
           <xs:documentation xml:lang="it">DefinizioneAttivita</xs:documentation>
           <xs:documentation xml:lang="es">DefinicionDeActividad</xs:documentation>
           <xs:documentation xml:lang="zh">活动定义</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ArtifactAssessment">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
-          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
-          <xs:documentation xml:lang="it">ArtefattoValutazione</xs:documentation>
-          <xs:documentation xml:lang="es">ArtefactoEvaluacion</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="ChargeItemDefinition">
@@ -4792,6 +4792,14 @@
           <xs:documentation xml:lang="zh">预约响应</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="ArtifactAssessment">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
+          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
+          <xs:documentation xml:lang="it">ArtefattoValutazione</xs:documentation>
+          <xs:documentation xml:lang="es">ArtefactoEvaluacion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="AuditEvent">
         <xs:annotation>
           <xs:documentation xml:lang="en">AuditEvent</xs:documentation>
@@ -4928,14 +4936,6 @@
           <xs:documentation xml:lang="it">DefinizioneAttivita</xs:documentation>
           <xs:documentation xml:lang="es">DefinicionDeActividad</xs:documentation>
           <xs:documentation xml:lang="zh">活动定义</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ArtifactAssessment">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
-          <xs:documentation xml:lang="en">ArtifactAssessment</xs:documentation>
-          <xs:documentation xml:lang="it">ArtefattoValutazione</xs:documentation>
-          <xs:documentation xml:lang="es">ArtefactoEvaluacion</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="ChargeItemDefinition">
@@ -11853,7 +11853,7 @@ The duration (usually in minutes) could also be provided to indicate the length 
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="MetadataResource">
+      <xs:extension base="DomainResource">
         <xs:sequence>
           <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
             <xs:annotation>
@@ -12501,7 +12501,7 @@ The duration (usually in minutes) could also be provided to indicate the length 
               <xs:documentation xml:lang="en">Identifies the patient, practitioner, device or any other resource that is the &quot;focus&quot; of this resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="created" minOccurs="0" maxOccurs="1" type="date">
+          <xs:element name="created" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies when the resource was first created.</xs:documentation>
            </xs:annotation>
@@ -32030,7 +32030,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">The human-readable title to display for the package of resources when rendering the implementation guide.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
             <xs:annotation>
               <xs:documentation xml:lang="en">Human readable text describing the package.</xs:documentation>
            </xs:annotation>
@@ -43513,7 +43513,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:choice>
           <xs:element name="trigger" minOccurs="0" maxOccurs="unbounded" type="TriggerDefinition">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A description of when the action should be triggered.</xs:documentation>
+              <xs:documentation xml:lang="en">A description of when the action should be triggered. When multiple triggers are specified on an action, any triggering event invokes the action.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="condition" type="PlanDefinition.Condition" minOccurs="0" maxOccurs="unbounded">

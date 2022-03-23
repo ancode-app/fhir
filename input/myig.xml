@@ -158,10 +158,24 @@
     </resource>    
     <resource>
       <reference>
+        <reference value="CodeSystem/BRTabelaTUSS18"/>
+      </reference>
+      <name value="BRTabelaTUSS18"/>
+      <description value="BR Tabela TUSS 18"/>                          
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRTabelaTUSS18"/>
+      </reference>
+      <name value="BRTabelaTUSS18"/>
+      <description value="BR Tabela TUSS 18"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/BRTabelaTUSS22"/>
       </reference>
       <name value="BRTabelaTUSS22"/>
-      <description value="BR Tabela TUSS22"/>                          
+      <description value="BR Tabela TUSS 22"/>                          
     </resource>
     <resource>
       <reference>

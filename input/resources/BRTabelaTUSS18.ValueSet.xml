@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="BRCID10" />
+  <id value="BRTabelaTUSS18" />
   <language value="pt-BR" />
-  <url value="https://ancode.app/fhir/ValueSet/BRCID10" />
+  <url value="https://ancode.app/fhir/ValueSet/BRTabelaTUSS18" />
   <version value="1.0" />
-  <name value="BRCID10" />
+  <name value="BRTabelaTUSS18" />
   <status value="draft" />
   <experimental value="false" />
   <date value="2021-12-04" />
   <publisher value="Ancode" />
-  <description value="BR CBO" />
+  <description value="BR Tabela TUSS 22" />
   <compose>
     <include>
-      <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10" />
+      <system value="https://ancode.app/fhir/CodeSystem/BRTabelaTUSS18" />
       <version value="*" />
     </include>
   </compose>

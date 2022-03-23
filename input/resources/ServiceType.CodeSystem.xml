@@ -16,19 +16,7 @@
     <display value="Taxas hospitalares, diárias e gases medicinais" />
   </concept>
   <concept>
-    <code value="19" />
-    <display value="Materiais" />
-  </concept>
-  <concept>
-    <code value="20" />
-    <display value="Medicamentos" />
-  </concept>
-  <concept>
     <code value="22" />
     <display value="Procedimentos e eventos em saúde" />
-  </concept>
-  <concept>
-    <code value="0" />
-    <display value="Tabela Própria" />
   </concept>
 </CodeSystem>

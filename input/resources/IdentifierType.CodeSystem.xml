@@ -147,4 +147,8 @@
     <code value="OTHER" />
     <display value="Other Identifier"/>
   </concept>  
+  <concept>
+    <code value="ANVISA" />
+    <display value="ANVISA - Agência Nacional de Vigilância Sanitária"/>
+  </concept>
 </CodeSystem>

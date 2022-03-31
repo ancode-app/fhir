@@ -172,6 +172,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/BRTabelaTUSS20"/>
+      </reference>
+      <name value="BRTabelaTUSS20"/>
+      <description value="BR Tabela TUSS 20"/>                          
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRTabelaTUSS20"/>
+      </reference>
+      <name value="BRTabelaTUSS20"/>
+      <description value="BR Tabela TUSS 20"/>
+    </resource> 
+    <resource>
+      <reference>
         <reference value="CodeSystem/BRTabelaTUSS22"/>
       </reference>
       <name value="BRTabelaTUSS22"/>
@@ -183,7 +197,21 @@
       </reference>
       <name value="BRTabelaTUSS22"/>
       <description value="BR Tabela TUSS 22"/>
-    </resource>    
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/CarePlan"/>
+      </reference>
+      <name value="CarePlan"/>
+      <description value="Care Plan"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/CareTeam"/>
+      </reference>
+      <name value="CareTeam"/>
+      <description value="Care Team"/>
+    </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/CBOHealthcare"/>
@@ -226,6 +254,13 @@
       <name value="City"/>
       <description value="City"/>
     </resource>    
+     <resource>
+      <reference>
+        <reference value="StructureDefinition/ClinicalImpression"/>
+      </reference>
+      <name value="ClinicalImpression"/>
+      <description value="Clinical Impression"/>
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Condition"/>
@@ -298,6 +333,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/DeviceDefinition"/>
+      </reference>
+      <name value="DeviceDefinition"/>
+      <description value="Device Definition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/DeviceDefinitionName"/>
+      </reference>
+      <name value="DeviceDefinitionName"/>
+      <description value="DeviceDefinition Name"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/DeviceUseStatement"/>
       </reference>
       <name value="DeviceUseStatement"/>
@@ -309,6 +358,13 @@
       </reference>
       <name value="DiagnosticReport"/>
       <description value="Diagnostic Report"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/DocumentReference"/>
+      </reference>
+      <name value="DocumentReference"/>
+      <description value="Document Reference"/>
     </resource>
     <resource>
       <reference>
@@ -347,17 +403,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CodeSystem/EncounterPriority"/>
+        <reference value="ValueSet/EncounterParticipantTypeMostUsed"/>
       </reference>
-      <name value="EncounterPriority"/>
-      <description value="Encounter Priority"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/EncounterPriority"/>
-      </reference>
-      <name value="EncounterPriority"/>
-      <description value="Encounter Priority"/>
+      <name value="EncounterParticipantTypeMostUsed"/>
+      <description value="Encounter Participant Type Most Used"/>
     </resource>
     <resource>
       <reference>
@@ -393,6 +442,13 @@
       </reference>
       <name value="FamilyMemberHistory"/>
       <description value="Family Member History"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Goal"/>
+      </reference>
+      <name value="Goal"/>
+      <description value="Goal"/>
     </resource>
     <resource>
       <reference>
@@ -464,6 +520,13 @@
       <name value="IdentifierTypePractitioner"/>
       <description value="Identifier Type Practitioner"/>
     </resource>
+     <resource>
+      <reference>
+        <reference value="StructureDefinition/ImagingStudy"/>
+      </reference>                                                                                
+      <name value="ImagingStudy"/>
+      <description value="Imaging Study"/>
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Immunization"/>
@@ -498,6 +561,13 @@
       </reference>                                                                                
       <name value="Location"/>
       <description value="Location"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Media"/>
+      </reference>                                                                                
+      <name value="Media"/>
+      <description value="Media"/>
     </resource>
     <resource>
       <reference>
@@ -627,6 +697,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Provenance"/>
+      </reference>
+      <name value="Provenance"/>
+      <description value="Provenance"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/Qualification"/>
       </reference>
       <name value="Qualification"/>
@@ -680,6 +757,20 @@
       </reference>
       <name value="RelatedPerson"/>
       <description value="RelatedPerson"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/RiskClass"/>
+      </reference>
+      <name value="RiskClass"/>
+      <description value="Risk Class"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/RiskClass"/>
+      </reference>
+      <name value="RiskClass"/>
+      <description value="Risk Class"/>
     </resource>
     <resource>
       <reference>

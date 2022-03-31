@@ -14,6 +14,27 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
   <derivation value="constraint" />
   <differential>
+    <element id="Medication.extension">
+      <path value="Medication.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Medication.extension:nameMetaphone">
+      <path value="Medication.extension" />
+      <sliceName value="nameMetaphone" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Metaphone" />
+      </type>
+    </element>
     <element id="Medication.status">
       <path value="Medication.status" />
       <min value="1" />

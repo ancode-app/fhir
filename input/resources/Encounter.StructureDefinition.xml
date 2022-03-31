@@ -40,13 +40,17 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://ancode.app/fhir/ValueSet/EncounterPriority" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/AppointmentType" />
       </binding>
     </element>
     <element id="Encounter.participant.type">
       <path value="Encounter.participant.type" />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/EncounterParticipantTypeMostUsed" />
+      </binding>
     </element>
     <element id="Encounter.participant.individual">
       <path value="Encounter.participant.individual" />

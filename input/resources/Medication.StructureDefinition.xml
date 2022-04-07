@@ -14,8 +14,12 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
   <derivation value="constraint" />
   <differential>
-    <element id="Medication.extension">
-      <path value="Medication.extension" />
+    <element id="Medication.code">
+      <path value="Medication.code" />
+      <min value="1" />
+    </element>
+    <element id="Medication.code.extension">
+      <path value="Medication.code.extension" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -25,9 +29,9 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Medication.extension:nameMetaphone">
-      <path value="Medication.extension" />
-      <sliceName value="nameMetaphone" />
+    <element id="Medication.code.extension:textMetaphone">
+      <path value="Medication.code.extension" />
+      <sliceName value="textMetaphone" />
       <min value="0" />
       <max value="1" />
       <type>

@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Mar 31, 2022 18:57+0000 for FHIR v4.6.0 
+  Generated on Tue, Apr 5, 2022 21:34+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -25960,10 +25960,10 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           </xs:element>
           <xs:element name="status" minOccurs="1" maxOccurs="1" type="EndpointStatus">
             <xs:annotation>
-              <xs:documentation xml:lang="en">active | suspended | error | off | test.</xs:documentation>
+              <xs:documentation xml:lang="en">The endpoint status represents the general expected availability of an endpoint.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="connectionType" minOccurs="1" maxOccurs="1" type="Coding">
+          <xs:element name="connectionType" minOccurs="1" maxOccurs="unbounded" type="Coding">
             <xs:annotation>
               <xs:documentation xml:lang="en">A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way. (e.g. XDS.b/DICOM/cds-hook).</xs:documentation>
            </xs:annotation>
@@ -25988,7 +25988,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">The interval during which the endpoint is expected to be operational.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="payloadType" minOccurs="1" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="payloadType" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">The payload type describes the acceptable content that can be communicated on the endpoint.</xs:documentation>
            </xs:annotation>
@@ -30250,6 +30250,11 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">A label assigned to the group for human identification and communication.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Explanation of what the group represents and how it is intended to be used.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="unsignedInt">
             <xs:annotation>
               <xs:documentation xml:lang="en">A count of the number of resource instances that are part of the group.</xs:documentation>
@@ -32108,7 +32113,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
             <xs:annotation>
               <xs:documentation xml:lang="en">A description of the reason that a resource has been included in the implementation guide.</xs:documentation>
            </xs:annotation>
@@ -35518,17 +35523,17 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
         <xs:sequence>
           <xs:element name="longitude" minOccurs="1" maxOccurs="1" type="decimal">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes below).</xs:documentation>
+              <xs:documentation xml:lang="en">Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes on Location main page).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="latitude" minOccurs="1" maxOccurs="1" type="decimal">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes below).</xs:documentation>
+              <xs:documentation xml:lang="en">Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes on Location main page).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="altitude" minOccurs="0" maxOccurs="1" type="decimal">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Altitude. The value domain and the interpretation are the same as for the text of the altitude element in KML (see notes below).</xs:documentation>
+              <xs:documentation xml:lang="en">Altitude. The value domain and the interpretation are the same as for the text of the altitude element in KML (see notes on Location main page).</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -40820,6 +40825,11 @@ Reflex | Repeat | Re-run.</xs:documentation>
               <xs:documentation xml:lang="en">The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is &gt;=5 - &lt;=9). If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is &gt;= 2.3).</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="normalValue" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The value of the normal value of the reference range.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.</xs:documentation>
@@ -43696,7 +43706,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">A reference to an ActivityDefinition that describes the action to be taken in detail, a PlanDefinition that describes a series of actions to be taken, a Questionnaire that should be filled out, or an ObservationDefinition that specifies what observation should be captured.</xs:documentation>
+              <xs:documentation xml:lang="en">A reference to an ActivityDefinition that describes the action to be taken in detail, a PlanDefinition that describes a series of actions to be taken, a Questionnaire that should be filled out, a SpecimenDefinition describing a specimen to be collected, or an ObservationDefinition that specifies what observation should be captured.</xs:documentation>
             </xs:annotation>
             <xs:element name="definitionCanonical" type="canonical"/>
             <xs:element name="definitionUri" type="uri"/>

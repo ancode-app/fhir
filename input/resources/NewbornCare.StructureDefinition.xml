@@ -1,30 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Metaphone" />
-  <url value="https://ancode.app/fhir/StructureDefinition/Metaphone" />
+  <id value="NewbornCare" />
+  <language value="pt-BR" />
+  <url value="https://ancode.app/fhir/StructureDefinition/NewbornCare" />
   <version value="1.0" />
-  <name value="Metaphone" />
+  <name value="NewbornCare" />
   <status value="draft" />
-  <date value="2021-12-29" />
+  <date value="2020-11-11" />
   <publisher value="Ancode" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="HumanName" />
-  </context>
-  <context>
-    <type value="element" />
-    <expression value="HealthcareService" />
-  </context>
-  <context>
-    <type value="element" />
-    <expression value="BackboneElement" />
-  </context>
-  <context>
-    <type value="element" />
-    <expression value="CodeableConcept" />
+    <expression value="ServiceRequest" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -32,12 +21,13 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://ancode.app/fhir/StructureDefinition/Metaphone" />
+      <fixedUri value="https://ancode.app/fhir/StructureDefinition/NewbornCare" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <min value="1" />
       <type>
-        <code value="string" />
+        <code value="boolean" />
       </type>
     </element>
   </differential>

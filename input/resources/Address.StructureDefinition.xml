@@ -96,6 +96,10 @@
     <element id="Address.state">
       <path value="Address.state" />
       <min value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/BrazilianState" />
+      </binding>
     </element>
     <element id="Address.postalCode">
       <path value="Address.postalCode" />

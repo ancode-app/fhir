@@ -151,4 +151,12 @@
     <code value="ANVISA" />
     <display value="ANVISA - Agência Nacional de Vigilância Sanitária"/>
   </concept>
+  <concept>
+    <code value="TISSTRANSACTION" />
+    <display value="TISS - Transaction"/>
+  </concept>
+  <concept>
+    <code value="HEALTHCAREPROVIDERCODE" />
+    <display value="Healthcare Provider Code"/>
+  </concept>  
 </CodeSystem>

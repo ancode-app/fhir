@@ -13,6 +13,34 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
   <derivation value="constraint" />
   <differential>
+    <element id="ServiceRequest.extension">
+      <path value="ServiceRequest.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="ServiceRequest.extension:newbornCare">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="newbornCare" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/NewbornCare" />
+      </type>
+    </element>
+    <element id="ServiceRequest.identifier">
+      <path value="ServiceRequest.identifier" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code" />
       <min value="1" />
@@ -23,6 +51,11 @@
       <type>
         <code value="Quantity" />
       </type>
+    </element>
+    <element id="ServiceRequest.locationReference">
+      <path value="ServiceRequest.locationReference" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="ServiceRequest.insurance">
       <path value="ServiceRequest.insurance" />
@@ -47,16 +80,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://ancode.app/fhir/StructureDefinition/HealthcareService" />
-      </type>
-    </element>
-    <element id="ServiceRequest.supportingInfo:insuranceProvider">
-      <path value="ServiceRequest.supportingInfo" />
-      <sliceName value="insuranceProvider" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://ancode.app/fhir/StructureDefinition/Organization" />
       </type>
     </element>
   </differential>

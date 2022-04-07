@@ -25,6 +25,10 @@
         <code value="OTHER" />
         <display value="Other Identifier"/>
       </concept>
+      <concept>
+        <code value="HEALTHCAREPROVIDERCODE" />
+        <display value="Healthcare Provider Code"/>
+      </concept> 
     </include>
   </compose>
 </ValueSet>

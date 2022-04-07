@@ -119,4 +119,8 @@
     <code value="TO" />
     <display value="Tocantins" />
   </concept>
+  <concept>
+    <code value="EX" />
+    <display value="Exterior" />
+  </concept>
 </CodeSystem>

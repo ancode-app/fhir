@@ -18,9 +18,37 @@
       <path value="Condition.clinicalStatus" />
       <min value="1" />
     </element>
+    <element id="Condition.verificationStatus">
+      <path value="Condition.verificationStatus" />
+      <min value="1" />
+    </element>
+    <element id="Condition.category">
+      <path value="Condition.category" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/BRCID10" />
+      </binding>
+    </element>
     <element id="Condition.encounter">
       <path value="Condition.encounter" />
       <min value="1" />
+    </element>
+    <element id="Condition.onset[x]">
+      <path value="Condition.onset[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Condition.abatement[x]">
+      <path value="Condition.abatement[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
     </element>
     <element id="Condition.recorder">
       <path value="Condition.recorder" />

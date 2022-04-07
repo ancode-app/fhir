@@ -92,6 +92,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/BirthSex"/>
+      </reference>
+      <name value="BirthSex"/>
+      <description value="Birth Sex"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/BrazilianState"/>
       </reference>
       <name value="BrazilianState"/>
@@ -133,13 +140,42 @@
       <name value="BRCID10"/>
       <description value="BR CID10"/>
       <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"/>
-    </resource>
+    </resource>    
     <resource>
       <reference>
         <reference value="ValueSet/BRCID10"/>
       </reference>
       <name value="BRCID10"/>
       <description value="BR CID10"/>
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="ValueSet/BREtnia"/>
+      </reference>
+      <name value="BREtnia"/>
+      <description value="BR Etnia"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/BREtniaIndigena"/>
+      </reference>
+      <name value="BREtniaIndigena"/>
+      <description value="BREtniaIndigena"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BREtniaIndigena"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/BRNivelEscolaridade"/>
+      </reference>
+      <name value="BRNivelEscolaridade"/>
+      <description value="BR Nivel Escolaridade"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRNivelEscolaridade"/>
+      </reference>
+      <name value="BRNivelEscolaridade"/>
+      <description value="BR Nivel Escolaridade"/>
     </resource>
     <resource>
       <reference>
@@ -197,6 +233,21 @@
       </reference>
       <name value="BRTabelaTUSS22"/>
       <description value="BR Tabela TUSS 22"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/BRTipoEstabelecimentoSaude"/>
+      </reference>
+      <name value="BRTipoEstabelecimentoSaude"/>
+      <description value="BR Tipo Estabelecimento Saude"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoEstabelecimentoSaude"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRTipoEstabelecimentoSaude"/>
+      </reference>
+      <name value="BRTipoEstabelecimentoSaude"/>
+      <description value="BR Tipo Estabelecimento Saude"/>
     </resource>
     <resource>
       <reference>
@@ -382,6 +433,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/EducationLevel"/>
+      </reference>
+      <name value="EducationLevel"/>
+      <description value="Education Level"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Encounter"/>
       </reference>
       <name value="Encounter"/>
@@ -431,10 +489,38 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Endpoint"/>
+      </reference>
+      <name value="Endpoint"/>
+      <description value="Endpoint"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/EndpointType"/>
+      </reference>
+      <name value="EndpointType"/>
+      <description value="EndpointType"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/EndpointType"/>
+      </reference>
+      <name value="EndpointType"/>
+      <description value="EndpointType"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/EndTime"/>
       </reference>
       <name value="EndTime"/>
       <description value="End Time"/>
+    </resource>
+     <resource>
+      <reference>
+        <reference value="StructureDefinition/Ethnicity"/>
+      </reference>
+      <name value="Ethnicity"/>
+      <description value="Ethnicity"/>
     </resource>
     <resource>
       <reference>
@@ -557,6 +643,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/IsMain"/>
+      </reference>                                                                                
+      <name value="IsMain"/>
+      <description value="Is Main"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Location"/>
       </reference>                                                                                
       <name value="Location"/>
@@ -603,6 +696,13 @@
       </reference>
       <name value="Neighborhood"/>
       <description value="Neighborhood"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/NewbornCare"/>
+      </reference>
+      <name value="NewbornCare"/>
+      <description value="Newborn Care"/>
     </resource>
     <resource>
       <reference>
@@ -932,6 +1032,13 @@
       </reference>
       <name value="TerminologyType"/>
       <description value="Terminology Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/TypeHealthcareFacility"/>
+      </reference>
+      <name value="TypeHealthcareFacility"/>
+      <description value="Type Healthcare Facility"/>
     </resource>
     <resource>
       <reference>

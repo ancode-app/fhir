@@ -53,6 +53,17 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/BillingTableProvider" />
       </type>
     </element>
+    <element id="Organization.extension:typeHealthcareFacility">
+      <path value="Organization.extension" />
+      <sliceName value="typeHealthcareFacility" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/TypeHealthcareFacility" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
       <min value="1" />

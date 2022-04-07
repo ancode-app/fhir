@@ -14,8 +14,12 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceDefinition" />
   <derivation value="constraint" />
   <differential>
-    <element id="DeviceDefinition.extension">
-      <path value="DeviceDefinition.extension" />
+    <element id="DeviceDefinition.deviceName">
+      <path value="DeviceDefinition.deviceName" />
+      <min value="1" />
+    </element>
+    <element id="DeviceDefinition.deviceName.extension">
+      <path value="DeviceDefinition.deviceName.extension" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -25,11 +29,10 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="DeviceDefinition.extension:nameMetaphone">
-      <path value="DeviceDefinition.extension" />
+    <element id="DeviceDefinition.deviceName.extension:nameMetaphone">
+      <path value="DeviceDefinition.deviceName.extension" />
       <sliceName value="nameMetaphone" />
       <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Metaphone" />

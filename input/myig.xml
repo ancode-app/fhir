@@ -304,8 +304,22 @@
       </reference>
       <name value="City"/>
       <description value="City"/>
-    </resource>    
-     <resource>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Claim"/>
+      </reference>
+      <name value="Claim"/>
+      <description value="Claim"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ClaimResponse"/>
+      </reference>
+      <name value="ClaimResponse"/>
+      <description value="Claim Response"/>
+    </resource>
+    <resource>
       <reference>
         <reference value="StructureDefinition/ClinicalImpression"/>
       </reference>
@@ -682,6 +696,20 @@
       </reference>
       <name value="Metaphone"/>
       <description value="Metaphone"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/MimeType"/>
+      </reference>
+      <name value="MimeType"/>
+      <description value="Mime Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/MimeType"/>
+      </reference>
+      <name value="MimeType"/>
+      <description value="Mime Type"/>
     </resource>
     <resource>
       <reference>

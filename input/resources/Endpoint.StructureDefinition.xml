@@ -36,7 +36,7 @@
       <path value="Endpoint.payloadType" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/mimetypes" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/MimeType" />
       </binding>
     </element>
   </differential>

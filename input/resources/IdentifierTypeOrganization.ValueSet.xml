@@ -46,9 +46,17 @@
         <display value="Other Identifier"/>
       </concept>
       <concept>
+        <code value="INTEGRATION" />
+        <display value="Integration Identifier"/>
+      </concept>
+      <concept>
         <code value="HEALTHCAREPROVIDERCODE" />
         <display value="Healthcare Provider Code"/>
-      </concept> 
+      </concept>  
+      <concept>
+        <code value="VERSION" />
+        <display value="Version"/>
+      </concept>
     </include>
   </compose>
 </ValueSet>

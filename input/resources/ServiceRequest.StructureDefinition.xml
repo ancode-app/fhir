@@ -60,7 +60,6 @@
     <element id="ServiceRequest.insurance">
       <path value="ServiceRequest.insurance" />
       <min value="1" />
-      <max value="1" />
     </element>
     <element id="ServiceRequest.supportingInfo">
       <path value="ServiceRequest.supportingInfo" />

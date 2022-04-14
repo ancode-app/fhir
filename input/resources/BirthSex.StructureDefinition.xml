@@ -30,7 +30,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <description value="Ethnicity" />
+        <description value="BirthSex" />
         <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1" />
       </binding>
     </element>

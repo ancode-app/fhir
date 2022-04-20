@@ -41,6 +41,7 @@
     </element>
     <element id="Appointment.specialty">
       <path value="Appointment.specialty" />
+      <min value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="https://ancode.app/fhir/ValueSet/CBOHealthcare" />

@@ -881,6 +881,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/Reference"/>
+      </reference>
+      <name value="Reference"/>
+      <description value="Reference"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/RelatedPerson"/>
       </reference>
       <name value="RelatedPerson"/>

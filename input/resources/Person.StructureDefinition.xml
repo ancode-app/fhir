@@ -15,7 +15,6 @@
   <differential>
     <element id="Person.identifier">
       <path value="Person.identifier" />
-      <min value="1" />
       <type>
         <code value="Identifier" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Identifier" />

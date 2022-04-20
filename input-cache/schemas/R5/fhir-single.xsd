@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Tue, Apr 12, 2022 15:02+0000 for FHIR v4.6.0 
+  Generated on Wed, Apr 20, 2022 03:39+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -12602,7 +12602,7 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">A unique identifier for an aliquot of a product.  Used to distinguish individual aliquots of a product carrying the same biologicalSource and productCode identifiers.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="0" maxOccurs="1" type="BiologicallyDerivedProductStatus">
+          <xs:element name="productStatus" minOccurs="0" maxOccurs="1" type="Coding">
             <xs:annotation>
               <xs:documentation xml:lang="en">Whether the product is currently available.</xs:documentation>
            </xs:annotation>
@@ -12728,31 +12728,6 @@ into another (possibly the same) biological entity.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="Element">
         <xs:attribute name="value" type="BiologicallyDerivedProductCategoryEnum" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="BiologicallyDerivedProductStatusEnum">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="available">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Available</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="unavailable">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Unavailable</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="BiologicallyDerivedProductStatus">
-    <xs:annotation>
-      <xs:documentation xml:lang="en"></xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="BiologicallyDerivedProductStatusEnum" use="optional"/>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -18209,7 +18184,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="undesirableEffect" type="ClinicalUseDefinition.UndesirableEffect" minOccurs="0" maxOccurs="1">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Describe the undesirable effects of the medicinal product.</xs:documentation>
+              <xs:documentation xml:lang="en">Describe the possible undesirable effects (negative outcomes) from the use of the medicinal product as treatment.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="warning" type="ClinicalUseDefinition.Warning" minOccurs="0" maxOccurs="1">
@@ -18235,7 +18210,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="diseaseStatus" minOccurs="0" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The status of the disease or symptom for the contraindication.</xs:documentation>
+              <xs:documentation xml:lang="en">The status of the disease or symptom for the contraindication, for example &quot;chronic&quot; or &quot;metastatic&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="comorbidity" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
@@ -18292,7 +18267,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="diseaseStatus" minOccurs="0" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The status of the disease or symptom for the indication.</xs:documentation>
+              <xs:documentation xml:lang="en">The status of the disease or symptom for the indication, for example &quot;chronic&quot; or &quot;metastatic&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="comorbidity" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
@@ -18305,14 +18280,16 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">The intended effect, aim or strategy to be achieved.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="duration" minOccurs="0" maxOccurs="1" type="Quantity">
+          <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">Timing or duration information.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
+              <xs:documentation xml:lang="en">Timing or duration information, that may be associated with use with the indicated condition e.g. Adult patients suffering from myocardial infarction (from a few days until less than 35 days), ischaemic stroke (from 7 days until less than 6 months).</xs:documentation>
+            </xs:annotation>
+            <xs:element name="durationRange" type="Range"/>
+            <xs:element name="durationString" type="string"/>
+          </xs:choice>
           <xs:element name="undesirableEffect" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The specific undesirable effects of the medicinal product.</xs:documentation>
+              <xs:documentation xml:lang="en">An unwanted side effect or negative outcome that may happen if you use the drug (or other subject of this resource) for this indication.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="otherTherapy" type="ClinicalUseDefinition.OtherTherapy" minOccurs="0" maxOccurs="unbounded">
@@ -21149,6 +21126,11 @@ into another (possibly the same) biological entity.</xs:documentation>
           <xs:documentation xml:lang="en">Inactive</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="not-done">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Abandoned</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="entered-in-error">
         <xs:annotation>
           <xs:documentation xml:lang="en">Entered in Error</xs:documentation>
@@ -23452,7 +23434,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">The version of the standard that is used to operate and communicate.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="category" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="category" minOccurs="0" maxOccurs="1" type="Coding">
             <xs:annotation>
               <xs:documentation xml:lang="en">Kind of standards that the device adheres to, e.g., communication, performance or communication.</xs:documentation>
            </xs:annotation>
@@ -34255,7 +34237,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
             <xs:element name="presentationCodeableConcept" type="CodeableConcept"/>
             <xs:element name="presentationQuantity" type="Quantity"/>
           </xs:choice>
-          <xs:element name="presentationText" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="textPresentation" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A textual represention of either the whole of the presentation strength or a part of it - with the rest being in Strength.presentation as a ratio.</xs:documentation>
            </xs:annotation>
@@ -34269,7 +34251,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
             <xs:element name="concentrationCodeableConcept" type="CodeableConcept"/>
             <xs:element name="concentrationQuantity" type="Quantity"/>
           </xs:choice>
-          <xs:element name="concentrationText" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="textConcentration" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A textual represention of either the whole of the concentration strength or a part of it - with the rest being in Strength.concentration as a ratio.</xs:documentation>
            </xs:annotation>
@@ -42040,6 +42022,11 @@ For resource issues, this will be a simple XPath limited to element names, repet
           <xs:element name="alias" minOccurs="0" maxOccurs="unbounded" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">A list of alternate names that the organization is known as, or was known as in the past.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Description of the organization, which helps provide additional general context on the organization to ensure that the correct organization is selected.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="contact" minOccurs="0" maxOccurs="unbounded" type="ExtendedContactDetail">

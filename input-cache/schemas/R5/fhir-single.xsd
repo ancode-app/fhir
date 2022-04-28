@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Apr 21, 2022 22:51+0000 for FHIR v4.6.0 
+  Generated on Mon, Apr 25, 2022 20:40+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -1428,16 +1428,6 @@
           <xs:documentation xml:lang="zh">概念映射</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="ConceptMap2">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
-          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
-          <xs:documentation xml:lang="it">MappaDiConcetti2</xs:documentation>
-          <xs:documentation xml:lang="fr">CarteDeConcepts2</xs:documentation>
-          <xs:documentation xml:lang="es">MapaDeConceptos2</xs:documentation>
-          <xs:documentation xml:lang="zh">概念映射2</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
       <xs:enumeration value="ExampleScenario">
         <xs:annotation>
           <xs:documentation xml:lang="en">ExampleScenario</xs:documentation>
@@ -1498,6 +1488,16 @@
           <xs:documentation xml:lang="en">Citation</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="ConceptMap2">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
+          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
+          <xs:documentation xml:lang="it">MappaDiConcetti2</xs:documentation>
+          <xs:documentation xml:lang="fr">CarteDeConcepts2</xs:documentation>
+          <xs:documentation xml:lang="es">MapaDeConceptos2</xs:documentation>
+          <xs:documentation xml:lang="zh">概念映射2</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="ConditionDefinition">
         <xs:annotation>
           <xs:documentation xml:lang="en">ConditionDefinition</xs:documentation>
@@ -1548,6 +1548,15 @@
           <xs:documentation xml:lang="zh">指标</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="NamingSystem">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
+          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
+          <xs:documentation xml:lang="fr">SystèmeDeNommage</xs:documentation>
+          <xs:documentation xml:lang="es">SistemaDeNombres</xs:documentation>
+          <xs:documentation xml:lang="zh">命名系统</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="PlanDefinition">
         <xs:annotation>
           <xs:documentation xml:lang="en">PlanDefinition</xs:documentation>
@@ -1564,15 +1573,6 @@
           <xs:documentation xml:lang="fr">Questionnaire</xs:documentation>
           <xs:documentation xml:lang="zh">调查问卷</xs:documentation>
           <xs:documentation xml:lang="es">Cuestionario</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="NamingSystem">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
-          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
-          <xs:documentation xml:lang="fr">SystèmeDeNommage</xs:documentation>
-          <xs:documentation xml:lang="es">SistemaDeNombres</xs:documentation>
-          <xs:documentation xml:lang="zh">命名系统</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="OperationDefinition">
@@ -12059,16 +12059,6 @@
           <xs:documentation xml:lang="zh">概念映射</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="ConceptMap2">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
-          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
-          <xs:documentation xml:lang="it">MappaDiConcetti2</xs:documentation>
-          <xs:documentation xml:lang="fr">CarteDeConcepts2</xs:documentation>
-          <xs:documentation xml:lang="es">MapaDeConceptos2</xs:documentation>
-          <xs:documentation xml:lang="zh">概念映射2</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
       <xs:enumeration value="ExampleScenario">
         <xs:annotation>
           <xs:documentation xml:lang="en">ExampleScenario</xs:documentation>
@@ -12129,6 +12119,16 @@
           <xs:documentation xml:lang="en">Citation</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="ConceptMap2">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
+          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
+          <xs:documentation xml:lang="it">MappaDiConcetti2</xs:documentation>
+          <xs:documentation xml:lang="fr">CarteDeConcepts2</xs:documentation>
+          <xs:documentation xml:lang="es">MapaDeConceptos2</xs:documentation>
+          <xs:documentation xml:lang="zh">概念映射2</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="ConditionDefinition">
         <xs:annotation>
           <xs:documentation xml:lang="en">ConditionDefinition</xs:documentation>
@@ -12179,6 +12179,15 @@
           <xs:documentation xml:lang="zh">指标</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="NamingSystem">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
+          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
+          <xs:documentation xml:lang="fr">SystèmeDeNommage</xs:documentation>
+          <xs:documentation xml:lang="es">SistemaDeNombres</xs:documentation>
+          <xs:documentation xml:lang="zh">命名系统</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="PlanDefinition">
         <xs:annotation>
           <xs:documentation xml:lang="en">PlanDefinition</xs:documentation>
@@ -12195,15 +12204,6 @@
           <xs:documentation xml:lang="fr">Questionnaire</xs:documentation>
           <xs:documentation xml:lang="zh">调查问卷</xs:documentation>
           <xs:documentation xml:lang="es">Cuestionario</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="NamingSystem">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
-          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
-          <xs:documentation xml:lang="fr">SystèmeDeNommage</xs:documentation>
-          <xs:documentation xml:lang="es">SistemaDeNombres</xs:documentation>
-          <xs:documentation xml:lang="zh">命名系统</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="OperationDefinition">
@@ -13775,16 +13775,6 @@
           <xs:documentation xml:lang="zh">概念映射</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="ConceptMap2">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
-          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
-          <xs:documentation xml:lang="it">MappaDiConcetti2</xs:documentation>
-          <xs:documentation xml:lang="fr">CarteDeConcepts2</xs:documentation>
-          <xs:documentation xml:lang="es">MapaDeConceptos2</xs:documentation>
-          <xs:documentation xml:lang="zh">概念映射2</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
       <xs:enumeration value="ExampleScenario">
         <xs:annotation>
           <xs:documentation xml:lang="en">ExampleScenario</xs:documentation>
@@ -13845,6 +13835,16 @@
           <xs:documentation xml:lang="en">Citation</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="ConceptMap2">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
+          <xs:documentation xml:lang="en">ConceptMap2</xs:documentation>
+          <xs:documentation xml:lang="it">MappaDiConcetti2</xs:documentation>
+          <xs:documentation xml:lang="fr">CarteDeConcepts2</xs:documentation>
+          <xs:documentation xml:lang="es">MapaDeConceptos2</xs:documentation>
+          <xs:documentation xml:lang="zh">概念映射2</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="ConditionDefinition">
         <xs:annotation>
           <xs:documentation xml:lang="en">ConditionDefinition</xs:documentation>
@@ -13895,6 +13895,15 @@
           <xs:documentation xml:lang="zh">指标</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="NamingSystem">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
+          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
+          <xs:documentation xml:lang="fr">SystèmeDeNommage</xs:documentation>
+          <xs:documentation xml:lang="es">SistemaDeNombres</xs:documentation>
+          <xs:documentation xml:lang="zh">命名系统</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="PlanDefinition">
         <xs:annotation>
           <xs:documentation xml:lang="en">PlanDefinition</xs:documentation>
@@ -13911,15 +13920,6 @@
           <xs:documentation xml:lang="fr">Questionnaire</xs:documentation>
           <xs:documentation xml:lang="zh">调查问卷</xs:documentation>
           <xs:documentation xml:lang="es">Cuestionario</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="NamingSystem">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
-          <xs:documentation xml:lang="en">NamingSystem</xs:documentation>
-          <xs:documentation xml:lang="fr">SystèmeDeNommage</xs:documentation>
-          <xs:documentation xml:lang="es">SistemaDeNombres</xs:documentation>
-          <xs:documentation xml:lang="zh">命名系统</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="OperationDefinition">
@@ -28880,7 +28880,7 @@ into another (possibly the same) biological entity.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="CanonicalResource">
+      <xs:extension base="MetadataResource">
         <xs:sequence>
           <xs:element name="url" minOccurs="0" maxOccurs="1" type="uri">
             <xs:annotation>
@@ -36667,9 +36667,19 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           <xs:documentation xml:lang="en">At most</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="statistical">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Statistical</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="net-effect">
         <xs:annotation>
           <xs:documentation xml:lang="en">Net effect</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="dataset">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Dataset</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -48586,7 +48596,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="CanonicalResource">
+      <xs:extension base="MetadataResource">
         <xs:sequence>
           <xs:element name="url" minOccurs="0" maxOccurs="1" type="uri">
             <xs:annotation>
@@ -48833,7 +48843,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
           </xs:element>
           <xs:element name="code" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Type of nutrition intake setting/reporting.</xs:documentation>
+              <xs:documentation xml:lang="en">Overall type of nutrition intake.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="subject" minOccurs="1" maxOccurs="1" type="Reference">
@@ -49299,17 +49309,22 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
   </xs:complexType>
   <xs:element name="NutritionProduct" type="NutritionProduct">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or supplement that is consumed by patients.</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="NutritionProduct">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or supplement that is consumed by patients.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="DomainResource">
         <xs:sequence>
+          <xs:element name="code" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The code assigned to the product, for example a USDA NDB number, a USDA FDC ID number, or a Langual code.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="status" minOccurs="1" maxOccurs="1" type="NutritionProductStatus">
             <xs:annotation>
               <xs:documentation xml:lang="en">The current state of the product.</xs:documentation>
@@ -49318,11 +49333,6 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
           <xs:element name="category" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Nutrition products can have different classifications - according to its nutritional properties, preparation methods, etc.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="code" minOccurs="0" maxOccurs="1" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The code assigned to the product, for example a manufacturer number or other terminology.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="manufacturer" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -49345,12 +49355,12 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
               <xs:documentation xml:lang="en">Allergens that are known or suspected to be a part of this nutrition product.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="productCharacteristic" type="NutritionProduct.ProductCharacteristic" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="characteristic" type="NutritionProduct.Characteristic" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Specifies descriptive properties of the nutrition product.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="instance" type="NutritionProduct.Instance" minOccurs="0" maxOccurs="1">
+          <xs:element name="instance" type="NutritionProduct.Instance" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Conveys instance-level information about this product item. One or several physical, countable instances or occurrences of the product.</xs:documentation>
            </xs:annotation>
@@ -49366,7 +49376,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
   </xs:complexType>
   <xs:complexType name="NutritionProduct.Nutrient">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or supplement that is consumed by patients.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -49387,7 +49397,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
   </xs:complexType>
   <xs:complexType name="NutritionProduct.Ingredient">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or supplement that is consumed by patients.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -49406,9 +49416,9 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="NutritionProduct.ProductCharacteristic">
+  <xs:complexType name="NutritionProduct.Characteristic">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or supplement that is consumed by patients.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -49435,7 +49445,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
   </xs:complexType>
   <xs:complexType name="NutritionProduct.Instance">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A food or fluid product that is consumed by patients.</xs:documentation>
+      <xs:documentation xml:lang="en">A food or supplement that is consumed by patients.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -49447,7 +49457,12 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
           </xs:element>
           <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The identifier for the physical instance, typically a serial number.</xs:documentation>
+              <xs:documentation xml:lang="en">The identifier for the physical instance, typically a serial number or manufacturer number.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The name for the specific product.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="lotNumber" minOccurs="0" maxOccurs="1" type="string">
@@ -58865,7 +58880,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
             <xs:element name="amountQuantity" type="Quantity"/>
             <xs:element name="amountString" type="string"/>
           </xs:choice>
-          <xs:element name="amountType" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="measurementType" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">The measurement type of the quantitative value. In capturing the actual relative amounts of substances or molecular fragments it may be necessary to indicate whether the amount refers to, for example, a mole ratio or weight ratio.</xs:documentation>
            </xs:annotation>
@@ -59168,12 +59183,12 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
             <xs:element name="amountRatio" type="Ratio"/>
             <xs:element name="amountString" type="string"/>
           </xs:choice>
-          <xs:element name="amountRatioHighLimit" minOccurs="0" maxOccurs="1" type="Ratio">
+          <xs:element name="ratioHighLimitAmount" minOccurs="0" maxOccurs="1" type="Ratio">
             <xs:annotation>
               <xs:documentation xml:lang="en">For use when the numeric has an uncertain range.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="amountType" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="comparator" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">An operator for the amount, for example &quot;average&quot;, &quot;approximately&quot;, &quot;less than&quot;.</xs:documentation>
            </xs:annotation>
@@ -63202,7 +63217,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="scope" type="ValueSet.Scope" minOccurs="0" maxOccurs="1">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Description of the semantic space the Value Set Expansion is intended to cover.</xs:documentation>
+              <xs:documentation xml:lang="en">Description of the semantic space the Value Set Expansion is intended to cover and should further clarify the text in ValueSet.description.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>

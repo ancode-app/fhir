@@ -3,7 +3,7 @@
   <id value="AppointmentSupportingInformation" />
   <url value="https://ancode.app/fhir/SearchParameter/AppointmentSupportingInformation" />
   <version value="1.0" />
-  <name value="AppointmentSupportingInformation.SearchParameter" />
+  <name value="AppointmentSupportingInformation" />
   <status value="draft" />
   <experimental value="false" />
   <date value="2022-03-04" />

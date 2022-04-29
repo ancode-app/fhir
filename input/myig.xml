@@ -50,6 +50,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/AllergyIntoleranceCode"/>
+      </reference>
+      <name value="AllergyIntoleranceCode"/>
+      <description value="Allergy Intolerance Code"/>
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="ValueSet/AllergyIntoleranceCode"/>
+      </reference>
+      <name value="AllergyIntoleranceCode"/>
+      <description value="Allergy Intolerance Code"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Appointment"/>
       </reference>
       <name value="Appointment"/>

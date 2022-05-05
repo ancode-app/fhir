@@ -444,6 +444,13 @@
       </reference>
       <name value="DocumentReference"/>
       <description value="Document Reference"/>
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="SearchParameter/DomainResourceExtension"/>
+      </reference>
+      <name value="DomainResourceExtension"/>
+      <description value="DomainResource Extension"/>
     </resource>
     <resource>
       <reference>
@@ -577,6 +584,13 @@
       </reference>
       <name value="HumanName"/>
       <description value="Human Name"/>
+    </resource>
+     <resource>
+      <reference>
+        <reference value="SearchParameter/HumanNameExtension"/>
+      </reference>
+      <name value="HumanNameExtension"/>
+      <description value="HumanName Extension"/>
     </resource>
     <resource>
       <reference>
@@ -755,10 +769,31 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/ObservationCodes"/>
+      </reference>
+      <name value="ObservationCodes"/>
+      <description value="Observation Codes"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ObservationCodes"/>
+      </reference>
+      <name value="ObservationCodes"/>
+      <description value="Observation Codes"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ObservationDefinition"/>
       </reference>
       <name value="ObservationDefinition"/>
       <description value="Observation Definition"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ObservationSocialHistory"/>
+      </reference>
+      <name value="ObservationSocialHistory"/>
+      <description value="Observation Social History"/>
     </resource>
      <resource>
       <reference>
@@ -780,7 +815,7 @@
       </reference>
       <name value="OrganizationAffiliation"/>
       <description value="OrganizationAffiliation"/>
-    </resource>    
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/Patient"/>

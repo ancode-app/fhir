@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Wed, Apr 27, 2022 22:45+0000 for FHIR v4.6.0 
+  Generated on Wed, May 4, 2022 14:36+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -11708,11 +11708,6 @@
           <xs:documentation xml:lang="en">PrimitiveType</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="ProdCharacteristic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ProdCharacteristic</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
       <xs:enumeration value="ProductShelfLife">
         <xs:annotation>
           <xs:documentation xml:lang="en">ProductShelfLife</xs:documentation>
@@ -13422,11 +13417,6 @@
       <xs:enumeration value="PrimitiveType">
         <xs:annotation>
           <xs:documentation xml:lang="en">PrimitiveType</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ProdCharacteristic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ProdCharacteristic</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="ProductShelfLife">
@@ -18741,73 +18731,6 @@ Normal practice is to use the 'mo' code as a calendar month when calculating the
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="ProdCharacteristic">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">The marketing status describes the date when a medicinal product is actually put on the market or the date as of which it is no longer available.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have a value for at least one of the defined elements, an @id referenced from the Narrative, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneType">
-        <xs:sequence>
-          <xs:element name="height" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the height can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="width" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the width can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="depth" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the depth can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="weight" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the weight can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="nominalVolume" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the nominal volume can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="externalDiameter" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the external diameter can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="shape" type="string" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the shape can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="color" type="string" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the color can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="imprint" type="string" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the imprint can be specified as text.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="image" type="Attachment" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the image can be provided The format of the image attachment shall be specified by regional implementations.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="scoring" type="CodeableConcept" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the scoring can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
   <xs:complexType name="CodeableConcept">
     <xs:annotation>
       <xs:documentation xml:lang="en">A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.</xs:documentation>
@@ -21462,7 +21385,7 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Broad category of this product.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="productCode" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="productCode" minOccurs="0" maxOccurs="1" type="Coding">
             <xs:annotation>
               <xs:documentation xml:lang="en">A codified value that systematically supports characterization and classification of medical products of human origin inclusive of processing conditions such as additives, volumes and handling conditions.</xs:documentation>
            </xs:annotation>
@@ -21563,7 +21486,7 @@ into another (possibly the same) biological entity.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="Coding">
             <xs:annotation>
               <xs:documentation xml:lang="en">Code that specifies the property. It should reference an established coding system.</xs:documentation>
            </xs:annotation>
@@ -28256,9 +28179,19 @@ into another (possibly the same) biological entity.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="DomainResource">
         <xs:sequence>
+          <xs:element name="url" minOccurs="0" maxOccurs="1" type="uri">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">An absolute URI that is used to identify this Composition when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which at which an authoritative instance of this Composition is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the Composition is stored on different servers.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="identifier" minOccurs="0" maxOccurs="1" type="Identifier">
             <xs:annotation>
               <xs:documentation xml:lang="en">A version-independent identifier for the Composition. This identifier stays constant as the composition is changed over time.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">An explicitly assigned identifer of a variation of the content in the Composition.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="status" minOccurs="1" maxOccurs="1" type="CompositionStatus">
@@ -28291,14 +28224,29 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">The composition editing time, when the composition was last logically changed by the author.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="useContext" minOccurs="0" maxOccurs="unbounded" type="UsageContext">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate Composition instances.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="author" minOccurs="1" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies who is responsible for the information in the composition, not necessarily who typed it in.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A natural language name identifying the {{title}}. This name should be usable as an identifier for the module by machine processing applications such as code generation.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="title" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Official human-readable label for the composition.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="note" minOccurs="0" maxOccurs="unbounded" type="Annotation">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">For any additional notes.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="confidentiality" minOccurs="0" maxOccurs="1" type="Confidentiality">
@@ -29086,7 +29034,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="product" type="ConceptMap2.DependsOn" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A set of additional outcomes from this mapping to other elements. To properly execute this mapping, the specified element must be mapped to some data element or source that is in context. The mapping may still be useful without a place for the additional data elements, but the relationship (e.g., equivalent) cannot be relied on.</xs:documentation>
+              <xs:documentation xml:lang="en">Product is the output of a ConceptMap that provides additional values relevant to the interpretation of the mapping target.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -29102,7 +29050,7 @@ into another (possibly the same) biological entity.</xs:documentation>
         <xs:sequence>
           <xs:element name="property" minOccurs="1" maxOccurs="1" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A reference to an element that holds a coded value that corresponds to a code system property. The idea is that the information model carries an element somewhere that is labeled to correspond with a code system property.</xs:documentation>
+              <xs:documentation xml:lang="en">A reference to a property that holds a value the map depends on. This value can be supplied to the $translate operation to select the appropriate targets.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:choice minOccurs="1" maxOccurs="1" >
@@ -34234,7 +34182,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="encounter" minOccurs="0" maxOccurs="unbounded" type="Reference">
+          <xs:element name="context" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Describes the clinical encounter or type of care that the document content is associated with.</xs:documentation>
            </xs:annotation>
@@ -47321,6 +47269,11 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
               <xs:documentation xml:lang="en">Package type for the product. See also the PackagedProductDefinition resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="comprisedOf" minOccurs="0" maxOccurs="unbounded" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A medicinal manufactured item that this product consists of, such as a tablet or capsule. Used as a direct link when the item's packaging is not being recorded (see also PackagedProductDefinition.package.containedItem.item).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="ingredient" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">The ingredients of this medicinal product - when not detailed in other resources. This is only needed if the ingredients are not specified by incoming references from the Ingredient resource, or indirectly via incoming AdministrableProductDefinition, PackagedProductDefinition or ManufacturedItemDefinition references. In cases where those levels of detail are not used, the ingredients may be specified directly here as codes.</xs:documentation>
@@ -47545,10 +47498,12 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
           </xs:element>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">A value for the characteristic.</xs:documentation>
+              <xs:documentation xml:lang="en">A value for the characteristic.text.</xs:documentation>
             </xs:annotation>
             <xs:element name="valueCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="valueString" type="string"/>
             <xs:element name="valueQuantity" type="Quantity"/>
+            <xs:element name="valueInteger" type="integer"/>
             <xs:element name="valueDate" type="date"/>
             <xs:element name="valueBoolean" type="boolean"/>
             <xs:element name="valueAttachment" type="Attachment"/>
@@ -48012,12 +47967,12 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
   </xs:complexType>
   <xs:element name="MolecularSequence" type="MolecularSequence">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Raw data describing a biological sequence.</xs:documentation>
+      <xs:documentation xml:lang="en">Representation of a molecular sequence.</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="MolecularSequence">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Raw data describing a biological sequence.</xs:documentation>
+      <xs:documentation xml:lang="en">Representation of a molecular sequence.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -48025,7 +47980,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
         <xs:sequence>
           <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A unique identifier for this particular sequence instance. This is a FHIR-defined id.</xs:documentation>
+              <xs:documentation xml:lang="en">A unique identifier for this particular sequence instance.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="type" minOccurs="0" maxOccurs="1" type="sequenceType">
@@ -48033,14 +47988,9 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
               <xs:documentation xml:lang="en">Amino Acid Sequence/ DNA Sequence / RNA Sequence.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="coordinateSystem" minOccurs="1" maxOccurs="1" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Whether the sequence is numbered starting at 0 (0-based numbering or coordinates, inclusive start, exclusive end) or starting at 1 (1-based numbering, inclusive start and inclusive end).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
           <xs:element name="patient" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The patient whose sequencing results are described by this resource.</xs:documentation>
+              <xs:documentation xml:lang="en">Indicates the patient this sequence is associated too.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="specimen" minOccurs="0" maxOccurs="1" type="Reference">
@@ -48058,39 +48008,19 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
               <xs:documentation xml:lang="en">The organization or lab that should be responsible for this result.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="Quantity">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The number of copies of the sequence of interest. (RNASeq).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="referenceSeq" type="MolecularSequence.ReferenceSeq" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A sequence that is used as a reference to describe variants that are present in a sequence analyzed.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="variant" type="MolecularSequence.Variant" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The definition of variant here originates from Sequence ontology ([variant_of](http://www.sequenceontology.org/browser/current_svn/term/variant_of)). This element can represent amino acid or nucleic sequence change(including insertion,deletion,SNP,etc.)  It can represent some complex mutation or segment variation with the assist of CIGAR string.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="observedSeq" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="literal" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Sequence that was observed. It is the result marked by referenceSeq along with variant records on referenceSeq. This shall start from referenceSeq.windowStart and end by referenceSeq.windowEnd.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="quality" type="MolecularSequence.Quality" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="formatted" minOccurs="0" maxOccurs="1" type="Attachment">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An experimental feature attribute that defines the quality of the feature in a quantitative way, such as a phred quality score ([SO:0001686](http://www.sequenceontology.org/browser/current_svn/term/SO:0001686)).</xs:documentation>
+              <xs:documentation xml:lang="en">Sequence that was observed as file content. Can be an actual file contents, or referenced by a URL to an external system.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="readCoverage" minOccurs="0" maxOccurs="1" type="integer">
+          <xs:element name="relative" type="MolecularSequence.Relative" minOccurs="0" maxOccurs="1">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Coverage (read depth or depth) is the average number of reads representing a given nucleotide in the reconstructed sequence.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="repository" type="MolecularSequence.Repository" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Configurations of the external repository. The repository shall store target's observedSeq or records related with target's observedSeq.</xs:documentation>
+              <xs:documentation xml:lang="en">A sequence defined relative to another sequence.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="pointer" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -48098,18 +48028,39 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
               <xs:documentation xml:lang="en">Pointer to next atomic sequence which at most contains one variant.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="structureVariant" type="MolecularSequence.StructureVariant" minOccurs="0" maxOccurs="unbounded">
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MolecularSequence.Relative">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Representation of a molecular sequence.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="coordinateSystem" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Information about chromosome structure variation.</xs:documentation>
+              <xs:documentation xml:lang="en">These are different ways of identifying nucleotides or amino acids within a sequence. Different databases and file types may use different systems. For detail definitions, see https://loinc.org/92822-6/ for more detail.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="reference" type="MolecularSequence.Reference" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A sequence that is used as a reference to describe variants that are present in a sequence analyzed.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="edit" type="MolecularSequence.Edit" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Changes in sequence from the reference.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="MolecularSequence.ReferenceSeq">
+  <xs:complexType name="MolecularSequence.Reference">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Raw data describing a biological sequence.</xs:documentation>
+      <xs:documentation xml:lang="en">Representation of a molecular sequence.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -48131,7 +48082,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
           </xs:element>
           <xs:element name="referenceSeqId" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Reference identifier of reference sequence submitted to NCBI. It must match the type in the MolecularSequence.type field. For example, the prefix, “NG_” identifies reference sequence for genes, “NM_” for messenger RNA transcripts, and “NP_” for amino acid sequences.</xs:documentation>
+              <xs:documentation xml:lang="en">This field carries the ID for the reference sequence. For this ID use either the NCBI genomic nucleotide RefSeq IDs with their version number (see: NCBI.NLM.NIH.Gov/RefSeq) or use the LRG identifiers when they become available. (See- Report sponsored by GEN2PHEN at the European Bioinformatics Institute at Hinxton UK April 24-25, 2008).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="referenceSeqPointer" minOccurs="0" maxOccurs="1" type="Reference">
@@ -48163,292 +48114,36 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="MolecularSequence.Variant">
+  <xs:complexType name="MolecularSequence.Edit">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Raw data describing a biological sequence.</xs:documentation>
+      <xs:documentation xml:lang="en">Representation of a molecular sequence.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
           <xs:element name="start" minOccurs="0" maxOccurs="1" type="integer">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Start position of the variant on the  reference sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.</xs:documentation>
+              <xs:documentation xml:lang="en">Start position of the edit on the reference sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="end" minOccurs="0" maxOccurs="1" type="integer">
             <xs:annotation>
-              <xs:documentation xml:lang="en">End position of the variant on the reference sequence. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.</xs:documentation>
+              <xs:documentation xml:lang="en">End position of the edit on the reference sequence. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="observedAllele" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An allele is one of a set of coexisting sequence variants of a gene ([SO:0001023](http://www.sequenceontology.org/browser/current_svn/term/SO:0001023)).  Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the observed  sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.</xs:documentation>
+              <xs:documentation xml:lang="en">Allele that was observed. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the observed  sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="referenceAllele" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An allele is one of a set of coexisting sequence variants of a gene ([SO:0001023](http://www.sequenceontology.org/browser/current_svn/term/SO:0001023)). Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the reference sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.</xs:documentation>
+              <xs:documentation xml:lang="en">Allele in the reference sequence. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the reference sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="cigar" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Extended CIGAR string for aligning the sequence with reference bases. See detailed documentation [here](http://support.illumina.com/help/SequencingAnalysisWorkflow/Content/Vault/Informatics/Sequencing_Analysis/CASAVA/swSEQ_mCA_ExtendedCIGARFormat.htm).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="variantPointer" minOccurs="0" maxOccurs="1" type="Reference">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A pointer to an Observation containing variant information.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="MolecularSequence.Quality">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Raw data describing a biological sequence.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="qualityType">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">INDEL / SNP / Undefined variant.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="standardSequence" minOccurs="0" maxOccurs="1" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Gold standard sequence used for comparing against.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="start" minOccurs="0" maxOccurs="1" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Start position of the sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="end" minOccurs="0" maxOccurs="1" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">End position of the sequence. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="score" minOccurs="0" maxOccurs="1" type="Quantity">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The score of an experimentally derived feature such as a p-value ([SO:0001685](http://www.sequenceontology.org/browser/current_svn/term/SO:0001685)).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="method" minOccurs="0" maxOccurs="1" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Which method is used to get sequence quality.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="truthTP" minOccurs="0" maxOccurs="1" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">True positives, from the perspective of the truth data, i.e. the number of sites in the Truth Call Set for which there are paths through the Query Call Set that are consistent with all of the alleles at this site, and for which there is an accurate genotype call for the event.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="queryTP" minOccurs="0" maxOccurs="1" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">True positives, from the perspective of the query data, i.e. the number of sites in the Query Call Set for which there are paths through the Truth Call Set that are consistent with all of the alleles at this site, and for which there is an accurate genotype call for the event.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="truthFN" minOccurs="0" maxOccurs="1" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">False negatives, i.e. the number of sites in the Truth Call Set for which there is no path through the Query Call Set that is consistent with all of the alleles at this site, or sites for which there is an inaccurate genotype call for the event. Sites with correct variant but incorrect genotype are counted here.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="queryFP" minOccurs="0" maxOccurs="1" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">False positives, i.e. the number of sites in the Query Call Set for which there is no path through the Truth Call Set that is consistent with this site. Sites with correct variant but incorrect genotype are counted here.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="gtFP" minOccurs="0" maxOccurs="1" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The number of false positives where the non-REF alleles in the Truth and Query Call Sets match (i.e. cases where the truth is 1/1 and the query is 0/1 or similar).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="precision" minOccurs="0" maxOccurs="1" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">QUERY.TP / (QUERY.TP + QUERY.FP).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="recall" minOccurs="0" maxOccurs="1" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">TRUTH.TP / (TRUTH.TP + TRUTH.FN).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="fScore" minOccurs="0" maxOccurs="1" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Harmonic mean of Recall and Precision, computed as: 2 * precision * recall / (precision + recall).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="roc" type="MolecularSequence.Roc" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Receiver Operator Characteristic (ROC) Curve  to give sensitivity/specificity tradeoff.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="MolecularSequence.Roc">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Raw data describing a biological sequence.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="score" minOccurs="0" maxOccurs="unbounded" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Invidual data point representing the GQ (genotype quality) score threshold.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="numTP" minOccurs="0" maxOccurs="unbounded" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The number of true positives if the GQ score threshold was set to &quot;score&quot; field value.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="numFP" minOccurs="0" maxOccurs="unbounded" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The number of false positives if the GQ score threshold was set to &quot;score&quot; field value.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="numFN" minOccurs="0" maxOccurs="unbounded" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The number of false negatives if the GQ score threshold was set to &quot;score&quot; field value.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="precision" minOccurs="0" maxOccurs="unbounded" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Calculated precision if the GQ score threshold was set to &quot;score&quot; field value.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="sensitivity" minOccurs="0" maxOccurs="unbounded" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Calculated sensitivity if the GQ score threshold was set to &quot;score&quot; field value.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="fMeasure" minOccurs="0" maxOccurs="unbounded" type="decimal">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Calculated fScore if the GQ score threshold was set to &quot;score&quot; field value.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="MolecularSequence.Repository">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Raw data describing a biological sequence.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="repositoryType">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Click and see / RESTful API / Need login to see / RESTful API with authentication / Other ways to see resource.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="url" minOccurs="0" maxOccurs="1" type="uri">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">URI of an external repository which contains further details about the genetics data.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">URI of an external repository which contains further details about the genetics data.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="datasetId" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Id of the variant in this external repository. The server will understand how to use this id to call for more info about datasets in external repository.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="variantsetId" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Id of the variantset in this external repository. The server will understand how to use this id to call for more info about variantsets in external repository.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="readsetId" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Id of the read in this external repository.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="MolecularSequence.StructureVariant">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Raw data describing a biological sequence.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="variantType" minOccurs="0" maxOccurs="1" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Information about chromosome structure variation DNA change type.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="exact" minOccurs="0" maxOccurs="1" type="boolean">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Used to indicate if the outer and inner start-end values have the same meaning.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="length" minOccurs="0" maxOccurs="1" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Length of the variant chromosome.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="outer" type="MolecularSequence.Outer" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Structural variant outer.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="inner" type="MolecularSequence.Inner" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Structural variant inner.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="MolecularSequence.Outer">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Raw data describing a biological sequence.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="start" minOccurs="0" maxOccurs="1" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Structural variant outer start. If the coordinate system is either 0-based or 1-based, then start position is inclusive.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="end" minOccurs="0" maxOccurs="1" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Structural variant outer end. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="MolecularSequence.Inner">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Raw data describing a biological sequence.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="start" minOccurs="0" maxOccurs="1" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Structural variant inner start. If the coordinate system is either 0-based or 1-based, then start position is inclusive.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="end" minOccurs="0" maxOccurs="1" type="integer">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Structural variant inner end. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.</xs:documentation>
+              <xs:documentation xml:lang="en">Extended CIGAR string for aligning the sequence with reference bases. See documentation [here](https://samtools.github.io/hts-specs/SAMv1.pdf) and search for CIGAR.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -48502,76 +48197,6 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
     <xs:complexContent>
       <xs:extension base="Element">
         <xs:attribute name="value" type="orientationTypeEnum" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="repositoryTypeEnum">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="directlink">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Click and see</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="openapi">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The URL is the RESTful or other kind of API that can access to the result.</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="login">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Result cannot be access unless an account is logged in</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="oauth">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Result need to be fetched with API and need LOGIN( or cookies are required when visiting the link of resource)</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="other">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Some other complicated or particular way to get resource from URL.</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="repositoryType">
-    <xs:annotation>
-      <xs:documentation xml:lang="en"></xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="repositoryTypeEnum" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="qualityTypeEnum">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="indel">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">INDEL Comparison</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="snp">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">SNP Comparison</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="unknown">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">UNKNOWN Comparison</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="qualityType">
-    <xs:annotation>
-      <xs:documentation xml:lang="en"></xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="qualityTypeEnum" use="optional"/>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -49663,6 +49288,11 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
           <xs:element name="bodySite" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Indicates the site on the subject's body where the observation was made (i.e. the target site).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="bodyStructure" minOccurs="0" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates the body structure on the subject's body where the observation was made (i.e. the target site).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="method" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -51040,7 +50670,7 @@ For resource issues, this will be a simple XPath limited to element names, repet
         <xs:sequence>
           <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A unique identifier for this package as whole. Unique instance identifiers assigned to a package by manufacturers, regulators, drug catalogue custodians or other organizations.</xs:documentation>
+              <xs:documentation xml:lang="en">A unique identifier for this package as whole - not the the content of the package. Unique instance identifiers assigned to a package by manufacturers, regulators, drug catalogue custodians or other organizations.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
@@ -51055,7 +50685,7 @@ For resource issues, this will be a simple XPath limited to element names, repet
           </xs:element>
           <xs:element name="packageFor" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The product that this is a pack for.</xs:documentation>
+              <xs:documentation xml:lang="en">The product this package model relates to, not the contents of the package (for which see package.containedItem).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="status" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -51095,7 +50725,7 @@ For resource issues, this will be a simple XPath limited to element names, repet
           </xs:element>
           <xs:element name="copackagedIndicator" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
-              <xs:documentation xml:lang="en">States whether a drug product is supplied with another item such as a diluent or adjuvant.</xs:documentation>
+              <xs:documentation xml:lang="en">Identifies if the package contains different items, such as when a drug product is supplied with another item e.g. a diluent or adjuvant.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="manufacturer" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -51147,7 +50777,7 @@ For resource issues, this will be a simple XPath limited to element names, repet
         <xs:sequence>
           <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An identifier that is specific to this particular part of the packaging. Including possibly Data Carrier Identifier (a GS1 barcode).</xs:documentation>
+              <xs:documentation xml:lang="en">A business identifier that is specific to this particular part of the packaging, often assigned by the manufacturer. Including possibly Data Carrier Identifier (a GS1 barcode).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -51157,7 +50787,7 @@ For resource issues, this will be a simple XPath limited to element names, repet
           </xs:element>
           <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="integer">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The quantity of this level of packaging in the package that contains it. If specified, the outermost level is always 1.</xs:documentation>
+              <xs:documentation xml:lang="en">The quantity of packaging items contained at this layer of the package. This does not relate to the number of contained items but relates solely to the number of packaging items. When looking at the outermost layer it is always 1. If there are two boxes within, at the next layer it would be 2.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="material" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
@@ -51177,7 +50807,7 @@ For resource issues, this will be a simple XPath limited to element names, repet
           </xs:element>
           <xs:element name="manufacturer" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Manufacturer of this package Item. When there are multiple it means these are all possible manufacturers.</xs:documentation>
+              <xs:documentation xml:lang="en">Manufacturer of this packaging item. When there are multiple values each one is a potential manufacturer of this packaging item.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="property" type="PackagedProductDefinition.Property" minOccurs="0" maxOccurs="unbounded">
@@ -55260,6 +54890,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           <xs:element name="role" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Type of association.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="period" minOccurs="0" maxOccurs="unbounded" type="Period">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Identifies the start date and the end date of the associated party in the role.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="classifier" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">

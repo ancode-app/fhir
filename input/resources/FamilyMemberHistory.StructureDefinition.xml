@@ -35,49 +35,23 @@
         <strength value="required" />
       </binding>
     </element>
+    <element id="FamilyMemberHistory.born[x]">
+      <path value="FamilyMemberHistory.born[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
     <element id="FamilyMemberHistory.age[x]">
       <path value="FamilyMemberHistory.age[x]" />
       <type>
-        <code value="Range" />
+        <code value="Age" />
       </type>
-    </element>
-    <element id="FamilyMemberHistory.age[x].low">
-      <path value="FamilyMemberHistory.age[x].low" />
-      <min value="1" />
-    </element>
-    <element id="FamilyMemberHistory.age[x].low.value">
-      <path value="FamilyMemberHistory.age[x].low.value" />
-      <min value="1" />
-    </element>
-    <element id="FamilyMemberHistory.age[x].high">
-      <path value="FamilyMemberHistory.age[x].high" />
-      <min value="1" />
-    </element>
-    <element id="FamilyMemberHistory.age[x].high.value">
-      <path value="FamilyMemberHistory.age[x].high.value" />
-      <min value="1" />
-    </element>
-    <element id="FamilyMemberHistory.estimatedAge">
-      <path value="FamilyMemberHistory.estimatedAge" />
-      <min value="1" />
     </element>
     <element id="FamilyMemberHistory.deceased[x]">
       <path value="FamilyMemberHistory.deceased[x]" />
       <type>
-        <code value="Range" />
+        <code value="date" />
       </type>
-    </element>
-    <element id="FamilyMemberHistory.deceased[x].low">
-      <path value="FamilyMemberHistory.deceased[x].low" />
-      <min value="1" />
-    </element>
-    <element id="FamilyMemberHistory.deceased[x].low.value">
-      <path value="FamilyMemberHistory.deceased[x].low.value" />
-      <min value="1" />
-    </element>
-    <element id="FamilyMemberHistory.deceased[x].high">
-      <path value="FamilyMemberHistory.deceased[x].high" />
-      <min value="1" />
     </element>
     <element id="FamilyMemberHistory.condition">
       <path value="FamilyMemberHistory.condition" />
@@ -105,10 +79,6 @@
     </element>
     <element id="FamilyMemberHistory.condition.onset[x].low">
       <path value="FamilyMemberHistory.condition.onset[x].low" />
-      <min value="1" />
-    </element>
-    <element id="FamilyMemberHistory.condition.onset[x].high">
-      <path value="FamilyMemberHistory.condition.onset[x].high" />
       <min value="1" />
     </element>
   </differential>

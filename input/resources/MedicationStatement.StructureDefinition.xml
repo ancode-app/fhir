@@ -73,6 +73,10 @@
         <strength value="required" />
       </binding>
     </element>
+    <element id="MedicationStatement.dosage.patientInstruction">
+      <path value="MedicationStatement.dosage.patientInstruction" />
+      <min value="1" />
+    </element>
     <element id="MedicationStatement.dosage.timing.code">
       <path value="MedicationStatement.dosage.timing.code" />
       <binding>

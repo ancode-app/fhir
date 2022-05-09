@@ -3,6 +3,7 @@
   <id value="ObservationSocialHistory" />
   <url value="https://ancode.app/fhir/ValueSet/ObservationSocialHistory" />
   <version value="1.0" />
+  
   <name value="ObservationSocialHistory" />
   <status value="draft" />
   <experimental value="false" />
@@ -28,6 +29,10 @@
       <concept>
         <code value="74204-9" />
         <display value="Drug use" />
+      </concept>
+      <concept>
+        <code value="74172-8" />
+        <display value="Level of autonomy" />
       </concept>
     </include>
   </compose>

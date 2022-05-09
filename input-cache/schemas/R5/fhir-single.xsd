@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Wed, May 4, 2022 14:36+0000 for FHIR v4.6.0 
+  Generated on Mon, May 9, 2022 07:17+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -20361,7 +20361,7 @@ A coverage may only be responsible for specific types of charges, and the sequen
               <xs:documentation xml:lang="en">A broad categorization of the service that is to be performed during this appointment.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="serviceType" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="serviceType" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The specific service that is to be performed during this appointment.</xs:documentation>
            </xs:annotation>
@@ -27260,7 +27260,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="status" minOccurs="1" maxOccurs="1" type="PublicationStatus">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The date (and optionally time) when the code system resource was created or revised.</xs:documentation>
+              <xs:documentation xml:lang="en">The status of this code system. Enables tracking the life-cycle of the content.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="experimental" minOccurs="0" maxOccurs="1" type="boolean">
@@ -27315,7 +27315,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="valueSet" minOccurs="0" maxOccurs="1" type="canonical">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Canonical reference to the value set that contains the entire code system.</xs:documentation>
+              <xs:documentation xml:lang="en">Canonical reference to the value set that contains all codes in the code system independent of code status.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="hierarchyMeaning" minOccurs="0" maxOccurs="1" type="CodeSystemHierarchyMeaning">
@@ -34431,7 +34431,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="serviceType" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="serviceType" minOccurs="0" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Broad categorization of the service that is to be provided (e.g. cardiology).</xs:documentation>
            </xs:annotation>
@@ -55364,7 +55364,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">A broad categorization of the service that is to be performed during this appointment.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="serviceType" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="serviceType" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The specific service that is to be performed during this appointment.</xs:documentation>
            </xs:annotation>
@@ -55944,7 +55944,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">A broad categorization of the service that is to be performed during this appointment.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="serviceType" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="serviceType" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The type of appointments that can be booked into this slot (ideally this would be an identifiable service - which is at a location, rather than the location itself). If provided then this overrides the value provided on the Schedule resource.</xs:documentation>
            </xs:annotation>
@@ -62939,7 +62939,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="filter" type="ValueSet.Filter" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Select concepts by specify a matching criterion based on the properties (including relationships) defined by the system, or on filters defined by the system. If multiple filters are specified, they SHALL all be true.</xs:documentation>
+              <xs:documentation xml:lang="en">Select concepts by specifying a matching criterion based on the properties (including relationships) defined by the system, or on filters defined by the system. If multiple filters are specified within the include, they SHALL all be true.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="valueSet" minOccurs="0" maxOccurs="unbounded" type="canonical">

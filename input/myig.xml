@@ -795,7 +795,14 @@
       <name value="ObservationSocialHistory"/>
       <description value="Observation Social History"/>
     </resource>
-     <resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ObservationVitalSigns"/>
+      </reference>
+      <name value="ObservationVitalSigns"/>
+      <description value="Observation Vital Signs"/>
+    </resource>
+    <resource>
       <reference>
         <reference value="StructureDefinition/Occupation"/>
       </reference>

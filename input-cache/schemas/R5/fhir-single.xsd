@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Mon, May 9, 2022 07:17+0000 for FHIR v4.6.0 
+  Generated on Tue, May 10, 2022 16:44+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -1957,6 +1957,12 @@
           <xs:documentation xml:lang="fr">Drapeau</xs:documentation>
           <xs:documentation xml:lang="es">Bandera</xs:documentation>
           <xs:documentation xml:lang="zh">标记</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FormularyItem">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">FormularyItem</xs:documentation>
+          <xs:documentation xml:lang="en">FormularyItem</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Goal">
@@ -12585,6 +12591,12 @@
           <xs:documentation xml:lang="zh">标记</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="FormularyItem">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">FormularyItem</xs:documentation>
+          <xs:documentation xml:lang="en">FormularyItem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Goal">
         <xs:annotation>
           <xs:documentation xml:lang="en">Goal</xs:documentation>
@@ -14296,6 +14308,12 @@
           <xs:documentation xml:lang="zh">标记</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="FormularyItem">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">FormularyItem</xs:documentation>
+          <xs:documentation xml:lang="en">FormularyItem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Goal">
         <xs:annotation>
           <xs:documentation xml:lang="en">Goal</xs:documentation>
@@ -15322,6 +15340,7 @@
       <xs:element ref="ExplanationOfBenefit"/>
       <xs:element ref="FamilyMemberHistory"/>
       <xs:element ref="Flag"/>
+      <xs:element ref="FormularyItem"/>
       <xs:element ref="Goal"/>
       <xs:element ref="GraphDefinition"/>
       <xs:element ref="Group"/>
@@ -34239,7 +34258,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           </xs:element>
           <xs:element name="securityLabel" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A set of Security-Tag codes specifying the level of privacy/security of the Document. Note that DocumentReference.meta.security contains the security labels of the &quot;reference&quot; to the document, while DocumentReference.securityLabel contains a snapshot of the security labels on the document the reference refers to.</xs:documentation>
+              <xs:documentation xml:lang="en">A set of Security-Tag codes specifying the level of privacy/security of the Document found at DocumentReference.content.attachment.url. Note that DocumentReference.meta.security contains the security labels of the data elements in DocumentReference, while DocumentReference.securityLabel contains the security labels for the document the reference refers to. The distinction recognizes that the document may contain sensitive information, while the DocumentReference is metadata about the document and thus might not be as sensitive as the document. For example: a psychotherapy episode may contain highly sensitive information, while the metadata may simply indicate that some episode happened.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="content" type="DocumentReference.Content" minOccurs="1" maxOccurs="unbounded">
@@ -34416,7 +34435,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="class" minOccurs="1" maxOccurs="1" type="Coding">
+          <xs:element name="class" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations.</xs:documentation>
            </xs:annotation>
@@ -38611,6 +38630,68 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="Element">
         <xs:attribute name="value" type="FlagStatusEnum" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FormularyItem" type="FormularyItem">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">This resource describes a product or service that is available through a program and includes the conditions and constraints of availability.  All of the information in this resource is specific to the inclusion of the item in the formulary and is not inherent to the item itself.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="FormularyItem">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">This resource describes a product or service that is available through a program and includes the conditions and constraints of availability.  All of the information in this resource is specific to the inclusion of the item in the formulary and is not inherent to the item itself.</xs:documentation>
+      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DomainResource">
+        <xs:sequence>
+          <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Business identifier for this formulary item.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="code" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A code (or set of codes) that specify the product or service that is identified by this formulary item.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="status" minOccurs="0" maxOccurs="1" type="FormularyItemStatusCodes">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The validity about the information of the formulary item and not of the underlying product or service itself.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="FormularyItemStatusCodesEnum">
+    <xs:restriction base="code-primitive">
+      <xs:enumeration value="active">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Active</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="entered-in-error">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Entered in Error</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="inactive">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Inactive</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="FormularyItemStatusCodes">
+    <xs:annotation>
+      <xs:documentation xml:lang="en"></xs:documentation>
+      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="Element">
+        <xs:attribute name="value" type="FormularyItemStatusCodesEnum" use="optional"/>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>

@@ -80,7 +80,7 @@
     <display value="Maximum right calf circumference" />
   </concept>
   <concept>
-    <code value="11947-9" />
+    <code value="8280-0" />
     <display value="Abdominal circumference" />
   </concept>
 </CodeSystem>

@@ -179,6 +179,22 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/BRImunobiologico"/>
+      </reference>
+      <name value="BRImunobiologico"/>
+      <description value="BRImunobiologico"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRImunobiologico"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/BRLocalAplicacao"/>
+      </reference>
+      <name value="BRLocalAplicacao"/>
+      <description value="BRLocalAplicacao"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRLocalAplicacao"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/BRNivelEscolaridade"/>
       </reference>
       <name value="BRNivelEscolaridade"/>
@@ -262,6 +278,14 @@
       </reference>
       <name value="BRTipoEstabelecimentoSaude"/>
       <description value="BR Tipo Estabelecimento Saude"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/BRViaAdministracao"/>
+      </reference>
+      <name value="BRViaAdministracao"/>
+      <description value="BRViaAdministracao"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao"/>
     </resource>
     <resource>
       <reference>
@@ -790,6 +814,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/ObservationPhysicalExam"/>
+      </reference>
+      <name value="ObservationPhysicalExam"/>
+      <description value="Observation Physical Exam"/>
+    </resource>    
+    <resource>
+      <reference>
         <reference value="ValueSet/ObservationSocialHistory"/>
       </reference>
       <name value="ObservationSocialHistory"/>
@@ -1130,6 +1161,27 @@
       </reference>
       <name value="TypeHealthcareFacility"/>
       <description value="Type Healthcare Facility"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/VaccineBodySite"/>
+      </reference>
+      <name value="VaccineBodySite"/>
+      <description value="VaccineBodySite"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/VaccineCode"/>
+      </reference>
+      <name value="VaccineCode"/>
+      <description value="VaccineCode"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/VaccineRoute"/>
+      </reference>
+      <name value="VaccineRoute"/>
+      <description value="VaccineRoute"/>
     </resource>
     <resource>
       <reference>

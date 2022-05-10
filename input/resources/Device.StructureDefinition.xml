@@ -18,5 +18,9 @@
       <path value="Device.status" />
       <min value="1" />
     </element>
+    <element id="Device.deviceName">
+      <path value="Device.deviceName" />
+      <min value="1" />
+    </element>
   </differential>
 </StructureDefinition>

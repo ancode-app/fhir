@@ -42,7 +42,7 @@
       <path value="DeviceDefinition.type" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://ancode.app/fhir/CodeSystem/RiskRating" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/RiskClass" />
       </binding>
     </element>
   </differential>

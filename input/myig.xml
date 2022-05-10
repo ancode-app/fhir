@@ -286,21 +286,7 @@
       <name value="BRViaAdministracao"/>
       <description value="BRViaAdministracao"/>
       <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/CarePlan"/>
-      </reference>
-      <name value="CarePlan"/>
-      <description value="Care Plan"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/CareTeam"/>
-      </reference>
-      <name value="CareTeam"/>
-      <description value="Care Team"/>
-    </resource>
+    </resource>   
     <resource>
       <reference>
         <reference value="CodeSystem/CBOHealthcare"/>
@@ -450,25 +436,11 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/DeviceUseStatement"/>
-      </reference>
-      <name value="DeviceUseStatement"/>
-      <description value="Device Use Statement"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/DiagnosticReport"/>
       </reference>
       <name value="DiagnosticReport"/>
       <description value="Diagnostic Report"/>
     </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/DocumentReference"/>
-      </reference>
-      <name value="DocumentReference"/>
-      <description value="Document Reference"/>
-    </resource>    
     <resource>
       <reference>
         <reference value="SearchParameter/DomainResourceExtension"/>
@@ -590,13 +562,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/Goal"/>
-      </reference>
-      <name value="Goal"/>
-      <description value="Goal"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/HealthcareService"/>
       </reference>
       <name value="HealthcareService"/>
@@ -671,27 +636,13 @@
       </reference>
       <name value="IdentifierTypePractitioner"/>
       <description value="Identifier Type Practitioner"/>
-    </resource>
-     <resource>
-      <reference>
-        <reference value="StructureDefinition/ImagingStudy"/>
-      </reference>                                                                                
-      <name value="ImagingStudy"/>
-      <description value="Imaging Study"/>
-    </resource>
+    </resource>    
     <resource>
       <reference>
         <reference value="StructureDefinition/Immunization"/>
       </reference>                                                                                
       <name value="Immunization"/>
       <description value="Immunization"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/InsurancePlan"/>
-      </reference>                                                                                
-      <name value="InsurancePlan"/>
-      <description value="Insurance Plan"/>
     </resource>
     <resource>
       <reference>
@@ -720,13 +671,6 @@
       </reference>                                                                                
       <name value="Location"/>
       <description value="Location"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Media"/>
-      </reference>                                                                                
-      <name value="Media"/>
-      <description value="Media"/>
     </resource>
     <resource>
       <reference>
@@ -912,13 +856,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/Provenance"/>
-      </reference>
-      <name value="Provenance"/>
-      <description value="Provenance"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="CodeSystem/Qualification"/>
       </reference>
       <name value="Qualification"/>
@@ -1098,13 +1035,6 @@
       </reference>
       <name value="Slot"/>
       <description value="Slot"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Specimen"/>
-      </reference>
-      <name value="Specimen"/>
-      <description value="Specimen"/>
     </resource>
     <resource>
       <reference>

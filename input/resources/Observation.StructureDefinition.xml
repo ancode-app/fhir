@@ -46,7 +46,6 @@
     </element>
     <element id="Observation.interpretation">
       <path value="Observation.interpretation" />
-      <min value="1" />
       <max value="1" />
     </element>
   </differential>

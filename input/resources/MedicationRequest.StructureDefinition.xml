@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="MedicationRequest" />
+  <url value="https://ancode.app/fhir/StructureDefinition/MedicationRequest" />
+  <name value="MedicationRequest" />
+  <status value="draft" />
+  <date value="2022-05-13" />
+  <publisher value="Ancode" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationRequest" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
+  <derivation value="constraint" />
+</StructureDefinition>

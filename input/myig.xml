@@ -443,6 +443,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/DocumentReference"/>
+      </reference>
+      <name value="DocumentReference"/>
+      <description value="Document Reference"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/DocumentReferenceCategory"/>
+      </reference>
+      <name value="DocumentReferenceCategory"/>
+      <description value="Document Reference Category"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/DocumentReferenceCategory"/>
+      </reference>
+      <name value="DocumentReferenceCategory"/>
+      <description value="Document Reference Category"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="SearchParameter/DomainResourceExtension"/>
       </reference>
       <name value="DomainResourceExtension"/>
@@ -685,6 +706,13 @@
       </reference>                                                                                
       <name value="MedicationStatement"/>
       <description value="Medication Statement"/>
+    </resource>
+     <resource>
+      <reference>
+        <reference value="StructureDefinition/MedicationRequest"/>
+      </reference>                                                                                
+      <name value="MedicationRequest"/>
+      <description value="Medication Request"/>
     </resource>
     <resource>
       <reference>

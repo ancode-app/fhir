@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DocumentReferenceCategory" />
+  <url value="https://ancode.app/fhir/ValueSet/DocumentReferenceCategory" />
+  <version value="1.0" />
+  <name value="DocumentReferenceCategory" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2022-05-17" />
+  <publisher value="Ancode" />
+  <description value="Document Reference Category" />
+  <immutable value="false" />
+  <compose>
+    <include>
+      <system value="https://ancode.app/fhir/CodeSystem/DocumentReferenceCategory" />
+    </include>
+  </compose>
+</ValueSet>

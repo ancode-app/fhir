@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Tue, May 17, 2022 15:24+0000 for FHIR v4.6.0 
+  Generated on Fri, May 20, 2022 00:17+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -21519,9 +21519,9 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Unique instance identifiers assigned to a biologically derived product. Note: This is a business identifier, not a resource identifier.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="biologicalSource" minOccurs="0" maxOccurs="1" type="Identifier">
+          <xs:element name="biologicalSourceEvent" minOccurs="0" maxOccurs="1" type="Identifier">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An identifier that supports traceability to the biological entity or entities that is/are the source of the biological material in the product.  Where multiple biological entities are involved, the biologicalSource should provide a link to the pooling event records where linkage to individual entities are maintained.</xs:documentation>
+              <xs:documentation xml:lang="en">An identifier that supports traceability to the event during which material in this product from one or more biological entities was obtained or pooled.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="processingFacility" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -32107,9 +32107,9 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Reason for the status of the Device record. For example, why is the record not active.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="biologicalSource" minOccurs="0" maxOccurs="1" type="Identifier">
+          <xs:element name="biologicalSourceEvent" minOccurs="0" maxOccurs="1" type="Identifier">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An identifier that supports traceability to the biological entity that is the source of biological material in the product.</xs:documentation>
+              <xs:documentation xml:lang="en">An identifier that supports traceability to the event during which material in this product from one or more biological entities was obtained or pooled.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="manufacturer" minOccurs="0" maxOccurs="1" type="string">
@@ -32372,7 +32372,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">Code that specifies the property being represented. No codes are specified but the MDC codes are an example: https://build.fhir.org/mdc.html.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="0" maxOccurs="1" >
+          <xs:choice minOccurs="1" maxOccurs="1" >
             <xs:annotation>
               <xs:documentation xml:lang="en">Property value - can be a code, quantity, boolean, string or attachment.</xs:documentation>
             </xs:annotation>
@@ -32619,13 +32619,11 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">The part number or catalog number of the device.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="0" maxOccurs="1" >
+          <xs:element name="manufacturer" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">A name of the manufacturer  or legal representative e.g. labeler. Whether this is the actual manufacturer or the labeler or responsible depends on implementation and jurisdiction.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="manufacturerString" type="string"/>
-            <xs:element name="manufacturerReference" type="Reference"/>
-          </xs:choice>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="deviceName" type="DeviceDefinition.DeviceName" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">The name or names of the device as given by the manufacturer.</xs:documentation>
@@ -33003,7 +33001,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">Code that specifies the property.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="0" maxOccurs="1" >
+          <xs:choice minOccurs="1" maxOccurs="1" >
             <xs:annotation>
               <xs:documentation xml:lang="en">Property value - the data type depends on the property type.</xs:documentation>
             </xs:annotation>
@@ -33658,7 +33656,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">Plan/proposal/order fulfilled by this request.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="priorRequest" minOccurs="0" maxOccurs="unbounded" type="Reference">
+          <xs:element name="replaces" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The request takes the place of the referenced completed or terminated request(s).</xs:documentation>
            </xs:annotation>
@@ -49331,9 +49329,9 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
               <xs:documentation xml:lang="en">The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="biologicalSource" minOccurs="0" maxOccurs="1" type="Identifier">
+          <xs:element name="biologicalSourceEvent" minOccurs="0" maxOccurs="1" type="Identifier">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An identifier that supports traceability to the biological entity that is the source of biological material in the product.</xs:documentation>
+              <xs:documentation xml:lang="en">An identifier that supports traceability to the event during which material in this product from one or more biological entities was obtained or pooled.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -56028,6 +56026,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">On whom or what the service is to be performed. This is usually a human patient, but can also be requested on animals, groups of humans or animals, devices such as dialysis machines, or even locations (typically for environmental scans).</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="focus" minOccurs="0" maxOccurs="unbounded" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The actual focus of a service request when it is not the subject of record representing something or someone associated with the subject such as a spouse, parent, fetus, or donor. The focus of a service request could also be an existing condition,  an intervention, the subject's diet,  another service request on the subject,  or a body structure such as tumor or implanted device.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">An encounter that provides additional information about the healthcare context in which this request is made.</xs:documentation>
@@ -62562,7 +62565,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="status" minOccurs="0" maxOccurs="1" type="TransportStatus">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A code specifying the state of the dispense event.</xs:documentation>
+              <xs:documentation xml:lang="en">A code specifying the state of the transport event.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="statusReason" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -62942,12 +62945,22 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
       </xs:enumeration>
       <xs:enumeration value="completed">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Delivered</xs:documentation>
+          <xs:documentation xml:lang="en">Completed</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="abandoned">
         <xs:annotation>
           <xs:documentation xml:lang="en">Abandoned</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="cancelled">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Cancelled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="planned">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Planned</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="entered-in-error">

@@ -71,6 +71,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/AppointmentDefault"/>
+      </reference>
+      <name value="AppointmentDefault"/>
+      <description value="Appointment Default"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/AppointmentResponse"/>
       </reference>
       <name value="AppointmentResponse"/>
@@ -713,6 +720,13 @@
       </reference>                                                                                
       <name value="MedicationRequest"/>
       <description value="Medication Request"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/MedicationStatementStatus"/>
+      </reference>
+      <name value="MedicationStatementStatus"/>
+      <description value="Medication Statement Status"/>
     </resource>
     <resource>
       <reference>

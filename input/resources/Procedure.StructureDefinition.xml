@@ -32,6 +32,10 @@
         <code value="Period" />
       </type>
     </element>
+    <element id="Procedure.recorder">
+      <path value="Procedure.recorder" />
+      <min value="1" />
+    </element>
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode" />
       <binding>

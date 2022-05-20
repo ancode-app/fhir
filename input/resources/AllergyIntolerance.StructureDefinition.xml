@@ -18,22 +18,12 @@
       <path value="AllergyIntolerance.verificationStatus" />
       <min value="1" />
     </element>
-    <element id="AllergyIntolerance.type">
-      <path value="AllergyIntolerance.type" />
-      <min value="1" />
-    </element>
     <element id="AllergyIntolerance.category">
       <path value="AllergyIntolerance.category" />
-      <min value="1" />
       <max value="1" />
-    </element>
-    <element id="AllergyIntolerance.criticality">
-      <path value="AllergyIntolerance.criticality" />
-      <min value="1" />
     </element>
     <element id="AllergyIntolerance.code">
       <path value="AllergyIntolerance.code" />
-      <min value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="https://ancode.app/fhir/ValueSet/AllergyIntoleranceCode" />

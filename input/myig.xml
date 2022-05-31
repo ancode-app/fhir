@@ -71,13 +71,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/AppointmentDefault"/>
-      </reference>
-      <name value="AppointmentDefault"/>
-      <description value="Appointment Default"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/AppointmentResponse"/>
       </reference>
       <name value="AppointmentResponse"/>
@@ -96,7 +89,14 @@
       </reference>
       <name value="AppointmentType"/>
       <description value="Appointment Type"/>
-    </resource>    
+    </resource>
+     <resource>
+      <reference>
+        <reference value="StructureDefinition/AppointmentType"/>
+      </reference>
+      <name value="AppointmentType"/>
+      <description value="Appointment Type"/>
+    </resource>
     <resource>
       <reference>
         <reference value="ValueSet/AppointmentType"/>
@@ -706,6 +706,13 @@
       </reference>                                                                                
       <name value="Medication"/>
       <description value="Medication"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/MedicationCodeExtension"/>
+      </reference>
+      <name value="MedicationCodeExtension"/>
+      <description value="Medication Code Extension"/>
     </resource>
     <resource>
       <reference>

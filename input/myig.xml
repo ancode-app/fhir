@@ -730,6 +730,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/MedicationRequestCategory"/>
+      </reference>
+      <name value="MedicationRequestCategory"/>
+      <description value="Medication Request Category"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/MedicationRequestCategory"/>
+      </reference>
+      <name value="MedicationRequestCategory"/>
+      <description value="Medication Request Category"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/MedicationStatementStatus"/>
       </reference>
       <name value="MedicationStatementStatus"/>

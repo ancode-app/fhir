@@ -12,4 +12,13 @@
   <type value="MedicationRequest" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
   <derivation value="constraint" />
+  <differential>
+    <element id="MedicationRequest.category">
+      <path value="MedicationRequest.category" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/MedicationRequestCategory" />
+      </binding>
+    </element>
+  </differential>
 </StructureDefinition>

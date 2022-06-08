@@ -4,6 +4,7 @@ temp
 template
 output
 fsh-generated
+.vs/
 
 # Don't commit this because it's so large #
 ###########################################
@@ -23,4 +24,3 @@ Thumbs.db
 ################
 *.bak
 *.jar
-/.vs/fhir/FileContentIndex

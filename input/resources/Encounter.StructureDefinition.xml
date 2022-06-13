@@ -63,6 +63,7 @@
     </element>
     <element id="Encounter.reasonCode">
       <path value="Encounter.reasonCode" />
+      <max value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="https://ancode.app/fhir/ValueSet/BRCID10" />

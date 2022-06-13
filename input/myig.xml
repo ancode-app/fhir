@@ -702,6 +702,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/MainSpecialty"/>
+      </reference>
+      <name value="MainSpecialty"/>
+      <description value="Main Specialty"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Medication"/>
       </reference>                                                                                
       <name value="Medication"/>
@@ -937,6 +944,20 @@
       </reference>
       <name value="Questionnaire"/>
       <description value="Questionnaire"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/QuestionnaireCode"/>
+      </reference>
+      <name value="QuestionnaireCode"/>
+      <description value="Questionnaire Code"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/QuestionnaireCode"/>
+      </reference>
+      <name value="QuestionnaireCode"/>
+      <description value="Questionnaire Code"/>
     </resource>
     <resource>
       <reference>

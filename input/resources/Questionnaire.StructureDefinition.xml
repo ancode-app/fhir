@@ -14,5 +14,26 @@
       <path value="Questionnaire.title" />
       <min value="1" />
     </element>
+    <element id="Questionnaire.date">
+      <path value="Questionnaire.date" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.code">
+      <path value="Questionnaire.code" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/QuestionnaireCode" />
+      </binding>
+    </element>
+    <element id="Questionnaire.item.text">
+      <path value="Questionnaire.item.text" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.item.required">
+      <path value="Questionnaire.item.required" />
+      <min value="1" />
+    </element>
   </differential>
 </StructureDefinition>

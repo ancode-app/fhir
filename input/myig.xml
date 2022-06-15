@@ -184,6 +184,20 @@
       <description value="BREtniaIndigena"/>
       <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BREtniaIndigena"/>
     </resource>
+     <resource>
+      <reference>
+        <reference value="CodeSystem/BRGrauParticipacao"/>
+      </reference>
+      <name value="BRGrauParticipacao"/>
+      <description value="BR Grau Participacao"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRGrauParticipacao"/>
+      </reference>
+      <name value="BRGrauParticipacao"/>
+      <description value="BR Grau Participacao"/>
+    </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/BRImunobiologico"/>
@@ -273,6 +287,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/BRTecnicaUtilizada"/>
+      </reference>
+      <name value="BRTecnicaUtilizada"/>
+      <description value="BR Tecnica Utilizada"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRTecnicaUtilizada"/>
+      </reference>
+      <name value="BRTecnicaUtilizada"/>
+      <description value="BR Tecnica Utilizada"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/BRTipoEstabelecimentoSaude"/>
       </reference>
       <name value="BRTipoEstabelecimentoSaude"/>
@@ -288,6 +316,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/BRViaAcesso"/>
+      </reference>
+      <name value="BRViaAcesso"/>
+      <description value="BR Via Acesso"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRViaAcesso"/>
+      </reference>
+      <name value="BRViaAcesso"/>
+      <description value="BR Via Acesso"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/BRViaAdministracao"/>
       </reference>
       <name value="BRViaAdministracao"/>
@@ -297,6 +339,13 @@
     <resource>
       <reference>
         <reference value="CodeSystem/CBOHealthcare"/>
+      </reference>
+      <name value="CBOHealthcare"/>
+      <description value="CBOHealthcare"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/CBOHealthcare"/>
       </reference>
       <name value="CBOHealthcare"/>
       <description value="CBOHealthcare"/>
@@ -702,13 +751,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/MainSpecialty"/>
-      </reference>
-      <name value="MainSpecialty"/>
-      <description value="Main Specialty"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/Medication"/>
       </reference>                                                                                
       <name value="Medication"/>
@@ -937,6 +979,13 @@
       </reference>
       <name value="Qualification"/>
       <description value="Qualification"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Quantity"/>
+      </reference>
+      <name value="Quantity"/>
+      <description value="Quantity"/>
     </resource>
     <resource>
       <reference>

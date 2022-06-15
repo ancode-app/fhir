@@ -22,16 +22,15 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
     <element id="PractitionerRole.extension:mainSpecialty">
       <path value="PractitionerRole.extension" />
       <sliceName value="mainSpecialty" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/MainSpecialty" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/CBOHealthcare" />
       </type>
       <isModifier value="false" />
     </element>

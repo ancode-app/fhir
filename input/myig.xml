@@ -762,15 +762,8 @@
       </reference>
       <name value="MedicationCodeExtension"/>
       <description value="Medication Code Extension"/>
-    </resource>
+    </resource>    
     <resource>
-      <reference>
-        <reference value="StructureDefinition/MedicationStatement"/>
-      </reference>                                                                                
-      <name value="MedicationStatement"/>
-      <description value="Medication Statement"/>
-    </resource>
-     <resource>
       <reference>
         <reference value="StructureDefinition/MedicationRequest"/>
       </reference>                                                                                
@@ -790,6 +783,20 @@
       </reference>
       <name value="MedicationRequestCategory"/>
       <description value="Medication Request Category"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/MedicationRequestGroupIdentifier"/>
+      </reference>
+      <name value="MedicationRequestGroupIdentifier"/>
+      <description value="MedicationRequest GroupIdentifier"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/MedicationStatement"/>
+      </reference>                                                                                
+      <name value="MedicationStatement"/>
+      <description value="Medication Statement"/>
     </resource>
     <resource>
       <reference>

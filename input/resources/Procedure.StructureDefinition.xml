@@ -29,16 +29,11 @@
       <path value="Procedure.extension" />
       <sliceName value="executedQuantity" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/Quantity" />
       </type>
       <isModifier value="false" />
-    </element>
-    <element id="Procedure.extension:executedQuantity.value[x]">
-      <path value="Procedure.extension.value[x]" />
-      <min value="1" />
     </element>
     <element id="Procedure.basedOn">
       <path value="Procedure.basedOn" />

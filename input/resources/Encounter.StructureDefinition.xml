@@ -21,26 +21,37 @@
       <path value="Encounter.class" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://ancode.app/fhir/ValueSet/EncounterCode" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/EncounterClass" />
       </binding>
     </element>
     <element id="Encounter.classHistory.class">
       <path value="Encounter.classHistory.class" />
+      <short value="InPerson| AncodeVideoCall | Telephone | WhatsApp+" />
+      <definition value="InPerson| AncodeVideoCall | Telephone | WhatsApp+." />
       <binding>
         <strength value="required" />
-        <valueSet value="https://ancode.app/fhir/ValueSet/EncounterCode" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/EncounterClass" />
       </binding>
     </element>
     <element id="Encounter.classHistory.period.start">
       <path value="Encounter.classHistory.period.start" />
       <min value="1" />
     </element>
+    <element id="Encounter.type">
+      <path value="Encounter.type" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/EncounterType" />
+      </binding>
+    </element>
     <element id="Encounter.priority">
       <path value="Encounter.priority" />
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://ancode.app/fhir/ValueSet/AppointmentType" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/BRPrioridade" />
       </binding>
     </element>
     <element id="Encounter.participant.type">

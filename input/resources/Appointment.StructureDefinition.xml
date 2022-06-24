@@ -24,13 +24,13 @@
       </slicing>
       <min value="1" />
     </element>
-    <element id="Appointment.extension:encounterWay">
+    <element id="Appointment.extension:encounterClass">
       <path value="Appointment.extension" />
-      <sliceName value="encounterWay" />
+      <sliceName value="encounterClass" />
       <min value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/EncounterWay" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/EncounterClass" />
       </type>
     </element>
     <element id="Appointment.cancelationReason">
@@ -52,7 +52,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://ancode.app/fhir/ValueSet/AppointmentType" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/EncounterType" />
       </binding>
     </element>
     <element id="Appointment.priority">

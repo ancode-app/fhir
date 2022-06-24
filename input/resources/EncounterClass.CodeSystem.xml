@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="EncounterWay" />
-  <url value="https://ancode.app/fhir/CodeSystem/EncounterWay" />
+  <id value="EncounterClass" />
+  <url value="https://ancode.app/fhir/CodeSystem/EncounterClass" />
   <version value="1.0" />
-  <name value="EncounterWay" />
+  <name value="EncounterClass" />
   <status value="draft" />
   <experimental value="false" />
   <date value="2021-12-07" />
   <publisher value="Ancode" />
-  <description value="Encounter Way" />
+  <description value="Encounter Class" />
   <caseSensitive value="true" />
   <content value="complete" />
   <concept>

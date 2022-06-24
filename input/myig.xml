@@ -82,27 +82,6 @@
       </reference>
       <name value="AppointmentSupportingInformation"/>
       <description value="Appointment SupportingInformation"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/AppointmentType"/>
-      </reference>
-      <name value="AppointmentType"/>
-      <description value="Appointment Type"/>
-    </resource>
-     <resource>
-      <reference>
-        <reference value="StructureDefinition/AppointmentType"/>
-      </reference>
-      <name value="AppointmentType"/>
-      <description value="Appointment Type"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/AppointmentType"/>
-      </reference>
-      <name value="AppointmentType"/>
-      <description value="Appointment Type"/>
     </resource>    
     <resource>
       <reference>
@@ -227,6 +206,20 @@
       </reference>
       <name value="BRNivelEscolaridade"/>
       <description value="BR Nivel Escolaridade"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/BRPrioridade"/>
+      </reference>
+      <name value="BRPrioridade"/>
+      <description value="BR Prioridade"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRPrioridade"/>
+      </reference>
+      <name value="BRPrioridade"/>
+      <description value="BR Prioridade"/>
     </resource>
     <resource>
       <reference>
@@ -552,20 +545,27 @@
       </reference>
       <name value="Encounter"/>
       <description value="Encounter"/>
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="CodeSystem/EncounterClass"/>
+      </reference>
+      <name value="EncounterClass"/>
+      <description value="Encounter Class"/>
     </resource>
     <resource>
       <reference>
-        <reference value="CodeSystem/EncounterCode"/>
+        <reference value="StructureDefinition/EncounterClass"/>
       </reference>
-      <name value="EncounterCode"/>
-      <description value="Encounter Code"/>
+      <name value="EncounterClass"/>
+      <description value="Encounter Class"/>
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/EncounterCode"/>
+        <reference value="ValueSet/EncounterClass"/>
       </reference>
-      <name value="EncounterCode"/>
-      <description value="Encounter Code"/>
+      <name value="EncounterClass"/>
+      <description value="Encounter Class"/>
     </resource>
     <resource>
       <reference>
@@ -574,26 +574,26 @@
       <name value="EncounterParticipantTypeMostUsed"/>
       <description value="Encounter Participant Type Most Used"/>
     </resource>
-    <resource>
+     <resource>
       <reference>
-        <reference value="CodeSystem/EncounterWay"/>
+        <reference value="CodeSystem/EncounterType"/>
       </reference>
-      <name value="EncounterWay"/>
-      <description value="EncounterWay"/>
+      <name value="EncounterType"/>
+      <description value="Encounter Type"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/EncounterWay"/>
+        <reference value="StructureDefinition/EncounterType"/>
       </reference>
-      <name value="EncounterWay"/>
-      <description value="EncounterWay"/>
+      <name value="EncounterType"/>
+      <description value="Encounter Type"/>
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/EncounterWay"/>
+        <reference value="ValueSet/EncounterType"/>
       </reference>
-      <name value="EncounterWay"/>
-      <description value="EncounterWay"/>
+      <name value="EncounterType"/>
+      <description value="Encounter Type"/>
     </resource>
     <resource>
       <reference>

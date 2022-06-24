@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="EncounterWay" />
-  <url value="https://ancode.app/fhir/StructureDefinition/EncounterWay" />
+  <id value="EncounterClass" />
+  <url value="https://ancode.app/fhir/StructureDefinition/EncounterClass" />
   <version value="1.0" />
-  <name value="EncounterWay" />
+  <name value="EncounterClass" />
   <status value="draft" />
   <date value="2021-12-07" />
   <publisher value="Ancode" />
@@ -29,7 +29,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://ancode.app/fhir/StructureDefinition/EncounterWay" />
+      <fixedUri value="https://ancode.app/fhir/StructureDefinition/EncounterClass" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -39,7 +39,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://ancode.app/fhir/ValueSet/EncounterWay" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/EncounterClass" />
       </binding>
     </element>
   </differential>

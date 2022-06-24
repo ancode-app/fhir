@@ -44,6 +44,10 @@
     <element id="Slot.appointmentType">
       <path value="Slot.appointmentType" />
       <min value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/EncounterType" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

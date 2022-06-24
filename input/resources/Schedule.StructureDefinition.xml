@@ -72,23 +72,23 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/ServiceProvider" />
       </type>
     </element>
-    <element id="Schedule.extension:encounterWay">
+    <element id="Schedule.extension:encounterClass">
       <path value="Schedule.extension" />
-      <sliceName value="encounterWay" />
+      <sliceName value="encounterClass" />
       <min value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/EncounterWay" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/EncounterClass" />
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Schedule.extension:appointmentType">
+    <element id="Schedule.extension:encounterType">
       <path value="Schedule.extension" />
-      <sliceName value="appointmentType" />
+      <sliceName value="encounterType" />
       <min value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/AppointmentType" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/EncounterType" />
       </type>
       <isModifier value="false" />
     </element>

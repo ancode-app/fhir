@@ -14,13 +14,12 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
   <derivation value="constraint" />
   <differential>
-    <element id="DocumentReference.category">
-      <path value="DocumentReference.category" />
+    <element id="DocumentReference.type">
+      <path value="DocumentReference.type" />
       <min value="1" />
-      <max value="1" />
       <binding>
-        <strength value="example" />
-        <valueSet value="https://ancode.app/fhir/ValueSet/DocumentReferenceCategory" />
+        <strength value="required" />
+        <valueSet value="https://ancode.app/fhir/ValueSet/DocumentReferenceType" />
       </binding>
     </element>
     <element id="DocumentReference.subject">

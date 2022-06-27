@@ -499,18 +499,18 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CodeSystem/DocumentReferenceCategory"/>
+        <reference value="CodeSystem/DocumentReferenceType"/>
       </reference>
-      <name value="DocumentReferenceCategory"/>
-      <description value="Document Reference Category"/>
+      <name value="DocumentReferenceType"/>
+      <description value="Document Reference Type"/>
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/DocumentReferenceCategory"/>
+        <reference value="ValueSet/DocumentReferenceType"/>
       </reference>
-      <name value="DocumentReferenceCategory"/>
-      <description value="Document Reference Category"/>
-    </resource>
+      <name value="DocumentReferenceType"/>
+      <description value="Document Reference Type"/>
+    </resource>    
     <resource>
       <reference>
         <reference value="SearchParameter/DomainResourceExtension"/>

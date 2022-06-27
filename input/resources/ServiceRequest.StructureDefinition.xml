@@ -22,7 +22,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="2" />
+      <min value="3" />
     </element>
     <element id="ServiceRequest.extension:newbornCare">
       <path value="ServiceRequest.extension" />
@@ -37,6 +37,16 @@
     <element id="ServiceRequest.extension:authorizedQuantity">
       <path value="ServiceRequest.extension" />
       <sliceName value="authorizedQuantity" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/Quantity" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ServiceRequest.extension:performedQuantity">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="performedQuantity" />
       <min value="1" />
       <type>
         <code value="Extension" />

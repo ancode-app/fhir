@@ -25,13 +25,14 @@
       </slicing>
       <min value="1" />
     </element>
-    <element id="Procedure.extension:executedQuantity">
+    <element id="Procedure.extension:performedQuantity">
       <path value="Procedure.extension" />
-      <sliceName value="executedQuantity" />
+      <sliceName value="performedQuantity" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Quantity" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/PerformedQuantity" />
       </type>
       <isModifier value="false" />
     </element>

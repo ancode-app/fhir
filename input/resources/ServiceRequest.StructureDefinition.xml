@@ -38,9 +38,10 @@
       <path value="ServiceRequest.extension" />
       <sliceName value="authorizedQuantity" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Quantity" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/AuthorizedQuantity" />
       </type>
       <isModifier value="false" />
     </element>
@@ -48,9 +49,10 @@
       <path value="ServiceRequest.extension" />
       <sliceName value="performedQuantity" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/Quantity" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/PerformedQuantity" />
       </type>
       <isModifier value="false" />
     </element>

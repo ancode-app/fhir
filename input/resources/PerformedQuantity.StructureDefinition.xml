@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Quantity" />
-  <url value="https://ancode.app/fhir/StructureDefinition/Quantity" />
+  <id value="PerformedQuantity" />
+  <url value="https://ancode.app/fhir/StructureDefinition/PerformedQuantity" />
   <version value="1.0" />
-  <name value="Quantity" />
+  <name value="PerformedQuantity" />
   <status value="draft" />
-  <date value="2022-06-15" />
+  <date value="2022-06-28" />
   <publisher value="Ancode" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
@@ -29,7 +29,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://ancode.app/fhir/StructureDefinition/Quantity" />
+      <fixedUri value="https://ancode.app/fhir/StructureDefinition/PerformedQuantity" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

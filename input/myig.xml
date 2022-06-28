@@ -85,6 +85,13 @@
     </resource>    
     <resource>
       <reference>
+        <reference value="StructureDefinition/AuthorizedQuantity"/>
+      </reference>
+      <name value="AuthorizedQuantity"/>
+      <description value="Authorized Quantity"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/BillingTableProvider"/>
       </reference>
       <name value="BillingTableProvider"/>
@@ -926,6 +933,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/PerformedQuantity"/>
+      </reference>
+      <name value="PerformedQuantity"/>
+      <description value="Performed Quantity"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Person"/>
       </reference>
       <name value="Person"/>
@@ -986,14 +1000,7 @@
       </reference>
       <name value="Qualification"/>
       <description value="Qualification"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Quantity"/>
-      </reference>
-      <name value="Quantity"/>
-      <description value="Quantity"/>
-    </resource>
+    </resource>   
     <resource>
       <reference>
         <reference value="StructureDefinition/Questionnaire"/>

@@ -12,23 +12,23 @@
   <caseSensitive value="true" />
   <content value="complete" />
   <concept>
-    <code value="Outpatient" />
+    <code value="outpatient" />
     <display value="Outpatient" />
   </concept>
   <concept>
-    <code value="Exam" />
+    <code value="exam" />
     <display value="Exam" />
   </concept>
   <concept>
-    <code value="EmergencyService" />
-    <display value="Emergency Service" />
+    <code value="emergency" />
+    <display value="Emergency" />
   </concept>
   <concept>
-    <code value="Clinical Hospitalization" />
+    <code value="clinicalHospitalization" />
     <display value="Clinical Hospitalization" />
   </concept>
   <concept>
-    <code value="Surgical Hospitalization" />
+    <code value="surgicalHospitalization" />
     <display value="Surgical Hospitalization" />
   </concept>
 </CodeSystem>

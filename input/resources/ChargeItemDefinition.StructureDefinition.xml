@@ -59,5 +59,22 @@
         <targetProfile value="https://ancode.app/fhir/StructureDefinition/HealthcareService" />
       </type>
     </element>
+    <element id="ChargeItemDefinition.propertyGroup">
+      <path value="ChargeItemDefinition.propertyGroup" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="ChargeItemDefinition.propertyGroup.priceComponent">
+      <path value="ChargeItemDefinition.propertyGroup.priceComponent" />
+      <min value="1" />
+    </element>
+    <element id="ChargeItemDefinition.propertyGroup.priceComponent.amount">
+      <path value="ChargeItemDefinition.propertyGroup.priceComponent.amount" />
+      <min value="1" />
+    </element>
+    <element id="ChargeItemDefinition.propertyGroup.priceComponent.amount.value">
+      <path value="ChargeItemDefinition.propertyGroup.priceComponent.amount.value" />
+      <min value="1" />
+    </element>
   </differential>
 </StructureDefinition>

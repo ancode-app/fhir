@@ -29,7 +29,6 @@
       <path value="Procedure.extension" />
       <sliceName value="performedQuantity" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/PerformedQuantity" />
@@ -40,6 +39,10 @@
       <path value="Procedure.basedOn" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
+      </type>
     </element>
     <element id="Procedure.category">
       <path value="Procedure.category" />
@@ -52,6 +55,13 @@
     <element id="Procedure.code">
       <path value="Procedure.code" />
       <min value="1" />
+    </element>
+    <element id="Procedure.subject">
+      <path value="Procedure.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
     </element>
     <element id="Procedure.encounter">
       <path value="Procedure.encounter" />
@@ -108,6 +118,15 @@
         <strength value="required" />
         <valueSet value="https://ancode.app/fhir/ValueSet/BRGrauParticipacao" />
       </binding>
+    </element>
+    <element id="Procedure.performer.actor">
+      <path value="Procedure.performer.actor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+      </type>
     </element>
     <element id="Procedure.performer.onBehalfOf">
       <path value="Procedure.performer.onBehalfOf" />

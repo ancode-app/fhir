@@ -14,24 +14,30 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Account" />
   <derivation value="constraint" />
   <differential>
+    <element id="Account.name">
+      <path value="Account.name" />
+      <min value="1" />
+    </element>
     <element id="Account.subject">
       <path value="Account.subject" />
       <min value="1" />
+      <max value="1" />
     </element>
     <element id="Account.servicePeriod">
       <path value="Account.servicePeriod" />
       <min value="1" />
     </element>
+    <element id="Account.servicePeriod.start">
+      <path value="Account.servicePeriod.start" />
+      <min value="1" />
+    </element>
     <element id="Account.coverage">
       <path value="Account.coverage" />
       <min value="1" />
+      <max value="1" />
     </element>
     <element id="Account.owner">
       <path value="Account.owner" />
-      <min value="1" />
-    </element>
-    <element id="Account.description">
-      <path value="Account.description" />
       <min value="1" />
     </element>
   </differential>

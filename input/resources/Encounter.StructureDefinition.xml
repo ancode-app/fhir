@@ -80,8 +80,35 @@
         <valueSet value="https://ancode.app/fhir/ValueSet/BRCID10" />
       </binding>
     </element>
-    <element id="Encounter.location">
-      <path value="Encounter.location" />
+    <element id="Encounter.hospitalization.admitSource">
+      <path value="Encounter.hospitalization.admitSource" />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Encounter.hospitalization.dietPreference">
+      <path value="Encounter.hospitalization.dietPreference" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Encounter.hospitalization.dischargeDisposition">
+      <path value="Encounter.hospitalization.dischargeDisposition" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Encounter.location.status">
+      <path value="Encounter.location.status" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.location.period">
+      <path value="Encounter.location.period" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.location.period.start">
+      <path value="Encounter.location.period.start" />
       <min value="1" />
     </element>
     <element id="Encounter.serviceProvider">

@@ -18,6 +18,12 @@
       <path value="Claim.insurer" />
       <min value="1" />
     </element>
+    <element id="Claim.procedure.procedure[x]">
+      <path value="Claim.procedure.procedure[x]" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
     <element id="Claim.insurance">
       <path value="Claim.insurance" />
       <max value="1" />

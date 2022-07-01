@@ -38,7 +38,6 @@
       <path value="ServiceRequest.extension" />
       <sliceName value="authorizedQuantity" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/AuthorizedQuantity" />
@@ -49,7 +48,6 @@
       <path value="ServiceRequest.extension" />
       <sliceName value="performedQuantity" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/PerformedQuantity" />
@@ -92,6 +90,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="ServiceRequest.supportingInfo:healthcareService">
       <path value="ServiceRequest.supportingInfo" />
@@ -102,6 +101,24 @@
         <code value="Reference" />
         <targetProfile value="https://ancode.app/fhir/StructureDefinition/HealthcareService" />
       </type>
+    </element>
+    <element id="ServiceRequest.supportingInfo:healthcareService.reference">
+      <path value="ServiceRequest.supportingInfo.reference" />
+      <min value="1" />
+    </element>
+    <element id="ServiceRequest.supportingInfo:chargeItemDefinition">
+      <path value="ServiceRequest.supportingInfo" />
+      <sliceName value="chargeItemDefinition" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://ancode.app/fhir/StructureDefinition/ChargeItemDefinition" />
+      </type>
+    </element>
+    <element id="ServiceRequest.supportingInfo:chargeItemDefinition.reference">
+      <path value="ServiceRequest.supportingInfo.reference" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

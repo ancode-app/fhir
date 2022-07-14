@@ -24,16 +24,6 @@
       </slicing>
       <min value="3" />
     </element>
-    <element id="ServiceRequest.extension:newbornCare">
-      <path value="ServiceRequest.extension" />
-      <sliceName value="newbornCare" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/NewbornCare" />
-      </type>
-    </element>
     <element id="ServiceRequest.extension:authorizedQuantity">
       <path value="ServiceRequest.extension" />
       <sliceName value="authorizedQuantity" />
@@ -71,6 +61,10 @@
       <type>
         <code value="Quantity" />
       </type>
+    </element>
+    <element id="ServiceRequest.performer">
+      <path value="ServiceRequest.performer" />
+      <min value="1" />
     </element>
     <element id="ServiceRequest.locationReference">
       <path value="ServiceRequest.locationReference" />

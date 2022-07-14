@@ -12,11 +12,11 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Appointment" />
+    <expression value="Schedule" />
   </context>
   <context>
     <type value="element" />
-    <expression value="Schedule" />
+    <expression value="Account" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />

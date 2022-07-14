@@ -22,7 +22,17 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="2" />
+    </element>
+    <element id="Appointment.extension:accidentIndicator">
+      <path value="Appointment.extension" />
+      <sliceName value="accidentIndicator" />
       <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/AccidentIndicator" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="Appointment.extension:encounterClass">
       <path value="Appointment.extension" />
@@ -32,6 +42,18 @@
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/EncounterClass" />
       </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Appointment.extension:newbornCare">
+      <path value="Appointment.extension" />
+      <sliceName value="newbornCare" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/NewbornCare" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="Appointment.cancelationReason">
       <path value="Appointment.cancelationReason" />

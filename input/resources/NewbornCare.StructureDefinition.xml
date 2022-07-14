@@ -15,6 +15,10 @@
     <type value="element" />
     <expression value="ServiceRequest" />
   </context>
+  <context>
+    <type value="element" />
+    <expression value="Appointment" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

@@ -166,5 +166,13 @@
   <concept>
     <code value="VIDEOCALL" />
     <display value="VideoCall"/>
-  </concept> 
+  </concept>
+  <concept>
+    <code value="GROUPID" />
+    <display value="Group ID"/>
+  </concept>
+  <concept>
+    <code value="HEALTHCAREINSURANCECODE" />
+    <display value="Healthcare Insurance Code"/>
+  </concept>
 </CodeSystem>

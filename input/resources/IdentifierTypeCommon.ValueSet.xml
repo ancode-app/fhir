@@ -37,6 +37,14 @@
         <code value="VERSION" />
         <display value="Version"/>
       </concept>
+      <concept>
+        <code value="GROUPID" />
+        <display value="Group ID"/>
+      </concept>
+      <concept>
+        <code value="HEALTHCAREINSURANCECODE" />
+        <display value="Healthcare Insurance Code"/>
+      </concept>
     </include>
   </compose>
 </ValueSet>

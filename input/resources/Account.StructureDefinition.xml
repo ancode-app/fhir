@@ -14,6 +14,28 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Account" />
   <derivation value="constraint" />
   <differential>
+    <element id="Account.extension">
+      <path value="Account.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Account.extension:encounterType">
+      <path value="Account.extension" />
+      <sliceName value="encounterType" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/EncounterType" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="Account.name">
       <path value="Account.name" />
       <min value="1" />
@@ -39,6 +61,11 @@
     <element id="Account.owner">
       <path value="Account.owner" />
       <min value="1" />
+    </element>
+    <element id="Account.guarantor">
+      <path value="Account.guarantor" />
+      <min value="1" />
+      <max value="1" />
     </element>
   </differential>
 </StructureDefinition>

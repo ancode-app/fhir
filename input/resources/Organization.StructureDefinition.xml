@@ -43,16 +43,6 @@
         <profile value="https://ancode.app/fhir/StructureDefinition/TerminologyType" />
       </type>
     </element>
-    <element id="Organization.extension:billingTableProvider">
-      <path value="Organization.extension" />
-      <sliceName value="billingTableProvider" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://ancode.app/fhir/StructureDefinition/BillingTableProvider" />
-      </type>
-    </element>
     <element id="Organization.extension:typeHealthcareFacility">
       <path value="Organization.extension" />
       <sliceName value="typeHealthcareFacility" />
@@ -61,6 +51,39 @@
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/TypeHealthcareFacility" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Organization.extension:serviceBillingTable">
+      <path value="Organization.extension" />
+      <sliceName value="serviceBillingTable" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ServiceBillingTable" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Organization.extension:medicationBillingTable">
+      <path value="Organization.extension" />
+      <sliceName value="medicationBillingTable" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/MedicationBillingTable" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Organization.extension:deviceBillingTable">
+      <path value="Organization.extension" />
+      <sliceName value="deviceBillingTable" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/DeviceBillingTable" />
       </type>
       <isModifier value="false" />
     </element>

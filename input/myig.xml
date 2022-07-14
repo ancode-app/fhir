@@ -22,6 +22,13 @@
   <definition>
     <resource>
       <reference>
+        <reference value="StructureDefinition/AccidentIndicator"/>
+      </reference>
+      <name value="AccidentIndicator"/>
+      <description value="Accident Indicator"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Account"/>
       </reference>
       <name value="Account"/>
@@ -191,6 +198,20 @@
       <name value="BRImunobiologico"/>
       <description value="BRImunobiologico"/>
       <exampleCanonical value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRImunobiologico"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/BRIndicadorAcidente"/>
+      </reference>
+      <name value="BRIndicadorAcidente"/>
+      <description value="BR Indicador Acidente"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRIndicadorAcidente"/>
+      </reference>
+      <name value="BRIndicadorAcidente"/>
+      <description value="BR Indicador Acidente"/>
     </resource>
     <resource>
       <reference>
@@ -478,6 +499,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/DeviceBillingTable"/>
+      </reference>
+      <name value="DeviceBillingTable"/>
+      <description value="Device Billing Table"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/DeviceDefinition"/>
       </reference>
       <name value="DeviceDefinition"/>
@@ -762,6 +790,13 @@
       </reference>                                                                                
       <name value="Medication"/>
       <description value="Medication"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/MedicationBillingTable"/>
+      </reference>                                                                                
+      <name value="MedicationBillingTable"/>
+      <description value="Medication Billing Table"/>
     </resource>
     <resource>
       <reference>
@@ -1127,6 +1162,13 @@
       <name value="ScheduleType"/>
       <description value="ScheduleType"/>
     </resource>   
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ServiceBillingTable"/>
+      </reference>
+      <name value="ServiceBillingTable"/>
+      <description value="Service Billing Table"/>
+    </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/ServiceCategory"/>

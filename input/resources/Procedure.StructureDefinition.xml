@@ -145,7 +145,6 @@
     </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
-      <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />

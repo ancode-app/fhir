@@ -36,6 +36,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="SearchParameter/AccountGuarantor"/>
+      </reference>
+      <name value="AccountGuarantor"/>
+      <description value="Account Guarantor"/>
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="SearchParameter/AccountServicePeriod"/>
+      </reference>
+      <name value="AccountServicePeriod"/>
+      <description value="Account Service Period"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/Address"/>
       </reference>
       <name value="Address"/>
@@ -263,7 +277,21 @@
       </reference>
       <name value="BRTabelaSUS"/>
       <description value="BR Tabela SUS"/>
-    </resource>    
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/BRTabelaTUSS00"/>
+      </reference>
+      <name value="BRTabelaTUSS00"/>
+      <description value="BR Tabela TUSS 00"/>                          
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/BRTabelaTUSS00"/>
+      </reference>
+      <name value="BRTabelaTUSS00"/>
+      <description value="BR Tabela TUSS 00"/>
+    </resource>
     <resource>
       <reference>
         <reference value="CodeSystem/BRTabelaTUSS18"/>
@@ -398,6 +426,13 @@
       </reference>
       <name value="ChargeItemDefinitionInstance"/>
       <description value="ChargeItemDefinition Instance"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/ChargeItemStatus"/>
+      </reference>
+      <name value="ChargeItemStatus"/>
+      <description value="ChargeItem Status"/>
     </resource>
     <resource>
       <reference>
@@ -1280,6 +1315,13 @@
       </reference>
       <name value="TypeHealthcareFacility"/>
       <description value="Type Healthcare Facility"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/UnitType"/>
+      </reference>
+      <name value="UnitType"/>
+      <description value="Unit Type"/>
     </resource>
     <resource>
       <reference>

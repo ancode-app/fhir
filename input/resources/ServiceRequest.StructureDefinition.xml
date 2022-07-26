@@ -22,7 +22,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="3" />
+      <min value="2" />
     </element>
     <element id="ServiceRequest.extension:authorizedQuantity">
       <path value="ServiceRequest.extension" />

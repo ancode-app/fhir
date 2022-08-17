@@ -22,7 +22,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="7" />
+      <min value="8" />
     </element>
     <element id="Schedule.extension:type">
       <path value="Schedule.extension" />
@@ -89,6 +89,17 @@
       <type>
         <code value="Extension" />
         <profile value="https://ancode.app/fhir/StructureDefinition/EncounterType" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Schedule.extension:confirmationType">
+      <path value="Schedule.extension" />
+      <sliceName value="confirmationType" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://ancode.app/fhir/StructureDefinition/ConfirmationType" />
       </type>
       <isModifier value="false" />
     </element>

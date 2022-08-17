@@ -90,12 +90,12 @@
       <name value="Appointment"/>
       <description value="Appointment"/>
     </resource>
-    <resource>
+     <resource>
       <reference>
-        <reference value="StructureDefinition/AppointmentResponse"/>
+        <reference value="SearchParameter/AppointmentPartcipantIdentifier"/>
       </reference>
-      <name value="AppointmentResponse"/>
-      <description value="Appointment Response"/>
+      <name value="AppointmentPartcipantIdentifier"/>
+      <description value="Appointment Partcipant Identifier"/>
     </resource>
     <resource>
       <reference>
@@ -468,6 +468,27 @@
       </reference>
       <name value="Condition"/>
       <description value="Condition"/>
+    </resource>
+     <resource>
+      <reference>
+        <reference value="CodeSystem/ConfirmationType"/>
+      </reference>
+      <name value="ConfirmationType"/>
+      <description value="Confirmation Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ConfirmationType"/>
+      </reference>
+      <name value="ConfirmationType"/>
+      <description value="Confirmation Type"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ConfirmationType"/>
+      </reference>
+      <name value="ConfirmationType"/>
+      <description value="Confirmation Type"/>
     </resource>
     <resource>
       <reference>

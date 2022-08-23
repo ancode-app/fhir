@@ -422,6 +422,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="SearchParameter/ChargeItemDefinitionCode"/>
+      </reference>
+      <name value="ChargeItemDefinitionCode"/>
+      <description value="ChargeItemDefinition Code"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="SearchParameter/ChargeItemDefinitionInstance"/>
       </reference>
       <name value="ChargeItemDefinitionInstance"/>
@@ -1365,6 +1372,14 @@
       <name value="VaccineRoute"/>
       <description value="VaccineRoute"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/Value"/>
+      </reference>
+      <name value="Value"/>
+      <description value="Value"/>
+    </resource>
+
     <resource>
       <reference>
         <reference value="Person/Example1"/>

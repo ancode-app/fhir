@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Wed, Aug 17, 2022 18:59+0000 for FHIR v5.0.0-cibuild 
+  Generated on Thu, Aug 18, 2022 19:15+0000 for FHIR v5.0.0-cibuild 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="5.0.0-cibuild">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -20303,6 +20303,16 @@ A coverage may only be responsible for specific types of charges, and the sequen
               <xs:documentation xml:lang="en">Additional information to support the appointment provided when making the appointment.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="previousAppointment" minOccurs="0" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The previous appointment in a series of related appointments.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="originatingAppointment" minOccurs="0" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The originating appointment in a recurring set of related appointments.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="start" minOccurs="0" maxOccurs="1" type="instant">
             <xs:annotation>
               <xs:documentation xml:lang="en">Date/Time that the appointment is to take place.</xs:documentation>
@@ -20365,6 +20375,21 @@ A coverage may only be responsible for specific types of charges, and the sequen
 The duration (usually in minutes) could also be provided to indicate the length of the appointment to fill and populate the start/end times for the actual allocated time. However, in other situations the duration may be calculated by the scheduling system.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="recurrenceId" minOccurs="0" maxOccurs="1" type="positiveInt">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The sequence number that identifies a specific appointment in a recurring pattern.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="occurrenceChanged" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">This appointment varies from the recurring pattern.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="recurrenceTemplate" type="Appointment.RecurrenceTemplate" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The details of the recurrence pattern or template that is used to generate recurring appointments.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -20399,6 +20424,165 @@ The duration (usually in minutes) could also be provided to indicate the length 
           <xs:element name="status" minOccurs="1" maxOccurs="1" type="ParticipationStatus">
             <xs:annotation>
               <xs:documentation xml:lang="en">Participation status of the actor.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Appointment.RecurrenceTemplate">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s).</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="timezone" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The timezone of the recurring appointment occurrences.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="recurrenceType" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">How often the appointment series should recur.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="lastOccurrenceDate" minOccurs="0" maxOccurs="1" type="date">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Recurring appointments will not occur after this date.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="occurrenceCount" minOccurs="0" maxOccurs="1" type="positiveInt">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">How many appointments are planned in the recurrence.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="occurrenceDate" minOccurs="0" maxOccurs="unbounded" type="date">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The list of specific dates that will have appointments generated.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="weeklyTemplate" type="Appointment.WeeklyTemplate" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Information about weekly recurring appointments.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="monthlyTemplate" type="Appointment.MonthlyTemplate" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Information about monthly recurring appointments.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="yearlyTemplate" type="Appointment.YearlyTemplate" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Information about yearly recurring appointments.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="excludingDate" minOccurs="0" maxOccurs="unbounded" type="date">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Any dates, such as holidays, that should be excluded from the recurrence.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="excludingRecurrenceId" minOccurs="0" maxOccurs="unbounded" type="positiveInt">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Any dates, such as holidays, that should be excluded from the recurrence.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Appointment.WeeklyTemplate">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s).</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="monday" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates that recurring appointments should occur on Mondays.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="tuesday" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates that recurring appointments should occur on Tuesdays.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="wednesday" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates that recurring appointments should occur on Wednesdays.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="thursday" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates that recurring appointments should occur on Thursdays.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="friday" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates that recurring appointments should occur on Fridays.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="saturday" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates that recurring appointments should occur on Saturdays.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="sunday" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates that recurring appointments should occur on Sundays.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="weekInterval" minOccurs="0" maxOccurs="1" type="positiveInt">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The interval defines if the recurrence is every nth week. The default is every week, so it is expected that this value will be 2 or more.e.g. For recurring every second week this interval would be 2, or every third week the interval would be 3.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Appointment.MonthlyTemplate">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s).</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="dayOfMonth" minOccurs="0" maxOccurs="1" type="positiveInt">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates that appointments in the series of recurring appointments should occur on a specific day of the month.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="nthWeekOfMonth" minOccurs="0" maxOccurs="1" type="Coding">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates which week within a month the appointments in the series of recurring appointments should occur on.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="dayOfWeek" minOccurs="0" maxOccurs="1" type="Coding">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates which day of the week the recurring appointments should occur each nth week.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="monthInterval" minOccurs="1" maxOccurs="1" type="positiveInt">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates that recurring appointments should occur every nth month.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Appointment.YearlyTemplate">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s).</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="yearInterval" minOccurs="1" maxOccurs="1" type="positiveInt">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Appointment recurs every nth year.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -20561,6 +20745,21 @@ The duration (usually in minutes) could also be provided to indicate the length 
           <xs:element name="comment" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Additional comments about the appointment.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="recurring" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Indicates that this AppointmentResponse applies to all occurrences in a recurring request.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="occurrenceDate" minOccurs="0" maxOccurs="1" type="date">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The original date within a recurring request. This could be used in place of the recurrenceId to be more direct (or where the template is provided through the simple list of dates in `Appointment.occurrenceDate`).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="recurrenceId" minOccurs="0" maxOccurs="1" type="positiveInt">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The recurrence ID (sequence number) of the specific appointment when responding to a recurring request.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -26566,7 +26765,7 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">The type of relationship between the medicinal product indication or contraindication and another therapy.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="therapy" minOccurs="1" maxOccurs="1" type="CodeableReference">
+          <xs:element name="treatment" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Reference to a specific medication (active substance, medicinal product or class of products) as part of an indication or contraindication.</xs:documentation>
            </xs:annotation>
@@ -33892,6 +34091,11 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
           <xs:element name="appointment" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The appointment that scheduled this encounter.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="virtualService" minOccurs="0" maxOccurs="unbounded" type="VirtualServiceDetail">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Connection details of a virtual service (e.g. conference call).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="actualPeriod" minOccurs="0" maxOccurs="1" type="Period">

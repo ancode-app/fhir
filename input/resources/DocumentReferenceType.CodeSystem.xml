@@ -19,4 +19,8 @@
     <code value="medicalReferral" />
     <display value="MedicalReferral" />
   </concept>
+  <concept>
+    <code value="encounterAttatchment" />
+    <display value="EncounterAttatchment" />
+  </concept>
 </CodeSystem>
